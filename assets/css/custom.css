@@ -126,14 +126,11 @@
     font-size: 15px;
     text-decoration: none;
 
-    background: rgba(255, 255, 255, 0.13);
     border: 1px solid rgba(255, 255, 255, 0.55);
     border-radius: 50%;
 
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
 
     transition:
         color 0.3s ease,
@@ -141,9 +138,7 @@
         border-color 0.3s ease,
         transform 0.3s ease,
         box-shadow 0.3s ease;
-}
 
-.bb-social-icons a:hover {
     color: #fff;
 
     background: linear-gradient(
@@ -152,11 +147,9 @@
         #D5B15E,
         #A77A35
     );
-
     border-color: #F3D78C;
     transform: translateX(-5px);
 
-    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.22);
 }
 
 
@@ -1608,3 +1601,4 @@ background: linear-gradient(110deg, #1F7A35, #63B82E, #FFD43B);
         height: 175px;
     }
 }
+

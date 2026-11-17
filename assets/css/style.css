@@ -228,20 +228,7 @@ button {
   display: none;
 }
 
-.btn-primary::before {
-  --middle: calc(48px / 2);
-  background: var(--bg-white);
-  content: "";
-  height: 100%;
-  left: calc(48px * -1);
-  position: absolute;
-  top: 0;
-  transform: rotate(-90deg);
-  transform-origin: var(--middle) var(--middle);
-  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  width: calc(100% + 48px);
-  z-index: 1;
-}
+
 
 .btn-primary:hover::before,
 .btn-primary:focus::before,
@@ -272,7 +259,7 @@ button {
 .btn-primary:active,
 .btn-primary.active,
 .show>.btn-primary.dropdown-toggle {
-  color: var(--primary) !important;
+  color: white !important;
   transform: translateY(-2px);
 }
 
@@ -289,7 +276,7 @@ button {
 .btn-primary.active i,
 .btn-primary.active span,
 .show>.btn-primary.dropdown-toggle * {
-  color: var(--primary) !important;
+  color: white !important;
 }
 
 .btn-primary:hover i,
@@ -4239,7 +4226,7 @@ background: #ffffff !important;
   color: #ffffff !important;
 }
 
-.advantage-card:hover .advantage-icon.icon-amber {
+.advantage-card .advantage-icon.icon-amber {
   background: #d97706 !important;
   color: #ffffff !important;
 }
