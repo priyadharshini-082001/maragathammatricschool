@@ -1,0 +1,1610 @@
+
+/* =========================================================
+   01. HERO MAIN SECTION
+========================================================= */
+
+.bb-hero-section {
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: clamp(300px, 42vw, 640px);
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    isolation: isolate;
+    background: #17251d;
+    margin-top: 5%;
+}
+
+
+/* =========================================================
+   02. SWIPER STRUCTURE
+========================================================= */
+
+.bb-hero-slider {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.bb-hero-slider .swiper-wrapper,
+.bb-hero-slider .swiper-slide {
+    width: 100%;
+    height: 100%;
+}
+
+.bb-hero-slider .swiper-slide {
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   03. HERO IMAGE
+========================================================= */
+
+.bb-hero-image-wrap {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #17251d;
+}
+
+.bb-hero-image {
+    position: absolute;
+    inset: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+
+    object-fit: cover;
+    object-position: center center;
+
+    transform: scale(1.13);
+    transition: transform 7s cubic-bezier(0.2, 0.65, 0.3, 1);
+
+    border: 0;
+}
+
+.bb-hero-slider .swiper-slide-active .bb-hero-image {
+    transform: scale(1);
+}
+
+
+
+/* =========================================================
+   05. RIGHT SOCIAL MEDIA BAR
+========================================================= */
+
+.bb-hero-social {
+    position: absolute;
+    top: 60%;
+    right: clamp(20px, 3.2vw, 48px);
+    transform: translateY(-50%);
+
+    z-index: 20;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 48px;
+    gap: 15px;
+
+    margin: 0;
+    padding: 0;
+}
+
+.bb-social-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+
+.bb-social-icons a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 42px;
+    height: 42px;
+    flex: 0 0 42px;
+
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+
+    background: rgba(255, 255, 255, 0.13);
+    border: 1px solid rgba(255, 255, 255, 0.55);
+    border-radius: 50%;
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+
+    transition:
+        color 0.3s ease,
+        background 0.3s ease,
+        border-color 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.bb-social-icons a:hover {
+    color: #fff;
+
+    background: linear-gradient(
+        135deg,
+        #8B642B,
+        #D5B15E,
+        #A77A35
+    );
+
+    border-color: #F3D78C;
+    transform: translateX(-5px);
+
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.22);
+}
+
+
+/* =========================================================
+   06. SOCIAL VERTICAL LINE
+========================================================= */
+
+.bb-social-line {
+    position: relative;
+    display: block;
+
+    width: 1px;
+    height: 70px;
+    flex-shrink: 0;
+
+    background: rgba(255, 255, 255, 0.75);
+}
+
+.bb-social-line::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -1px;
+
+    width: 3px;
+    height: 25px;
+
+    background: #D9B65F;
+    border-radius: 5px;
+}
+
+
+/* =========================================================
+   07. FOLLOW US TEXT
+========================================================= */
+
+.bb-follow-text {
+    display: block;
+
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+
+    color: #fff;
+    font-size: 11px;
+    font-weight: 800;
+
+    letter-spacing: 5px;
+    line-height: 1.2;
+
+    text-transform: uppercase;
+    white-space: nowrap;
+
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+
+/* =========================================================
+   08. BOTTOM LEFT SLIDER NAVIGATION
+========================================================= */
+
+.bb-hero-navigation {
+    position: absolute;
+
+    left: clamp(20px, 3.2vw, 48px);
+    bottom: clamp(20px, 3vw, 38px);
+
+    z-index: 20;
+
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    margin: 0;
+    padding: 0;
+}
+
+.bb-hero-navigation button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 56px;
+    height: 56px;
+    flex: 0 0 56px;
+
+    padding: 0;
+    margin: 0;
+
+    color: #fff;
+    font-size: 17px;
+
+    background: rgba(255, 255, 255, 0.17);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+
+    cursor: pointer;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.bb-hero-navigation button:hover {
+    color: #fff;
+
+    background: linear-gradient(
+        135deg,
+        #8B642B,
+        #D5B15E
+    );
+
+    border-color: #E9CE83;
+    transform: translateY(-4px);
+}
+
+.bb-hero-navigation button:focus-visible,
+.bb-social-icons a:focus-visible {
+    outline: 2px solid #F2D27D;
+    outline-offset: 4px;
+}
+
+
+/* =========================================================
+   09. LARGE DESKTOP
+========================================================= */
+
+@media (min-width: 1600px) {
+
+    .bb-hero-section {
+        height: 680px;
+    }
+
+    .bb-hero-social {
+        right: 55px;
+        gap: 17px;
+    }
+
+    .bb-social-icons {
+        gap: 12px;
+    }
+
+    .bb-social-icons a {
+        width: 46px;
+        height: 46px;
+        flex-basis: 46px;
+        font-size: 17px;
+    }
+
+    .bb-social-line {
+        height: 80px;
+    }
+
+    .bb-follow-text {
+        font-size: 12px;
+        letter-spacing: 5px;
+    }
+
+    .bb-hero-navigation button {
+        width: 60px;
+        height: 60px;
+        flex-basis: 60px;
+    }
+}
+
+
+/* =========================================================
+   10. LAPTOP
+========================================================= */
+
+@media (min-width: 1200px) and (max-width: 1599px) {
+
+    .bb-hero-section {
+        height: 560px;
+    }
+
+    .bb-hero-social {
+        right: 35px;
+    }
+
+    .bb-social-icons a {
+        width: 40px;
+        height: 40px;
+        flex-basis: 40px;
+    }
+
+    .bb-hero-navigation button {
+        width: 52px;
+        height: 52px;
+        flex-basis: 52px;
+    }
+}
+
+
+/* =========================================================
+   11. TABLET LANDSCAPE
+========================================================= */
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+    .bb-hero-section {
+        height: 430px;
+    }
+
+    .bb-hero-social {
+        right: 20px;
+        width: 40px;
+        gap: 11px;
+        top: 60%;
+    }
+
+    .bb-social-icons {
+        gap: 8px;
+    }
+
+    .bb-social-icons a {
+        width: 36px;
+        height: 36px;
+        flex-basis: 36px;
+        font-size: 13px;
+    }
+
+    .bb-social-line {
+        height: 48px;
+    }
+
+    .bb-follow-text {
+        font-size: 9px;
+        letter-spacing: 3px;
+    }
+
+    .bb-hero-navigation {
+        left: 20px;
+        bottom: 20px;
+        gap: 10px;
+    }
+
+    .bb-hero-navigation button {
+        width: 46px;
+        height: 46px;
+        flex-basis: 46px;
+        font-size: 14px;
+    }
+}
+
+
+/* =========================================================
+   12. TABLET PORTRAIT
+========================================================= */
+
+@media (min-width: 601px) and (max-width: 767px) {
+
+    .bb-hero-section {
+        height: 350px;
+    }
+
+    .bb-hero-social {
+        right: 13px;
+        width: 35px;
+        gap: 9px;
+    }
+
+    .bb-social-icons {
+        gap: 7px;
+    }
+
+    .bb-social-icons a {
+        width: 32px;
+        height: 32px;
+        flex-basis: 32px;
+        font-size: 12px;
+    }
+
+    .bb-social-line {
+        height: 35px;
+    }
+
+    .bb-follow-text {
+        font-size: 8px;
+        letter-spacing: 2.5px;
+    }
+
+    .bb-hero-navigation {
+        left: 15px;
+        bottom: 15px;
+        gap: 9px;
+    }
+
+    .bb-hero-navigation button {
+        width: 40px;
+        height: 40px;
+        flex-basis: 40px;
+        font-size: 13px;
+    }
+}
+
+
+/* =========================================================
+   13. MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .bb-hero-section {
+        width: 100%;
+        max-height: 200px;
+        margin: 0;
+        padding: 0;
+        margin-top: 18%;
+
+    }
+
+    .bb-hero-slider,
+    .bb-hero-slider .swiper-wrapper,
+    .bb-hero-slider .swiper-slide {
+        width: 100%;
+        height: 100%;
+    }
+
+    .bb-hero-image-wrap {
+        width: 100%;
+        height: 100%;
+    }
+
+    .bb-hero-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+    }
+
+    /* MOBILE OVERLAY */
+
+    .bb-hero-image-wrap::before {
+        background:
+            linear-gradient(
+                90deg,
+                rgba(12, 31, 22, 0.42) 0%,
+                rgba(12, 31, 22, 0.13) 55%,
+                rgba(12, 31, 22, 0.48) 100%
+            ),
+            linear-gradient(
+                0deg,
+                rgba(10, 23, 16, 0.40),
+                transparent 65%
+            );
+    }
+
+    /* COMPACT MOBILE SOCIAL BAR */
+
+    .bb-hero-social {
+        top:55%;
+        right: 7px;
+
+        width: 26px;
+        gap: 6px;
+    }
+
+    .bb-social-icons {
+        gap: 5px;
+    }
+
+    .bb-social-icons a {
+        width: 23px;
+        height: 23px;
+        min-width: 23px;
+        flex: 0 0 23px;
+
+        font-size: 9px;
+        border-width: 1px;
+
+        background: rgba(20, 35, 26, 0.48);
+    }
+
+    .bb-social-icons a:hover {
+        transform: scale(1.05);
+    }
+
+    .bb-social-line {
+        width: 1px;
+        height: 20px;
+    }
+
+    .bb-social-line::before {
+        width: 2px;
+        height: 9px;
+    }
+
+    .bb-follow-text {
+        font-size: 6px;
+        letter-spacing: 1.8px;
+    }
+
+    /* MOBILE NAVIGATION */
+
+    .bb-hero-navigation {
+        left: 12px;
+        bottom: 12px;
+        gap: 9px;
+    }
+
+    .bb-hero-navigation button {
+        width: 39px;
+        height: 39px;
+        flex-basis: 39px;
+        font-size: 13px;
+
+        background: rgba(20, 35, 26, 0.42);
+    }
+}
+
+
+/* =========================================================
+   14. SMALL MOBILE
+========================================================= */
+
+@media (max-width: 375px) {
+
+    .bb-hero-section {
+        height: 250px;
+        min-height: 250px;
+        max-height:  250px;
+    }
+
+    .bb-hero-social {
+        right: 5px;
+        width: 23px;
+        gap: 5px;
+    }
+
+    .bb-social-icons {
+        gap: 4px;
+    }
+
+    .bb-social-icons a {
+        width: 21px;
+        height: 21px;
+        min-width: 21px;
+        flex: 0 0 21px;
+        font-size: 8px;
+    }
+
+    .bb-social-line {
+        height: 17px;
+    }
+
+    .bb-social-line::before {
+        height: 7px;
+    }
+
+    .bb-follow-text {
+        font-size: 5.5px;
+        letter-spacing: 1.5px;
+    }
+
+    .bb-hero-navigation {
+        left: 9px;
+        bottom: 9px;
+        gap: 7px;
+    }
+
+    .bb-hero-navigation button {
+        width: 34px;
+        height: 34px;
+        flex-basis: 34px;
+        font-size: 11px;
+    }
+}
+
+
+/* =========================================================
+   15. VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 320px) {
+
+    .bb-hero-section {
+        height: 230px;
+        min-height:  230px;
+        max-height:  230px;
+    }
+
+    .bb-hero-social {
+        right: 4px;
+        width: 21px;
+        gap: 4px;
+    }
+
+    .bb-social-icons {
+        gap: 4px;
+    }
+
+    .bb-social-icons a {
+        width: 19px;
+        height: 19px;
+        flex-basis: 19px;
+        font-size: 7px;
+    }
+
+    .bb-social-line {
+        height: 15px;
+    }
+
+    .bb-follow-text {
+        font-size: 5px;
+        letter-spacing: 1.2px;
+    }
+
+    .bb-hero-navigation {
+        left: 8px;
+        bottom: 8px;
+        gap: 6px;
+    }
+
+    .bb-hero-navigation button {
+        width: 30px;
+        height: 30px;
+        flex-basis: 30px;
+        font-size: 10px;
+    }
+}
+
+
+/* =========================================================
+   16. REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .bb-hero-image {
+        transform: none !important;
+        transition: none !important;
+    }
+
+    .bb-social-icons a,
+    .bb-hero-navigation button {
+        transition: none !important;
+    }
+}
+
+
+/* =========================================
+   VISION & MISSION NOTICE BOARD
+========================================= */
+
+.bb-notice-section {
+    position: relative;
+    padding: 35px 2%;
+    background: linear-gradient(135deg, #fff8ed, #f5f1e8, #edf5f5);
+    overflow: hidden;
+}
+
+.bb-board-frame {
+    max-width: 1400px;
+    margin: auto;
+    padding: 25px 10px;
+    background: linear-gradient(135deg, #a66b3f, #80502f, #a87549);
+    border: 8px solid #704323;
+    border-radius: 8px;
+}
+
+/* Heading */
+
+.bb-board-heading {
+    text-align: center;
+    margin-bottom: 22px;
+}
+
+.bb-board-heading span {
+    color: #fff0cf;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.bb-board-heading h2 {
+    color: #fff;
+    font-size: 32px;
+    margin: 5px 0;
+}
+
+.bb-board-heading p {
+    color: #fff5e5;
+    font-size: 15px;
+    margin: 0;
+}
+
+/* Notice Grid */
+
+.bb-notice-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+    max-width: 1050px;
+    margin: auto;
+}
+
+/* Paper */
+
+.bb-paper {
+    position: relative;
+    min-height: 275px;
+    padding: 28px 28px 18px;
+    background: #fffdf4;
+    border: 1px solid #e4d7bd;
+    border-radius: 4px;
+    text-align: center;
+    box-shadow: 0 5px 13px rgba(0,0,0,0.15);
+    transform: rotate(-0.5deg);
+    transition: 0.35s ease;
+}
+
+.mission-paper {
+    background: #fffafa;
+    transform: rotate(0.5deg);
+}
+
+.bb-paper:hover {
+    transform: translateY(-5px) rotate(0deg);
+    box-shadow: 0 12px 22px rgba(0,0,0,0.2);
+}
+
+/* Pushpin */
+
+.bb-pushpin {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.navy-pin {
+    background: #102f55;
+}
+
+.red-pin {
+    background: #a51f3d;
+}
+
+/* Paper Tag */
+
+.bb-paper-tag {
+    display: inline-block;
+    padding: 6px 15px;
+    background: #102f55;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    transform: rotate(-2deg);
+}
+
+.mission-paper .bb-paper-tag {
+    background: #a51f3d;
+    transform: rotate(2deg);
+}
+
+/* Icon */
+
+.bb-paper-icon {
+    font-size: 32px;
+    margin: 15px 0 3px;
+}
+
+/* Paper Heading */
+
+.bb-paper h3 {
+    color: #102f55;
+    font-size: 25px;
+    margin: 5px 0 8px;
+    font-family: 'Brittany Signature', cursive;
+}
+
+.mission-paper h3 {
+    color: #a51f3d;
+}
+
+/* Underline */
+
+.bb-paper-underline {
+    width: 55px;
+    height: 3px;
+    margin: 0 auto 12px;
+    background: #102f55;
+}
+
+.mission-paper .bb-paper-underline {
+    background: #a51f3d;
+}
+
+/* Paragraph */
+
+.bb-paper p {
+    color: #000000;
+    font-size: 17px;
+    line-height: 1.7;
+    text-align: justify;
+    margin: 0;
+}
+
+/* Paper Footer */
+
+.bb-paper-footer {
+    margin-top: 15px;
+    padding-top: 9px;
+    border-top: 1px dashed #c9bda9;
+    color: #a51f3d;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+/* Bottom Text */
+
+.bb-board-bottom {
+    margin-top: 20px;
+    text-align: center;
+    color: #fff5df;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.bb-board-bottom span {
+    color: #ffdb80;
+    padding: 0 5px;
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+    .bb-notice-section {
+        padding: 30px 4%;
+    }
+
+    .bb-board-frame {
+        padding: 22px 22px 18px;
+    }
+
+    .bb-notice-grid {
+        gap: 20px;
+    }
+
+    .bb-paper {
+        padding: 27px 22px 17px;
+        min-height: 260px;
+    }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 650px) {
+
+    .bb-notice-section {
+        padding: 22px 12px;
+    }
+
+    .bb-board-frame {
+        padding: 22px 14px 17px;
+        border-width: 6px;
+    }
+
+    .bb-board-heading {
+        margin-bottom: 18px;
+    }
+
+    .bb-board-heading span {
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+
+    .bb-board-heading h2 {
+        font-size: 25px;
+        margin: 5px 0;
+    }
+
+    .bb-board-heading p {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+    .bb-notice-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .bb-paper,
+    .mission-paper {
+        min-height: auto;
+        padding: 27px 18px 17px;
+        transform: none;
+    }
+
+    .bb-paper:hover {
+        transform: translateY(-3px);
+    }
+
+    .bb-paper-icon {
+        font-size: 29px;
+        margin: 13px 0 3px;
+    }
+
+    .bb-paper h3 {
+        font-size: 23px;
+        margin: 4px 0 7px;
+    }
+
+    .bb-paper p {
+        font-size: 15px;
+        line-height: 1.65;
+    }
+
+    .bb-paper-footer {
+        margin-top: 12px;
+        padding-top: 8px;
+        font-size: 9px;
+    }
+
+    .bb-board-bottom {
+        margin-top: 16px;
+        font-size: 11px;
+        line-height: 1.5;
+    }
+}
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 380px) {
+
+    .bb-board-frame {
+        padding: 20px 11px 15px;
+    }
+
+    .bb-board-heading h2 {
+        font-size: 22px;
+    }
+
+    .bb-paper,
+    .mission-paper {
+        padding: 25px 15px 15px;
+    }
+
+    .bb-paper h3 {
+        font-size: 21px;
+    }
+}
+
+
+/* ==========================================
+   BRAINYSCHOOL PROGRAMMES CAROUSEL
+========================================== */
+
+.tb-packages-v2 .tb-programmes-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    margin: 0 auto 25px;
+    position: relative;
+    z-index: 5;
+}
+
+.tb-packages-v2 .tb-programmes-counter {
+    color: #243b2b;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.tb-packages-v2 .tb-programmes-arrow {
+    width: 44px;
+    height: 44px;
+    flex: 0 0 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #245331;
+    border-radius: 50%;
+    background: #245331;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background .25s ease,
+                color .25s ease,
+                transform .25s ease;
+}
+
+.tb-packages-v2 .tb-programmes-arrow:hover {
+    background: #b58a5a;
+    border-color: #b58a5a;
+    color: #fff;
+    transform: scale(1.06);
+}
+
+.tb-packages-v2 .tb-programmes-arrow:focus-visible {
+    outline: 3px solid #b58a5a;
+    outline-offset: 3px;
+}
+
+/* Horizontal scrolling track */
+.tb-packages-v2 .tb-programmes-track {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding-top: 5px;
+    padding-bottom: 20px !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    touch-action: pan-x pan-y;
+}
+
+.tb-packages-v2 .tb-programmes-track::-webkit-scrollbar {
+    display: none;
+}
+
+/* Desktop: show 3 cards */
+.tb-packages-v2 .tb-programmes-track > [class*="col-"] {
+    flex: 0 0 33.333333% !important;
+    width: 33.333333% !important;
+    max-width: 33.333333% !important;
+    scroll-snap-align: start;
+    box-sizing: border-box;
+}
+
+/* Keep cards at equal height */
+.tb-packages-v2 .tb-package-card-v2 {
+    height: 100%;
+}
+
+/* Tablet: show 2 cards */
+@media (max-width: 991.98px) {
+    .tb-packages-v2 .tb-programmes-track > [class*="col-"] {
+        flex: 0 0 50% !important;
+        width: 50% !important;
+        max-width: 50% !important;
+    }
+}
+
+/* Mobile: show 1 card */
+@media (max-width: 575.98px) {
+    .tb-packages-v2 .tb-programmes-track > [class*="col-"] {
+        flex: 0 0 100% !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .tb-packages-v2 .tb-programmes-controls {
+        gap: 14px;
+        margin-bottom: 18px;
+    }
+
+    .tb-packages-v2 .tb-programmes-arrow {
+        width: 40px;
+        height: 40px;
+        flex-basis: 40px;
+    }
+
+    .tb-packages-v2 .tb-programmes-counter {
+        font-size: 14px;
+    }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    .tb-packages-v2 .tb-programmes-track {
+        scroll-behavior: auto;
+    }
+
+    .tb-packages-v2 .tb-programmes-arrow {
+        transition: none;
+    }
+}
+
+/* ==========================================
+   BRAINY BLOOMS FOOTER
+   BROWN + CRIMSON GRADIENT
+   COMPACT RESPONSIVE DESIGN
+========================================== */
+
+.bb-footer {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    color: #ffffff;
+background: linear-gradient(110deg, #1F7A35, #63B82E, #FFD43B);
+    font-size: 17px;
+}
+
+.bb-footer,
+.bb-footer * {
+    box-sizing: border-box;
+}
+
+.bb-footer p,
+.bb-footer h3,
+.bb-footer h4,
+.bb-footer ul {
+    margin-top: 0;
+}
+
+.bb-footer p,
+.bb-footer h3,
+.bb-footer h4,
+.bb-footer li,
+.bb-footer a,
+.bb-footer span {
+    color: #ffffff;
+    font-size: 17px;
+}
+
+.bb-footer p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.bb-footer a {
+    text-decoration: none;
+    overflow-wrap: anywhere;
+    transition: color 0.2s ease, background 0.2s ease;
+}
+
+.bb-footer-container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 32px 22px 0;
+}
+
+/* MAIN GRID */
+
+.bb-footer-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.75fr 1.1fr 1fr;
+    gap: 25px;
+    align-items: start;
+    padding-bottom: 24px;
+}
+
+.bb-footer-column {
+    width: 100%;
+    min-width: 0;
+}
+
+/* SCHOOL LOGO AND INTRODUCTION */
+
+.bb-footer-logo {
+    display: inline-block;
+    margin-bottom: 12px;
+}
+
+.bb-footer-logo img {
+    display: block;
+    width: auto;
+    max-width: 165px;
+    max-height: 72px;
+    object-fit: contain;
+}
+
+.bb-footer-heading {
+    margin-bottom: 10px;
+    font-weight: 700;
+    line-height: 1.45;
+}
+
+.bb-footer-description {
+    margin-bottom: 16px;
+    text-align: justify;
+    line-height: 1.65;
+}
+
+/* SECTION HEADINGS */
+
+.bb-footer-title {
+    position: relative;
+    display: table;
+    max-width: 100%;
+    margin-bottom: 17px;
+    padding-bottom: 8px;
+    font-weight: 700;
+    line-height: 1.45;
+}
+
+.bb-footer-title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 35px;
+    height: 2px;
+    background: #ffffff;
+}
+
+/* SOCIAL ICONS */
+
+.bb-footer-social {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.bb-footer .bb-social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    flex: 0 0 36px;
+    border: 1px solid rgba(255, 255, 255, 0.75);
+    border-radius: 50%;
+}
+
+.bb-footer .bb-social-link i {
+    font-size: 17px;
+}
+
+.bb-footer .bb-social-link:hover {
+    color: #7b1e29;
+    background: #ffffff;
+}
+
+.bb-footer .bb-social-link:hover i {
+    color: #7b1e29;
+}
+
+/* QUICK LINKS */
+
+.bb-footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    margin-bottom: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.bb-footer-links li {
+    margin: 0;
+    padding: 0;
+}
+
+.bb-footer .bb-footer-links a {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    line-height: 1.5;
+}
+
+.bb-footer-links a i {
+    flex: 0 0 auto;
+    margin-top: 6px;
+    font-size: 13px;
+}
+
+.bb-footer .bb-footer-links a:hover,
+.bb-footer .bb-contact-item a:hover,
+.bb-footer .bb-map-link:hover {
+    color: #ffe0d7;
+    text-decoration: underline;
+}
+
+/* CONTACT DETAILS */
+
+.bb-contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.bb-contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+    min-width: 0;
+}
+
+.bb-contact-item > i {
+    flex: 0 0 19px;
+    width: 19px;
+    margin-top: 5px;
+    text-align: center;
+    font-size: 17px;
+}
+
+.bb-contact-item p {
+    flex: 1 1 auto;
+    min-width: 0;
+    margin: 0;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+/* GOOGLE MAP */
+
+.bb-footer-map {
+    width: 100%;
+    height: 165px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 4px;
+    background: #ffffff;
+}
+
+.bb-footer-map iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.bb-footer .bb-map-link {
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+/* COPYRIGHT ROW */
+
+.bb-footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 13px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.45);
+}
+
+.bb-footer .bb-copyright {
+    flex: 1 1 auto;
+    min-width: 0;
+    margin: 0;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+
+.bb-designed-by {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 0 0 auto;
+    gap: 8px;
+}
+
+.bb-designed-by span {
+    white-space: nowrap;
+}
+
+.bb-designed-by a {
+    display: inline-flex;
+    align-items: center;
+    max-width: 120px;
+}
+
+.bb-designed-by img {
+    display: block;
+    width: 100px;
+    max-width: 100%;
+    max-height: 38px;
+    object-fit: contain;
+}
+
+/* SCROLL TO TOP */
+
+.bb-footer .bb-scroll-top {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 39px;
+    height: 39px;
+    padding: 0;
+    border: 1px solid #f7f7f7;
+    border-radius: 3px;
+    background:#6f0512;
+    color:white;
+    cursor: pointer;
+}
+
+.bb-footer .bb-scroll-top i {
+    color: #ffffff;
+    font-size: 17px;
+}
+
+.bb-footer .bb-scroll-top:hover {
+    background: #57251f;
+}
+
+.bb-footer .bb-scroll-top:hover i {
+    color: #ffffff;
+}
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 1050px) {
+    .bb-footer-container {
+        padding: 28px 20px 0;
+    }
+
+    .bb-footer-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 25px 22px;
+    }
+
+    .bb-footer-map {
+        height: 190px;
+    }
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 600px) {
+    .bb-footer-container {
+        padding: 24px 16px 0;
+    }
+
+    .bb-footer-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 22px;
+        padding-bottom: 20px;
+    }
+
+    .bb-footer-column {
+        min-width: 0;
+    }
+
+    .bb-footer-logo {
+        margin-bottom: 10px;
+    }
+
+    .bb-footer-logo img {
+        max-width: 150px;
+        max-height: 65px;
+    }
+
+    .bb-footer-heading {
+        margin-bottom: 9px;
+    }
+
+    .bb-footer-description {
+        margin-bottom: 13px;
+    }
+
+    .bb-footer-title {
+        margin-bottom: 13px;
+    }
+
+    .bb-footer-links {
+        gap: 8px;
+    }
+
+    .bb-contact-list {
+        gap: 10px;
+    }
+
+    .bb-footer-map {
+        height: 190px;
+    }
+
+    /* Keep all footer text at 17px */
+    .bb-footer,
+    .bb-footer p,
+    .bb-footer h3,
+    .bb-footer h4,
+    .bb-footer li,
+    .bb-footer a,
+    .bb-footer span,
+    .bb-footer .bb-copyright {
+        font-size: 17px;
+    }
+
+    /* Stack bottom row to prevent overflow */
+    .bb-footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 12px 0 16px;
+    }
+
+    .bb-footer .bb-copyright {
+        width: 100%;
+        line-height: 1.55;
+    }
+
+    .bb-designed-by {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .bb-designed-by img {
+        width: 90px;
+        max-height: 34px;
+    }
+
+    .bb-footer .bb-scroll-top {
+        right: 10px;
+        bottom: 10px;
+        width: 36px;
+        height: 36px;
+    }
+}
+
+/* VERY SMALL PHONES */
+
+@media (max-width: 360px) {
+    .bb-footer-container {
+        padding-right: 13px;
+        padding-left: 13px;
+    }
+
+    .bb-footer-grid {
+        gap: 20px;
+    }
+
+    .bb-footer-map {
+        height: 175px;
+    }
+}
