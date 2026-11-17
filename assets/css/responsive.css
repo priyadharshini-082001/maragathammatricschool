@@ -443,7 +443,6 @@
   }
 
   .advantage-card {
-    padding: 2rem 1.5rem !important;
     border-radius: 20px !important;
   }
 
@@ -453,7 +452,6 @@
 
   .travel-style-card {
     height: 380px;
-    border-radius: 90px 90px 20px 20px;
   }
 
   .promo-immersive-wrapper {

@@ -2300,7 +2300,7 @@ background: linear-gradient(110deg, #1F7A35, #63B82E, #FFD43B);
 
 .section-main-heading {
   font-family: var(--font-heading);
-  font-size: 46px;
+  font-size:26px;
   font-weight: 800;
   color:white;
   line-height: 1.15;
@@ -4061,7 +4061,9 @@ background: linear-gradient(110deg, #1F7A35, #63B82E, #FFD43B);
   content: '';
   position: absolute;
   inset: 0;
-  background:linear-gradient(90deg, rgba(255, 255, 255, 0.913) 0%, rgba(255, 255, 255, 0.879) 35%, rgb(255 255 255 / 42%) 70%, rgb(255 251 251 / 16%) 100%);
+  background:linear-gradient(90deg, rgba(255, 255, 255, 0.913) 0%,
+   rgba(255, 255, 255, 0.879) 35%, rgb(255 255 255 / 42%) 70%, 
+   rgba(255, 251, 251, 0.568) 100%);
   pointer-events: none;
   z-index: 0;
 }
@@ -4111,15 +4113,15 @@ background: linear-gradient(110deg, #c62a81 0%, #ac1a19 100%);
 
 /* Right Column Advantage Cards */
 .advantage-card {
-  background: #ffffff !important;
-  border: 1.5px solid rgba(226, 232, 240, 0.9) !important;
-  border-radius: 24px !important;
-  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
-  position: relative;
-  overflow: hidden;
-  cursor: pointer;
-  transform: translateY(-8px) !important;
-  border-color: rgba(226, 232, 240, 0.6) !important;
+background: #ffffff !important;
+    border: 1.5px solid #ffc107 !important;
+    border-radius: 24px !important;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transform: translateY(-8px) !important;
+    border-color: #ffc107 !important;
 }
 
 /* Dynamic Bottom Accent Line */
@@ -4442,10 +4444,9 @@ background: linear-gradient(110deg, #c62a81 0%, #ac1a19 100%);
 
 /* Arch-Shaped Tall Card */
 .travel-style-card {
-  height: 420px;
-  border-radius: 120px 120px 24px 24px;
+  height:350px;
+  border-radius:5px;
   background-color: var(--primary);
-  box-shadow: 0 16px 36px -6px rgba(0, 24, 83, 0.12), 0 4px 12px rgba(0, 24, 83, 0.04);
   transition: all 0.5s cubic-bezier(0.25, 1, 0.5, 1);
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
