@@ -80,6 +80,11 @@
     <link rel="stylesheet"
         href="assets/css/custom.css">
 
+                    <!-- Custom CSS -->
+    <link rel="stylesheet"
+        href="assets/css/innerpage.css">
+
+
     <!-- Open Graph / Social Media SEO -->
     <meta property="og:type" content="website">
 
@@ -170,136 +175,226 @@
 
   <!-- HEADER -->
   <header class="main-header header-glass" id="mainHeader" style="background-color: white;">
-    <nav class="navbar navbar-expand-lg py-0" aria-label="Main navigation">
-      <div class="container">
-        <!-- Brand Logo -->
-        <a class="brand-logo" href="index.html" aria-label="Travexa Homepage">
-          <img src="assets/img/mainlogo.png" alt="Travexa" class="brand-logo-img">
+    
+<nav class="navbar navbar-expand-lg py-0" aria-label="Main navigation">
+    <div class="container">
+
+        <!-- BRAND LOGO -->
+        <a class="brand-logo" href="index.html" aria-label="School Homepage">
+            <img src="assets/img/mainlogo.png" alt="School Logo" class="brand-logo-img">
         </a>
-        <!-- Mobile Toggler -->
-        <button class="navbar-toggler d-lg-none ms-auto me-2" type="button" data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasMobileHeader" aria-controls="offcanvasMobileHeader" aria-label="Toggle navigation">
-          <i class="fa-solid fa-bars-staggered"></i>
+
+        <!-- MOBILE TOGGLER -->
+        <button class="navbar-toggler d-lg-none ms-auto me-2"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasMobileHeader"
+                aria-controls="offcanvasMobileHeader"
+                aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars-staggered"></i>
         </button>
-        <!-- Desktop Navigation Menu -->
+
+        <!-- DESKTOP NAVIGATION -->
         <div class="collapse navbar-collapse justify-content-center" id="mainNavbar">
-          <ul class="navbar-nav align-items-lg-center">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle active" href="javascript:void(0)" id="homeDropdown" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false">
-                Home 
-              </a>
-            </li>
-<li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle"
-       href="javascript:void(0)"
-       id="aboutDropdown"
-       role="button"
-       data-bs-toggle="dropdown"
-       aria-expanded="false">
-        About
-        <i class="fa-solid fa-chevron-down ms-1 fs-8"></i>
-    </a>
 
-    <div class="dropdown-menu dropdown-home" aria-labelledby="aboutDropdown">
-        <a href="school-profile.html" class="dropdown-item">
-            <span>School Profile</span>
-        </a>
-        <a href="history.html" class="dropdown-item">
-            <span>Our History</span>
-        </a>
-        <a href="vision-mission.html" class="dropdown-item">
-            <span>Vision &amp; Mission</span>
-        </a>
-        <a href="core-values.html" class="dropdown-item">
-            <span>Core Values</span>
-        </a>
-        <a href="school-motto.html" class="dropdown-item">
-            <span>School Motto</span>
-        </a>
+            <ul class="navbar-nav align-items-lg-center">
 
-    </div>
-</li>
- <!-- 3. ACADEMICS -->
-    <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="javascript:void(0)"
-           id="academicsDropdown" role="button"
-           data-bs-toggle="dropdown" aria-expanded="false">
-            Academics <i class="fa-solid fa-chevron-down ms-1 fs-8"></i>
-        </a>
-        <div class="dropdown-menu dropdown-home" aria-labelledby="academicsDropdown">
-            <a href="primary.html" class="dropdown-item"><span>Academic Excellence</span></a>
-            <a href="middle-school.html" class="dropdown-item"><span>Communication Excellence</span></a>
-            <a href="senior-secondary.html" class="dropdown-item"><span>Sports Excellence</span></a>
-            <a href="faculty.html" class="dropdown-item"><span>Cultural Excellence</span></a>
-        </div>
-    </li>
+                <!-- HOME -->
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html" aria-current="page">
+                        Home
+                    </a>
+                </li>
 
-<!-- STUDENT LIFE -->
-<li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" href="javascript:void(0)"
-       id="studentLifeDropdown" role="button"
-       data-bs-toggle="dropdown" aria-expanded="false">
-        Management <i class="fa-solid fa-chevron-down ms-1 fs-8"></i>
-    </a>
-    <div class="dropdown-menu dropdown-home" aria-labelledby="studentLifeDropdown">
-        <a href="student-council.html" class="dropdown-item"><span>Chairman's Message</span></a>
-        <a href="clubs-activities.html" class="dropdown-item"><span>Correspondent's Message</span></a>
-        <a href="arts-crafts.html" class="dropdown-item"><span>Principal's Message</span></a>
-    </div>
-</li>
-             <!-- 6. PARENTS -->
-    <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="javascript:void(0)"
-           id="parentsDropdown" role="button"
-           data-bs-toggle="dropdown" aria-expanded="false">
-            Parent's corner <i class="fa-solid fa-chevron-down ms-1 fs-8"></i>
-        </a>
-        <div class="dropdown-menu dropdown-home" aria-labelledby="parentsDropdown">
-            <a href="school-timings.html" class="dropdown-item"><span>School Timings</span></a>
-            <a href="uniform.html" class="dropdown-item"><span>Uniform</span></a>
-            <a href="school-rules.html" class="dropdown-item"><span>School Rules</span></a>
-            <a href="fee-guidelines.html" class="dropdown-item"><span>Fee Guidelines</span></a>
-            <a href="examination-information.html" class="dropdown-item"><span>Examination Information</span></a>
+                <!-- ABOUT -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle"
+                       href="#"
+                       id="aboutDropdown"
+                       role="button"
+                       data-bs-toggle="dropdown"
+                       aria-expanded="false">
+                        About
+                        <i class="fa-solid fa-chevron-down ms-1 fs-8"></i>
+                    </a>
+
+                    <div class="dropdown-menu dropdown-home" aria-labelledby="aboutDropdown">
+                        <a href="school-profile.html" class="dropdown-item">
+                            <span>School Profile</span>
+                        </a>
+                        <a href="history.html" class="dropdown-item">
+                            <span>Our History</span>
+                        </a>
+                        <a href="vision-mission.html" class="dropdown-item">
+                            <span>Vision &amp; Mission</span>
+                        </a>
+                        <a href="core-values.html" class="dropdown-item">
+                            <span>Core Values</span>
+                        </a>
+                        <a href="school-motto.html" class="dropdown-item">
+                            <span>School Motto</span>
+                        </a>
+                    </div>
+                </li>
+
+                <!-- ACADEMICS -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle"
+                       href="#"
+                       id="academicsDropdown"
+                       role="button"
+                       data-bs-toggle="dropdown"
+                       aria-expanded="false">
+                        Academics
+                        <i class="fa-solid fa-chevron-down ms-1 fs-8"></i>
+                    </a>
+
+                    <div class="dropdown-menu dropdown-home" aria-labelledby="academicsDropdown">
+                        <a href="kindergarten.html" class="dropdown-item">
+                            <span>Kindergarten (KG)</span>
+                        </a>
+                        <a href="primary.html" class="dropdown-item">
+                            <span>Primary School (I–V)</span>
+                        </a>
+                        <a href="middle-school.html" class="dropdown-item">
+                            <span>Middle School (VI–VIII)</span>
+                        </a>
+                        <a href="secondary-school.html" class="dropdown-item">
+                            <span>Secondary School (IX–X)</span>
+                        </a>
+                        <a href="higher-secondary.html" class="dropdown-item">
+                            <span>Higher Secondary (XI–XII)</span>
+                        </a>
+                    </div>
+                </li>
+
+                <!-- STUDENTS LIFE -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle"
+                       href="#"
+                       id="studentsLifeDropdown"
+                       role="button"
+                       data-bs-toggle="dropdown"
+                       aria-expanded="false">
+                        Student Life
+                        <i class="fa-solid fa-chevron-down ms-1 fs-8"></i>
+                    </a>
+
+                    <div class="dropdown-menu dropdown-home" aria-labelledby="studentsLifeDropdown">
+                        <a href="academic-excellence.html" class="dropdown-item">
+                            <span>Academic Excellence</span>
+                        </a>
+                        <a href="communication-excellence.html" class="dropdown-item">
+                            <span>Communication Excellence</span>
+                        </a>
+                        <a href="sports-excellence.html" class="dropdown-item">
+                            <span>Sports Excellence</span>
+                        </a>
+                        <a href="cultural-excellence.html" class="dropdown-item">
+                            <span>Cultural Excellence</span>
+                        </a>
+                    </div>
+                </li>
+
+                <!-- MANAGEMENT -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle"
+                       href="#"
+                       id="managementDropdown"
+                       role="button"
+                       data-bs-toggle="dropdown"
+                       aria-expanded="false">
+                        Management
+                        <i class="fa-solid fa-chevron-down ms-1 fs-8"></i>
+                    </a>
+
+                    <div class="dropdown-menu dropdown-home" aria-labelledby="managementDropdown">
+                        <a href="chairman-message.html" class="dropdown-item">
+                            <span>Chairman's Message</span>
+                        </a>
+                        <a href="correspondent-message.html" class="dropdown-item">
+                            <span>Correspondent's Message</span>
+                        </a>
+                        <a href="principal-message.html" class="dropdown-item">
+                            <span>Principal's Message</span>
+                        </a>
+                    </div>
+                </li>
+
+                <!-- PARENTS CORNER -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle"
+                       href="#"
+                       id="parentsDropdown"
+                       role="button"
+                       data-bs-toggle="dropdown"
+                       aria-expanded="false">
+                        Parent's Corner
+                        <i class="fa-solid fa-chevron-down ms-1 fs-8"></i>
+                    </a>
+
+                    <div class="dropdown-menu dropdown-home" aria-labelledby="parentsDropdown">
+                        <a href="school-timings.html" class="dropdown-item">
+                            <span>School Timings</span>
+                        </a>
+                        <a href="uniform.html" class="dropdown-item">
+                            <span>Uniform</span>
+                        </a>
+                        <a href="school-rules.html" class="dropdown-item">
+                            <span>School Rules</span>
+                        </a>
+                        <a href="fee-guidelines.html" class="dropdown-item">
+                            <span>Fee Guidelines</span>
+                        </a>
+                        <a href="examination-information.html" class="dropdown-item">
+                            <span>Examination Information</span>
+                        </a>
+                    </div>
+                </li>
+
+                <!-- ADMISSIONS -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle"
+                       href="#"
+                       id="admissionsDropdown"
+                       role="button"
+                       data-bs-toggle="dropdown"
+                       aria-expanded="false">
+                        Admissions
+                        <i class="fa-solid fa-chevron-down ms-1 fs-8"></i>
+                    </a>
+
+                    <div class="dropdown-menu dropdown-home" aria-labelledby="admissionsDropdown">
+                        <a href="admissions.html" class="dropdown-item">
+                            <span>Admission Overview</span>
+                        </a>
+                        <a href="admission-procedure.html" class="dropdown-item">
+                            <span>Admission Procedure</span>
+                        </a>
+                        <a href="eligibility.html" class="dropdown-item">
+                            <span>Eligibility</span>
+                        </a>
+                        <a href="documents-required.html" class="dropdown-item">
+                            <span>Required Documents</span>
+                        </a>
+                        <a href="admission-enquiry.html" class="dropdown-item">
+                            <span>Admission Enquiry</span>
+                        </a>
+                    </div>
+                </li>
+            </ul>
         </div>
-    </li>
-    <!-- SPORTS -->
-<li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" href="javascript:void(0)"
-       id="sportsDropdown" role="button"
-       data-bs-toggle="dropdown" aria-expanded="false">
-        Campus Life 
-    </a>
-</li> 
-        <!-- 5. ADMISSIONS -->
-    <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="javascript:void(0)"
-           id="admissionsDropdown" role="button"
-           data-bs-toggle="dropdown" aria-expanded="false">
-            Admissions <i class="fa-solid fa-chevron-down ms-1 fs-8"></i>
-        </a>
-        <div class="dropdown-menu dropdown-home" aria-labelledby="admissionsDropdown">
-            <a href="admissions.html" class="dropdown-item"><span>Admission Overview</span></a>
-            <a href="admission-procedure.html" class="dropdown-item"><span>Admission Procedure</span></a>
-            <a href="eligibility.html" class="dropdown-item"><span>Eligibility</span></a>
-            <a href="documents-required.html" class="dropdown-item"><span>Required Documents</span></a>
-            <a href="admission-enquiry.html" class="dropdown-item"><span>Admission Enquiry</span></a>
-        </div>
-    </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact-us.html"></a>
-            </li>
-          </ul>
-        </div>
-        <!-- Right Side Header Actions (Desktop Only) -->
+
+        <!-- DESKTOP CONTACT BUTTON -->
         <div class="header-actions d-none d-lg-flex">
-          <!-- Book Now CTA Button -->
-          <a href="tour-booking.html" class="btn btn-primary">
-            <span>Contact</span>
-          </a>
+            <a href="contact-us.html" class="btn btn-primary">
+                <span>Contact</span>
+            </a>
         </div>
-      </div>
-    </nav>
+
+    </div>
+</nav>
+
   </header>
 
   <!-- MOBILE NAVIGATION MENU -->
@@ -314,112 +409,242 @@
     <div class="offcanvas-body d-flex flex-column justify-content-between">
       <div>
 
-        <!-- Mobile Navigation Menu Links -->
-      <ul class="navbar-nav align-items-lg-center">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle active" href="javascript:void(0)" id="homeDropdown" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false">
-                Home 
-              </a>
-            </li>
-<li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle"
-       href="javascript:void(0)"
-       id="aboutDropdown"
-       role="button"
-       data-bs-toggle="dropdown"
-       aria-expanded="false">
-        About
-        <i class="fa-solid fa-chevron-down ms-1 fs-8"></i>
-    </a>
 
-    <div class="dropdown-menu dropdown-home" aria-labelledby="aboutDropdown">
-        <a href="school-profile.html" class="dropdown-item">
-            <span>School Profile</span>
-        </a>
-        <a href="history.html" class="dropdown-item">
-            <span>Our History</span>
-        </a>
-        <a href="vision-mission.html" class="dropdown-item">
-            <span>Vision &amp; Mission</span>
-        </a>
-        <a href="core-values.html" class="dropdown-item">
-            <span>Core Values</span>
-        </a>
-        <a href="school-motto.html" class="dropdown-item">
-            <span>School Motto</span>
-        </a>
+<!-- MOBILE NAVIGATION MENU LINKS -->
+<ul class="navbar-nav">
 
-    </div>
-</li>
- <!-- 3. ACADEMICS -->
+    <!-- HOME -->
+    <li class="nav-item">
+        <a class="nav-link active" href="index.html" aria-current="page">
+            Home
+        </a>
+    </li>
+
+    <!-- ABOUT -->
     <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="javascript:void(0)"
-           id="academicsDropdown" role="button"
-           data-bs-toggle="dropdown" aria-expanded="false">
-            Academics <i class="fa-solid fa-chevron-down ms-1 fs-8"></i>
+        <a class="nav-link dropdown-toggle"
+           href="#"
+           id="mobileAboutDropdown"
+           role="button"
+           data-bs-toggle="dropdown"
+           aria-expanded="false">
+            About
+            <i class="fa-solid fa-chevron-down ms-1 fs-8"></i>
         </a>
-        <div class="dropdown-menu dropdown-home" aria-labelledby="academicsDropdown">
-            <a href="primary.html" class="dropdown-item"><span>Academic Excellence</span></a>
-            <a href="middle-school.html" class="dropdown-item"><span>Communication Excellence</span></a>
-            <a href="senior-secondary.html" class="dropdown-item"><span>Sports Excellence</span></a>
-            <a href="faculty.html" class="dropdown-item"><span>Cultural Excellence</span></a>
+
+        <div class="dropdown-menu dropdown-home"
+             aria-labelledby="mobileAboutDropdown">
+
+            <a href="school-profile.html" class="dropdown-item">
+                <span>School Profile</span>
+            </a>
+
+            <a href="history.html" class="dropdown-item">
+                <span>Our History</span>
+            </a>
+
+            <a href="vision-mission.html" class="dropdown-item">
+                <span>Vision &amp; Mission</span>
+            </a>
+
+            <a href="core-values.html" class="dropdown-item">
+                <span>Core Values</span>
+            </a>
+
+            <a href="school-motto.html" class="dropdown-item">
+                <span>School Motto</span>
+            </a>
+
         </div>
     </li>
 
-<!-- STUDENT LIFE -->
-<li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" href="javascript:void(0)"
-       id="studentLifeDropdown" role="button"
-       data-bs-toggle="dropdown" aria-expanded="false">
-        Management <i class="fa-solid fa-chevron-down ms-1 fs-8"></i>
-    </a>
-    <div class="dropdown-menu dropdown-home" aria-labelledby="studentLifeDropdown">
-        <a href="student-council.html" class="dropdown-item"><span>Chairman's Message</span></a>
-        <a href="clubs-activities.html" class="dropdown-item"><span>Correspondent's Message</span></a>
-        <a href="arts-crafts.html" class="dropdown-item"><span>Principal's Message</span></a>
-    </div>
-</li>
-             <!-- 6. PARENTS -->
+    <!-- ACADEMICS -->
     <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="javascript:void(0)"
-           id="parentsDropdown" role="button"
-           data-bs-toggle="dropdown" aria-expanded="false">
-            Parent's corner <i class="fa-solid fa-chevron-down ms-1 fs-8"></i>
+        <a class="nav-link dropdown-toggle"
+           href="#"
+           id="mobileAcademicsDropdown"
+           role="button"
+           data-bs-toggle="dropdown"
+           aria-expanded="false">
+            Academics
+            <i class="fa-solid fa-chevron-down ms-1 fs-8"></i>
         </a>
-        <div class="dropdown-menu dropdown-home" aria-labelledby="parentsDropdown">
-            <a href="school-timings.html" class="dropdown-item"><span>School Timings</span></a>
-            <a href="uniform.html" class="dropdown-item"><span>Uniform</span></a>
-            <a href="school-rules.html" class="dropdown-item"><span>School Rules</span></a>
-            <a href="fee-guidelines.html" class="dropdown-item"><span>Fee Guidelines</span></a>
-            <a href="examination-information.html" class="dropdown-item"><span>Examination Information</span></a>
-        </div>
-    </li>
-    <!-- SPORTS -->
-<li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" href="javascript:void(0)"
-       id="sportsDropdown" role="button"
-       data-bs-toggle="dropdown" aria-expanded="false">
-               Campus Life 
-    </a>
-</li> 
-        <!-- 5. ADMISSIONS -->
-    <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="javascript:void(0)"
-           id="admissionsDropdown" role="button"
-           data-bs-toggle="dropdown" aria-expanded="false">
-            Admissions <i class="fa-solid fa-chevron-down ms-1 fs-8"></i>
-        </a>
-        <div class="dropdown-menu dropdown-home" aria-labelledby="admissionsDropdown">
-            <a href="admissions.html" class="dropdown-item"><span>Admission Overview</span></a>
-            <a href="admission-procedure.html" class="dropdown-item"><span>Admission Procedure</span></a>
-            <a href="eligibility.html" class="dropdown-item"><span>Eligibility</span></a>
-            <a href="documents-required.html" class="dropdown-item"><span>Required Documents</span></a>
-            <a href="admission-enquiry.html" class="dropdown-item"><span>Admission Enquiry</span></a>
+
+        <div class="dropdown-menu dropdown-home"
+             aria-labelledby="mobileAcademicsDropdown">
+
+            <a href="kindergarten.html" class="dropdown-item">
+                <span>Kindergarten (KG)</span>
+            </a>
+
+            <a href="primary.html" class="dropdown-item">
+                <span>Primary School (I–V)</span>
+            </a>
+
+            <a href="middle-school.html" class="dropdown-item">
+                <span>Middle School (VI–VIII)</span>
+            </a>
+
+            <a href="secondary-school.html" class="dropdown-item">
+                <span>Secondary School (IX–X)</span>
+            </a>
+
+            <a href="higher-secondary.html" class="dropdown-item">
+                <span>Higher Secondary (XI–XII)</span>
+            </a>
+
         </div>
     </li>
 
-          </ul>
+    <!-- STUDENT LIFE -->
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle"
+           href="#"
+           id="mobileStudentsLifeDropdown"
+           role="button"
+           data-bs-toggle="dropdown"
+           aria-expanded="false">
+            Student Life
+            <i class="fa-solid fa-chevron-down ms-1 fs-8"></i>
+        </a>
+
+        <div class="dropdown-menu dropdown-home"
+             aria-labelledby="mobileStudentsLifeDropdown">
+
+            <a href="primary.html" class="dropdown-item">
+                <span>Academic Excellence</span>
+            </a>
+
+            <a href="middle-school.html" class="dropdown-item">
+                <span>Communication Excellence</span>
+            </a>
+
+            <a href="senior-secondary.html" class="dropdown-item">
+                <span>Sports Excellence</span>
+            </a>
+
+            <a href="faculty.html" class="dropdown-item">
+                <span>Cultural Excellence</span>
+            </a>
+
+        </div>
+    </li>
+
+    <!-- MANAGEMENT -->
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle"
+           href="#"
+           id="mobileManagementDropdown"
+           role="button"
+           data-bs-toggle="dropdown"
+           aria-expanded="false">
+            Management
+            <i class="fa-solid fa-chevron-down ms-1 fs-8"></i>
+        </a>
+
+        <div class="dropdown-menu dropdown-home"
+             aria-labelledby="mobileManagementDropdown">
+
+            <a href="student-council.html" class="dropdown-item">
+                <span>Chairman's Message</span>
+            </a>
+
+            <a href="clubs-activities.html" class="dropdown-item">
+                <span>Correspondent's Message</span>
+            </a>
+
+            <a href="arts-crafts.html" class="dropdown-item">
+                <span>Principal's Message</span>
+            </a>
+
+        </div>
+    </li>
+
+    <!-- PARENT'S CORNER -->
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle"
+           href="#"
+           id="mobileParentsDropdown"
+           role="button"
+           data-bs-toggle="dropdown"
+           aria-expanded="false">
+            Parent's Corner
+            <i class="fa-solid fa-chevron-down ms-1 fs-8"></i>
+        </a>
+
+        <div class="dropdown-menu dropdown-home"
+             aria-labelledby="mobileParentsDropdown">
+
+            <a href="school-timings.html" class="dropdown-item">
+                <span>School Timings</span>
+            </a>
+
+            <a href="uniform.html" class="dropdown-item">
+                <span>Uniform</span>
+            </a>
+
+            <a href="school-rules.html" class="dropdown-item">
+                <span>School Rules</span>
+            </a>
+
+            <a href="fee-guidelines.html" class="dropdown-item">
+                <span>Fee Guidelines</span>
+            </a>
+
+            <a href="examination-information.html" class="dropdown-item">
+                <span>Examination Information</span>
+            </a>
+
+        </div>
+    </li>
+
+    <!-- ADMISSIONS -->
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle"
+           href="#"
+           id="mobileAdmissionsDropdown"
+           role="button"
+           data-bs-toggle="dropdown"
+           aria-expanded="false">
+            Admissions
+            <i class="fa-solid fa-chevron-down ms-1 fs-8"></i>
+        </a>
+
+        <div class="dropdown-menu dropdown-home"
+             aria-labelledby="mobileAdmissionsDropdown">
+
+            <a href="admissions.html" class="dropdown-item">
+                <span>Admission Overview</span>
+            </a>
+
+            <a href="admission-procedure.html" class="dropdown-item">
+                <span>Admission Procedure</span>
+            </a>
+
+            <a href="eligibility.html" class="dropdown-item">
+                <span>Eligibility</span>
+            </a>
+
+            <a href="documents-required.html" class="dropdown-item">
+                <span>Required Documents</span>
+            </a>
+
+            <a href="admission-enquiry.html" class="dropdown-item">
+                <span>Admission Enquiry</span>
+            </a>
+
+        </div>
+    </li>
+
+    <!-- CONTACT -->
+    <li class="nav-item">
+        <a class="nav-link" href="contact-us.html">
+            Contact
+        </a>
+    </li>
+
+</ul>
+
       </div>
       <!-- Footer & Contact -->
       <div>
@@ -648,6 +873,9 @@ document.addEventListener("DOMContentLoaded", function () {
                     </div>
 
                 </div>
+                           <h4 style="color: rgb(0, 0, 0);padding:5px;
+           font-size:18px;border-radius: 5px;text-align: center;margin-top: 8%;">
+         Our Motto:Fit and Intellectual Education</h4>
             </div>
 
             <!-- RIGHT COLUMN: ABOUT CONTENT -->
@@ -736,9 +964,7 @@ The school’s educational direction is rooted in preparing students for lifelon
 
                 </p>
 
-           <h4 style="color: rgb(14, 130, 22);background:rgba(255, 107, 0, 0.05);padding:5px;
-           font-size:18px;border-radius: 5px;text-align: center;">
-         Our Motto:Fit and Intellectual Education</h4>
+
  
                 <!-- Educational Approach -->
                 <div class="d-flex align-items-center gap-3 mb-3 pb-1">
@@ -827,9 +1053,9 @@ The school’s educational direction is rooted in preparing students for lifelon
                                 Get in Touch
                             </div>
 
-                            <span class="tb-call-label text-muted fw-bold text-uppercase tracking-wider">
+                            <span class="tb-call-label text-muted fw-bold tracking-wider">
                                 <i class="fa-solid fa-comments me-1 text-accent"></i>
-                                WE'RE HERE TO HELP
+                               admissions@maragathaamschool.org
                             </span>
                         </div>
 

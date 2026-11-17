@@ -1,0 +1,1875 @@
+
+/* =====================================================
+   MARAGATHAM MATRIC SCHOOL - BREADCRUMB
+===================================================== */
+
+.mmhs-breadcrumb-section {
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+    /* CHANGE IMAGE PATH */
+    background-image: url("../img/EVENT 10-04-2026/build.jpg");
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    padding:65px 0;
+}
+
+/* DARK IMAGE OVERLAY */
+
+.mmhs-breadcrumb-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.358) 100%
+    );
+}
+
+/* CONTENT */
+
+.mmhs-breadcrumb-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* PAGE HEADING */
+
+.mmhs-breadcrumb-title h1 {
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin: 0 0 22px;
+}
+
+/* BREADCRUMB LIST */
+
+.mmhs-breadcrumb-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* LINKS */
+
+.mmhs-breadcrumb-item a {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.mmhs-breadcrumb-item a:hover {
+    color: #f6d77b;
+}
+
+.mmhs-breadcrumb-item a i {
+    color: #f6d77b;
+    margin-right: 6px;
+}
+
+/* SEPARATOR */
+
+.mmhs-breadcrumb-separator {
+    color: #f6d77b;
+    font-size: 15px;
+}
+
+/* ACTIVE PAGE */
+
+.mmhs-breadcrumb-item.mmhs-active {
+    color: #f6d77b;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/* TABLET */
+
+@media (max-width: 991px) {
+
+    .mmhs-breadcrumb-section {
+        min-height: 250px;
+        padding: 55px 0;
+    }
+
+    .mmhs-breadcrumb-title h1 {
+        font-size: 34px;
+    }
+
+}
+
+/* MOBILE */
+
+@media (max-width: 576px) {
+
+    .mmhs-breadcrumb-section {
+        min-height: 200px;
+        padding: 40px 0;
+        background-position: center;
+    }
+
+    .mmhs-breadcrumb-subtitle {
+        font-size: 10px;
+        letter-spacing: 1.2px;
+        line-height: 1.6;
+    }
+
+    .mmhs-breadcrumb-title h1 {
+        font-size: 27px;
+        margin-bottom: 17px;
+    }
+
+    .mmhs-breadcrumb-list {
+        gap: 8px;
+    }
+
+    .mmhs-breadcrumb-item a,
+    .mmhs-breadcrumb-item.mmhs-active {
+        font-size: 12px;
+    }
+
+}
+
+/* SMALL MOBILE */
+
+@media (max-width: 360px) {
+
+    .mmhs-breadcrumb-title h1 {
+        font-size: 24px;
+    }
+
+}
+
+
+/* =========================================================
+   MARAGATHAAM MATRIC SCHOOL - OVERVIEW SECTION
+========================================================= */
+
+.mmhs-overview-section {
+    width: 100%;
+    padding: 65px 35px;
+    background: #ffffff;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.mmhs-overview-section * {
+    box-sizing: border-box;
+}
+
+.mmhs-overview-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 35px;
+    width: 100%;
+    margin-top: -15px;
+}
+
+/* =========================================================
+   LEFT MAIN IMAGE AREA
+========================================================= */
+
+.mmhs-overview-visual {
+    position: relative;
+    width: 100%;
+    height: 445px;
+    border-radius: 20px;
+    overflow: hidden;
+    isolation: isolate;
+    background: #dce5d2;
+}
+
+.mmhs-overview-main-image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    z-index: 0;
+}
+
+/* =========================================================
+   STATISTICS GRID
+========================================================= */
+
+.mmhs-overview-stats {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 78%;
+    max-width: 380px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    border-radius: 20px;
+    z-index: 2;
+}
+
+.mmhs-stat-card {
+    min-height: 160px;
+    padding: 20px 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+}
+
+.mmhs-stat-white {
+    background: #ffffff;
+    color: #263a20;
+}
+
+.mmhs-stat-lime {
+    background: #d6e600;
+    color: #263a20;
+}
+
+/* STAT ICON */
+
+.mmhs-stat-icon {
+    font-size: 27px;
+    margin-bottom: 2px;
+    color: #385b25;
+}
+
+.mmhs-stat-card h3 {
+    font-size: 29px;
+    font-weight: 800;
+    line-height: 1.15;
+    margin: 0;
+    color: #263a20;
+}
+
+.mmhs-stat-card p {
+    font-size: 12px;
+    font-weight: 600;
+    margin: 0;
+    line-height: 1.4;
+    color: #4c563e;
+    text-align: center;
+}
+
+/* =========================================================
+   RIGHT CONTENT
+========================================================= */
+
+.mmhs-overview-content {
+    position: relative;
+    z-index: 1;
+    min-width: 0;
+    padding: 10px 0 10px 15px;
+}
+
+/* SECTION LABEL */
+
+.mmhs-overview-label {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin-bottom: 16px;
+}
+
+
+.mmhs-overview-label span:last-child {
+color:#c62a81;
+    font-size: 25px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+/* =========================================================
+   MAIN HEADING
+========================================================= */
+
+.mmhs-overview-content h2 {
+    color:#c62a81;
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 1.25;
+    margin: 0 0 20px;
+}
+
+.mmhs-overview-content h2 span {
+    display: block;
+   color:#c62a81;
+}
+
+/* =========================================================
+   PARAGRAPH - BLACK 17PX JUSTIFIED
+========================================================= */
+
+.mmhs-overview-description {
+    color: #000000;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.8;
+    text-align: justify;
+    text-justify: inter-word;
+    margin: 0 0 15px;
+    display: block;
+    width: 100%;
+}
+
+.mmhs-overview-content p {
+    color: #000000;
+    font-size: 17px;
+    line-height: 1.8;
+    text-align: justify;
+    margin: 0 0 15px;
+}
+
+/* =========================================================
+   SUPPORTING IMAGE GALLERY - DESKTOP
+========================================================= */
+
+.mmhs-overview-gallery {
+    display: grid;
+    grid-template-columns: 1.3fr 0.9fr;
+    gap: 16px;
+    margin-top: 22px;
+    margin-bottom: 23px;
+    width: 100%;
+    align-items: stretch;
+}
+
+.mmhs-overview-gallery-item {
+    width: 100%;
+    height: 280px;
+    border-radius: 11px;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.mmhs-overview-gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.mmhs-overview-gallery-item:hover img {
+    transform: scale(1.04);
+}
+
+/* =========================================================
+   EXPLORE BUTTON
+========================================================= */
+
+.mmhs-overview-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 17px;
+    min-width: 155px;
+    padding: 7px 8px 7px 19px;
+    border-radius: 50px;
+    background: #548322;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.mmhs-overview-btn span {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #d7e700;
+    color: #304c1d;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+}
+
+.mmhs-overview-btn:hover {
+    background: #304f22;
+    color: #ffffff;
+}
+
+.mmhs-overview-btn:hover span {
+    transform: translateX(3px);
+    background: #ffffff;
+}
+
+/* =========================================================
+   LARGE LAPTOP
+========================================================= */
+
+@media (max-width: 1199px) {
+
+    .mmhs-overview-section {
+        padding: 60px 25px;
+    }
+
+    .mmhs-overview-grid {
+        gap: 25px;
+    }
+
+    .mmhs-overview-content {
+        padding-left: 8px;
+    }
+
+    .mmhs-overview-content h2 {
+        font-size: 32px;
+    }
+
+    .mmhs-overview-description,
+    .mmhs-overview-content p {
+        font-size: 17px;
+    }
+
+    .mmhs-overview-gallery-item {
+        height: 230px;
+    }
+}
+
+/* =========================================================
+   TABLET RESPONSIVE
+========================================================= */
+
+@media (max-width: 991px) {
+
+    .mmhs-overview-section {
+        padding: 55px 25px;
+    }
+
+    .mmhs-overview-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        margin-top: 0;
+    }
+
+    .mmhs-overview-visual {
+        height: 420px;
+        max-width: 650px;
+        margin: 0 auto;
+    }
+
+    .mmhs-overview-content {
+        padding: 0;
+        width: 100%;
+    }
+
+    .mmhs-overview-content h2 {
+        font-size: 34px;
+    }
+
+    .mmhs-overview-description,
+    .mmhs-overview-content p {
+        font-size: 17px;
+        line-height: 1.8;
+    }
+
+    .mmhs-overview-gallery {
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+    }
+
+    .mmhs-overview-gallery-item {
+        height: 240px;
+    }
+}
+
+/* =========================================================
+   MOBILE RESPONSIVE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .mmhs-overview-section {
+        padding: 40px 18px;
+    }
+
+    .mmhs-overview-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        margin-top: 0;
+    }
+
+    /* MAIN IMAGE */
+
+    .mmhs-overview-visual {
+        width: 100%;
+        height: 340px;
+        border-radius: 15px;
+    }
+
+    .mmhs-overview-main-image {
+        object-fit: cover;
+    }
+
+    /* STATISTICS */
+
+    .mmhs-overview-stats {
+        width: 88%;
+        max-width: 350px;
+        border-radius: 14px;
+    }
+
+    .mmhs-stat-card {
+        min-height: 125px;
+        padding: 13px 8px;
+        gap: 6px;
+    }
+
+    .mmhs-stat-icon {
+        font-size: 22px;
+    }
+
+    .mmhs-stat-card h3 {
+        font-size: 24px;
+    }
+
+    .mmhs-stat-card p {
+        font-size: 11px;
+        line-height: 1.4;
+    }
+
+    /* CONTENT */
+
+    .mmhs-overview-content {
+        width: 100%;
+        padding: 0;
+    }
+
+    .mmhs-overview-label {
+        gap: 7px;
+        margin-bottom: 12px;
+    }
+
+    .mmhs-label-icon {
+        font-size: 16px;
+    }
+
+    .mmhs-overview-label span:last-child {
+        font-size:17px;
+        letter-spacing: 1.2px;
+    }
+
+    .mmhs-overview-content h2 {
+        font-size: 29px;
+        line-height: 1.3;
+        margin-bottom: 16px;
+        color: #263a20;
+    }
+
+    /* PARAGRAPH */
+
+    .mmhs-overview-description,
+    .mmhs-overview-content p {
+        color: #000000;
+        font-size: 17px;
+        line-height: 1.75;
+        text-align: justify;
+        text-justify: inter-word;
+        margin-bottom: 14px;
+    }
+
+    /* IMAGE GALLERY - VERTICAL */
+
+    .mmhs-overview-gallery {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .mmhs-overview-gallery-item {
+        width: 100%;
+        height: 230px;
+        border-radius: 11px;
+    }
+
+    .mmhs-overview-gallery-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    /* BUTTON */
+
+    .mmhs-overview-btn {
+        min-width: 150px;
+        font-size: 13px;
+    }
+}
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .mmhs-overview-section {
+        padding: 35px 15px;
+    }
+
+    .mmhs-overview-grid {
+        gap: 23px;
+    }
+
+    .mmhs-overview-visual {
+        height: 300px;
+        border-radius: 13px;
+    }
+
+    .mmhs-overview-stats {
+        width: 90%;
+        max-width: 320px;
+    }
+
+    .mmhs-stat-card {
+        min-height: 112px;
+        padding: 10px 6px;
+    }
+
+    .mmhs-stat-icon {
+        font-size: 20px;
+    }
+
+    .mmhs-stat-card h3 {
+        font-size: 22px;
+    }
+
+    .mmhs-stat-card p {
+        font-size: 10px;
+    }
+
+    .mmhs-overview-content h2 {
+        font-size: 27px;
+        line-height: 1.3;
+    }
+
+    .mmhs-overview-description,
+    .mmhs-overview-content p {
+        font-size: 17px;
+        line-height: 1.7;
+    }
+
+    /* IMAGES ONE BELOW ANOTHER */
+
+    .mmhs-overview-gallery {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .mmhs-overview-gallery-item {
+        height: 210px;
+    }
+}
+
+/* =========================================================
+   EXTRA SMALL MOBILE
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .mmhs-overview-section {
+        padding: 30px 12px;
+    }
+
+    .mmhs-overview-visual {
+        height: 270px;
+    }
+
+    .mmhs-overview-stats {
+        width: 92%;
+    }
+
+    .mmhs-stat-card {
+        min-height: 100px;
+        padding: 8px 5px;
+    }
+
+    .mmhs-stat-card h3 {
+        font-size: 20px;
+    }
+
+    .mmhs-stat-card p {
+        font-size: 9px;
+    }
+
+    .mmhs-overview-content h2 {
+        font-size: 25px;
+    }
+
+    .mmhs-overview-description,
+    .mmhs-overview-content p {
+        font-size: 17px;
+        line-height: 1.7;
+    }
+
+    .mmhs-overview-gallery {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .mmhs-overview-gallery-item {
+        height: 190px;
+    }
+}
+
+
+
+/* =========================================================
+   MARAGATHAAM - JOURNEY SECTION
+   PRIMARY: #c62a81
+   SECONDARY: #89bd3b
+========================================================= */
+
+.mmhs-journey-section {
+    width: 100%;
+    padding: 75px 30px;
+    background: #faf8f5;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.mmhs-journey-section * {
+    box-sizing: border-box;
+}
+
+.mmhs-journey-wrapper {
+    max-width: 1450px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 150px minmax(0, 1fr);
+    gap: 38px;
+    align-items: stretch;
+}
+
+
+/* =========================================================
+   LEFT VERTICAL SIDEBAR
+========================================================= */
+
+.mmhs-journey-sidebar {
+    position: relative;
+    background: linear-gradient(
+        180deg,
+        #c62a81 0%,
+        #a91e6a 100%
+    );
+    border-radius: 5px;
+    overflow: hidden;
+    min-height: 100%;
+}
+
+.mmhs-sidebar-inner {
+    position: sticky;
+    top: 30px;
+    min-height: 850px;
+    height: 100%;
+    padding: 30px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.mmhs-sidebar-top {
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+}
+
+/* VERTICAL OUR JOURNEY */
+
+.mmhs-vertical-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.mmhs-vertical-title span {
+    color: #ffffff;
+    font-family: Georgia, serif;
+    font-size: 49px;
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: 4px;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    text-shadow: 3px 4px 4px rgba(0,0,0,0.2);
+}
+
+.mmhs-sidebar-divider {
+    width: 45px;
+    height: 3px;
+    background: #89bd3b;
+    margin: 5px auto;
+}
+
+.mmhs-sidebar-year {
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.mmhs-sidebar-decoration {
+    width: 100%;
+    max-width: 115px;
+    margin: 15px 0;
+}
+
+.mmhs-sidebar-decoration img {
+    width: 100%;
+    height: 110px;
+    object-fit: contain;
+}
+
+.mmhs-sidebar-bottom {
+    color: #ffffff;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+}
+
+
+/* =========================================================
+   MAIN CONTENT
+========================================================= */
+
+.mmhs-journey-content {
+    min-width: 0;
+    width: 100%;
+}
+
+
+/* =========================================================
+   INTRODUCTION
+========================================================= */
+
+.mmhs-journey-heading {
+    max-width: 850px;
+    margin: 0 auto 65px;
+    text-align: center;
+}
+
+.mmhs-heading-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    color: #c62a81;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.mmhs-heading-label span {
+    width: 30px;
+    height: 2px;
+    background: #89bd3b;
+}
+
+.mmhs-journey-heading h2 {
+    color: #29252a;
+    font-size: 38px;
+    font-weight: 800;
+    line-height: 1.3;
+    margin: 0 0 18px;
+}
+
+.mmhs-journey-heading h2 span {
+    color: #c62a81;
+}
+
+.mmhs-journey-heading p {
+    color: #000000;
+    font-size: 17px;
+    line-height: 1.85;
+    text-align: justify;
+    margin: 0;
+}
+
+
+/* =========================================================
+   TIMELINE
+========================================================= */
+
+.mmhs-journey-timeline {
+    position: relative;
+    padding: 5px 0 15px;
+}
+
+/* TIMELINE CENTRAL LINE */
+
+.mmhs-journey-timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 130px;
+    left: 50%;
+    width: 3px;
+    background: linear-gradient(
+        to bottom,
+        #c62a81,
+        #89bd3b,
+        #c62a81
+    );
+    transform: translateX(-50%);
+}
+
+
+/* =========================================================
+   TIMELINE ITEMS
+========================================================= */
+
+.mmhs-journey-item {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    padding-right: calc(50% + 38px);
+    margin-bottom: 55px;
+}
+
+.mmhs-journey-item:nth-child(even) {
+    justify-content: flex-end;
+    padding-right: 0;
+    padding-left: calc(50% + 38px);
+}
+
+
+/* =========================================================
+   NUMBER CIRCLE
+========================================================= */
+
+.mmhs-journey-number {
+    position: absolute;
+    left: 50%;
+    top: 35px;
+    transform: translateX(-50%);
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background: #c62a81;
+    border: 5px solid #faf8f5;
+    box-shadow: 0 0 0 2px #89bd3b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 900;
+    z-index: 3;
+}
+
+
+/* =========================================================
+   TIMELINE CARD
+========================================================= */
+
+.mmhs-journey-card {
+    width: 100%;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 145px;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    background: #ffffff;
+    border-left: 4px solid #c62a81;
+    border-bottom: 3px solid #89bd3b;
+    position: relative;
+    border-radius: 5px;
+}
+
+/* ALTERNATING CONNECTOR */
+
+.mmhs-journey-card::after {
+    content: "";
+    position: absolute;
+    top: 62px;
+    right: -38px;
+    width: 38px;
+    height: 3px;
+    background: #89bd3b;
+}
+
+.mmhs-journey-item:nth-child(even) .mmhs-journey-card {
+    border-left: 0;
+    border-right: 4px solid #c62a81;
+}
+
+.mmhs-journey-item:nth-child(even) .mmhs-journey-card::after {
+    right: auto;
+    left: -38px;
+}
+
+
+/* =========================================================
+   DATE AND LABEL
+========================================================= */
+
+.mmhs-journey-date {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 7px;
+    margin-bottom: 13px;
+}
+
+.mmhs-date-year {
+    color: #c62a81;
+    font-size: 27px;
+    font-weight: 900;
+    line-height: 1.1;
+}
+
+.mmhs-date-label {
+    display: inline-block;
+    background: #edf5df;
+    color: #577e27;
+    padding: 6px 9px;
+    font-size: 9px;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+
+/* =========================================================
+   TEXT CONTENT
+========================================================= */
+
+.mmhs-journey-card-content {
+    min-width: 0;
+}
+
+.mmhs-journey-card h3 {
+    color: #29252a;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 1.35;
+    margin: 0 0 12px;
+}
+
+.mmhs-journey-card p {
+    color: #000000;
+    font-size: 16px;
+    line-height: 1.75;
+    text-align: justify;
+    margin: 0;
+}
+
+
+/* =========================================================
+   RIGHT SIDE IMAGE
+========================================================= */
+
+.mmhs-journey-photo {
+    width: 100%;
+    height: 185px;
+    overflow: hidden;
+    border-radius: 5px;
+    background: #f2f2ec;
+}
+
+.mmhs-journey-photo img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease;
+}
+
+.mmhs-journey-photo:hover img {
+    transform: scale(1.07);
+}
+
+
+/* =========================================================
+   FINAL JOURNEY SECTION
+========================================================= */
+
+.mmhs-journey-future {
+    position: relative;
+    max-width: 750px;
+    margin: 85px auto 20px;
+    padding: 35px 30px;
+    background: #ffffff;
+    border-top: 4px solid #c62a81;
+    border-bottom: 4px solid #89bd3b;
+    text-align: center;
+}
+
+.mmhs-future-symbol {
+    color: #89bd3b;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.mmhs-journey-future > span {
+    color: #c62a81;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.mmhs-journey-future h3 {
+    color: #29252a;
+    font-size: 27px;
+    font-weight: 800;
+    line-height: 1.35;
+    margin: 15px 0;
+}
+
+.mmhs-journey-future h3 strong {
+    color: #c62a81;
+}
+
+.mmhs-journey-future p {
+    color: #000000;
+    font-size: 17px;
+    line-height: 1.8;
+    text-align: justify;
+    margin: 0;
+}
+
+
+/* =========================================================
+   LARGE TABLET
+========================================================= */
+
+@media (max-width: 1199px) {
+
+    .mmhs-journey-wrapper {
+        grid-template-columns: 125px minmax(0, 1fr);
+        gap: 25px;
+    }
+
+    .mmhs-vertical-title span {
+        font-size: 43px;
+    }
+
+    .mmhs-journey-card {
+        grid-template-columns: minmax(0, 1fr) 115px;
+        padding: 15px;
+        gap: 12px;
+    }
+
+    .mmhs-journey-photo {
+        height: 165px;
+    }
+
+    .mmhs-journey-card h3 {
+        font-size: 18px;
+    }
+
+    .mmhs-journey-card p {
+        font-size: 15px;
+    }
+
+}
+
+
+/* =========================================================
+   TABLET RESPONSIVE
+========================================================= */
+
+@media (max-width: 991px) {
+
+    .mmhs-journey-section {
+        padding: 55px 20px;
+    }
+
+    .mmhs-journey-wrapper {
+        grid-template-columns: 100px minmax(0, 1fr);
+        gap: 20px;
+    }
+
+    .mmhs-sidebar-inner {
+        min-height: 800px;
+    }
+
+    .mmhs-vertical-title span {
+        font-size: 36px;
+        letter-spacing: 2px;
+    }
+
+    .mmhs-journey-heading h2 {
+        font-size: 31px;
+    }
+
+    .mmhs-journey-timeline::before {
+        display: none;
+    }
+
+    .mmhs-journey-number {
+        display: none;
+    }
+
+    .mmhs-journey-item,
+    .mmhs-journey-item:nth-child(even) {
+        padding: 0;
+        margin-bottom: 25px;
+    }
+
+    .mmhs-journey-card::after {
+        display: none;
+    }
+
+    .mmhs-journey-card {
+        grid-template-columns: minmax(0, 1fr) 120px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE RESPONSIVE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .mmhs-journey-section {
+        padding: 40px 16px;
+    }
+
+    .mmhs-journey-wrapper {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    /* VERTICAL TITLE BECOMES TOP BANNER */
+
+    .mmhs-journey-sidebar {
+        min-height: auto;
+        border-radius: 5px;
+    }
+
+    .mmhs-sidebar-inner {
+        position: relative;
+        top: auto;
+        min-height: auto;
+        padding: 23px 15px;
+        gap: 12px;
+    }
+
+    .mmhs-sidebar-top {
+        writing-mode: horizontal-tb;
+        transform: none;
+        font-size: 10px;
+    }
+
+    .mmhs-vertical-title {
+        flex-direction: row;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .mmhs-vertical-title span {
+        writing-mode: horizontal-tb;
+        transform: none;
+        font-size: 34px;
+        letter-spacing: 2px;
+    }
+
+    .mmhs-sidebar-divider {
+        width: 45px;
+        margin: 2px auto;
+    }
+
+    .mmhs-sidebar-year {
+        font-size: 12px;
+    }
+
+    .mmhs-sidebar-decoration {
+        display: none;
+    }
+
+    .mmhs-sidebar-bottom {
+        writing-mode: horizontal-tb;
+        transform: none;
+        font-size: 9px;
+    }
+
+    /* INTRODUCTION */
+
+    .mmhs-journey-heading {
+        margin-bottom: 35px;
+    }
+
+    .mmhs-journey-heading h2 {
+        font-size: 29px;
+    }
+
+    .mmhs-journey-heading p {
+        font-size: 17px;
+        line-height: 1.75;
+    }
+
+    /* TIMELINE */
+
+    .mmhs-journey-timeline {
+        padding: 0 0 0 26px;
+    }
+
+    .mmhs-journey-timeline::before {
+        display: block;
+        left: 8px;
+        transform: none;
+        top: 0;
+        bottom: 100px;
+        width: 3px;
+    }
+
+    .mmhs-journey-item,
+    .mmhs-journey-item:nth-child(even) {
+        display: block;
+        padding: 0;
+        margin-bottom: 28px;
+    }
+
+    .mmhs-journey-number {
+        display: flex;
+        left: -18px;
+        top: 22px;
+        transform: translateX(-50%);
+        width: 38px;
+        height: 38px;
+        border-width: 3px;
+        font-size: 11px;
+    }
+
+    /* CARD */
+
+    .mmhs-journey-card,
+    .mmhs-journey-item:nth-child(even) .mmhs-journey-card {
+        grid-template-columns: 1fr;
+        padding: 17px;
+        gap: 15px;
+        border-left: 4px solid #c62a81;
+        border-right: 0;
+        border-bottom: 3px solid #89bd3b;
+    }
+
+    .mmhs-journey-card::after,
+    .mmhs-journey-item:nth-child(even) .mmhs-journey-card::after {
+        display: none;
+    }
+
+    .mmhs-date-year {
+        font-size: 25px;
+    }
+
+    .mmhs-journey-card h3 {
+        font-size: 20px;
+    }
+
+    .mmhs-journey-card p {
+        font-size: 17px;
+        line-height: 1.75;
+    }
+
+    /* IMAGE ON RIGHT BECOMES FULL WIDTH BELOW TEXT */
+
+    .mmhs-journey-photo {
+        width: 100%;
+        height: 220px;
+    }
+
+    /* ENDING */
+
+    .mmhs-journey-future {
+        margin: 45px 0 15px;
+        padding: 25px 18px;
+    }
+
+    .mmhs-journey-future h3 {
+        font-size: 23px;
+    }
+
+    .mmhs-journey-future p {
+        font-size: 17px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .mmhs-journey-section {
+        padding: 30px 12px;
+    }
+
+    .mmhs-journey-wrapper {
+        gap: 23px;
+    }
+
+    .mmhs-sidebar-inner {
+        padding: 20px 12px;
+    }
+
+    .mmhs-vertical-title span {
+        font-size: 29px;
+    }
+
+    .mmhs-journey-heading h2 {
+        font-size: 26px;
+    }
+
+    .mmhs-journey-timeline {
+        padding-left: 23px;
+    }
+
+    .mmhs-journey-timeline::before {
+        left: 7px;
+    }
+
+    .mmhs-journey-number {
+        left: -16px;
+        width: 35px;
+        height: 35px;
+    }
+
+    .mmhs-journey-card {
+        padding: 14px;
+    }
+
+    .mmhs-journey-card h3 {
+        font-size: 19px;
+    }
+
+    .mmhs-journey-card p {
+        font-size: 17px;
+        line-height: 1.7;
+    }
+
+    .mmhs-journey-photo {
+        height: 195px;
+    }
+
+    .mmhs-journey-future h3 {
+        font-size: 21px;
+    }
+
+}
+
+
+/* =========================================================
+   EXTRA SMALL MOBILE
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .mmhs-vertical-title span {
+        font-size: 25px;
+    }
+
+    .mmhs-journey-heading h2 {
+        font-size: 24px;
+    }
+
+    .mmhs-journey-card h3 {
+        font-size: 18px;
+    }
+
+    .mmhs-journey-photo {
+        height: 175px;
+    }
+
+}
+
+
+/* =====================================================
+   MOTTO SECTION
+===================================================== */
+
+.mmhs-motto-section {
+    width: 100%;
+    padding:35px 25px;
+    background-color: #f7ffd0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.mmhs-motto-section * {
+    box-sizing: border-box;
+}
+
+.mmhs-motto-container {
+    max-width: 1350px;
+    min-height: 430px;
+    margin: auto;
+    display: grid;
+    grid-template-columns:40% 60%;
+    align-items: stretch;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+
+/* =====================================================
+   LEFT IMAGE
+===================================================== */
+
+.mmhs-motto-image {
+    position: relative;
+    min-height: 430px;
+    background: #c62a81;
+    overflow: hidden;
+}
+
+.mmhs-image-bg {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        145deg,
+        #c62a81,
+        #9d1c65
+    );
+}
+
+.mmhs-motto-image::before {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 320px;
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 50%;
+    top: -100px;
+    left: -100px;
+    z-index: 2;
+}
+
+.mmhs-motto-image img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 1;
+}
+
+/* IMAGE CAPTION */
+
+.mmhs-image-caption {
+    position: absolute;
+    left: 25px;
+    bottom: 25px;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+
+.mmhs-image-caption span {
+    font-size: 23px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.mmhs-image-caption small {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-top: 4px;
+}
+
+
+/* =====================================================
+   RIGHT MOTTO CONTENT
+===================================================== */
+
+.mmhs-motto-content {
+    position: relative;
+    padding: 65px 55px 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background:
+        radial-gradient(
+            circle,
+            rgba(137,189,59,0.09) 1.5px,
+            transparent 2px
+        );
+    background-size: 19px 19px;
+    background-color: #ffffff;
+}
+
+/* OPENING QUOTE */
+
+.mmhs-quote-open {
+    position: absolute;
+    top: 10px;
+    left: 45px;
+    color: #c62a81;
+    font-family: Georgia, serif;
+    font-size: 125px;
+    font-weight: 900;
+    line-height: 1;
+    opacity: 0.95;
+}
+
+/* LABEL */
+
+.mmhs-motto-label {
+    position: relative;
+    z-index: 2;
+    color: #89bd3b;
+    font-size: 18px;
+    font-weight: 900;
+    margin-bottom: 18px;
+}
+
+/* MAIN MOTTO */
+
+.mmhs-motto-content h2 {
+    position: relative;
+    z-index: 2;
+    color: #27252a;
+    font-size: clamp(28px, 3.2vw, 43px);
+    font-weight: 900;
+    line-height: 1.35;
+    margin: 0;
+}
+
+.mmhs-motto-content h2 span {
+    color: #c62a81;
+    display: inline;
+}
+
+/* DIVIDER */
+
+.mmhs-motto-divider {
+    width: 100%;
+    height: 3px;
+    background: #eeeeee;
+    margin: 23px 0 18px;
+    position: relative;
+}
+
+.mmhs-motto-divider span {
+    display: block;
+    width: 90px;
+    height: 3px;
+    background: #89bd3b;
+}
+
+/* DESCRIPTION */
+
+.mmhs-motto-content p {
+    color: #000000;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1.7;
+    margin: 0;
+    text-align: justify;
+}
+
+/* CLOSING QUOTE */
+
+.mmhs-quote-close {
+    position: absolute;
+    right: 35px;
+    bottom: 40px;
+    color: #c62a81;
+    font-family: Georgia, serif;
+    font-size: 115px;
+    font-weight: 900;
+    line-height: 1;
+    opacity: 0.9;
+}
+
+/* BOTTOM SCHOOL NAME */
+
+.mmhs-motto-bottom {
+    margin-top: 35px;
+    padding-top: 15px;
+    border-top: 1px solid #e8e8e8;
+}
+
+.mmhs-motto-bottom span {
+    color: #000000;
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 991px) {
+
+    .mmhs-motto-section {
+        padding: 45px 20px;
+    }
+
+    .mmhs-motto-container {
+        grid-template-columns: 38% 62%;
+    }
+
+    .mmhs-motto-image {
+        min-height: 370px;
+    }
+
+    .mmhs-motto-content {
+        padding: 55px 30px 35px;
+    }
+
+    .mmhs-motto-content h2 {
+        font-size: 32px;
+    }
+
+    .mmhs-quote-open {
+        left: 25px;
+        font-size: 95px;
+    }
+
+    .mmhs-quote-close {
+        right: 20px;
+        font-size: 85px;
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 767px) {
+
+    .mmhs-motto-section {
+        padding: 35px 15px;
+    }
+
+    .mmhs-motto-container {
+        grid-template-columns: 1fr;
+        border-radius: 10px;
+    }
+
+    .mmhs-motto-image {
+        min-height: 290px;
+        height: 290px;
+    }
+
+    .mmhs-motto-image img {
+        object-position: center 35%;
+    }
+
+    .mmhs-image-caption {
+        left: 18px;
+        bottom: 18px;
+    }
+
+    .mmhs-image-caption span {
+        font-size: 19px;
+    }
+
+    .mmhs-motto-content {
+        min-height: 290px;
+        padding: 65px 23px 30px;
+    }
+
+    .mmhs-quote-open {
+        top: 5px;
+        left: 18px;
+        font-size: 85px;
+    }
+
+    .mmhs-motto-label {
+        font-size: 15px;
+        margin-bottom: 12px;
+    }
+
+    .mmhs-motto-content h2 {
+        font-size: 29px;
+        line-height: 1.4;
+    }
+
+    .mmhs-motto-divider {
+        margin: 17px 0 13px;
+    }
+
+    .mmhs-motto-content p {
+        font-size: 16px;
+    }
+
+    .mmhs-quote-close {
+        right: 15px;
+        bottom: 20px;
+        font-size: 75px;
+    }
+
+    .mmhs-motto-bottom {
+        margin-top: 25px;
+    }
+
+    .mmhs-motto-bottom span {
+        font-size:15px;
+        letter-spacing: 1px;
+    }
+
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 380px) {
+
+    .mmhs-motto-image {
+        height: 250px;
+        min-height: 250px;
+    }
+
+    .mmhs-motto-content {
+        padding: 60px 18px 25px;
+    }
+
+    .mmhs-motto-content h2 {
+        font-size: 25px;
+    }
+
+}

@@ -5150,9 +5150,6 @@ background: #ffffff !important;
   color: var(--accent) !important;
 }
 
-.tracking-wider {
-  letter-spacing: 1px;
-}
 
 .line-clamp-2 {
   display: -webkit-box;
@@ -5966,10 +5963,6 @@ background: #ffffff !important;
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
-.tracking-wider {
-  letter-spacing: 1.5px;
-}
-
 .line-height-lg {
   line-height: 1.8;
 }
@@ -6141,10 +6134,6 @@ background: #ffffff !important;
   box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
 }
 
-/* Typography Helpers */
-.tracking-wider {
-  letter-spacing: 1.5px;
-}
 
 .line-clamp-2 {
   display: -webkit-box;
@@ -6699,14 +6688,14 @@ background: #ffffff !important;
   }
 }
 
-.tb-call-box:hover .tb-call-icon-circle {
+.tb-call-box .tb-call-icon-circle {
   background: var(--accent);
   color: #FFFFFF;
   transform: scale(1.06);
   box-shadow: 0 8px 22px rgba(255, 107, 0, 0.36);
 }
 
-.tb-call-box:hover .tb-call-icon-circle i {
+.tb-call-box .tb-call-icon-circle i {
   animation: phoneRingWiggle 0.6s ease infinite;
 }
 
@@ -6748,8 +6737,7 @@ background: #ffffff !important;
 }
 
 .tb-call-label {
-  font-size: 10.5px;
-  letter-spacing: 1.5px;
+  font-size: 15px;
   font-weight: 800;
   color: #64748B;
 }
@@ -8252,10 +8240,6 @@ html::-webkit-scrollbar-thumb:hover {
 
 .border-light-20 {
   border-color: rgba(255, 255, 255, 0.25) !important;
-}
-
-.tracking-wider {
-  letter-spacing: 1.5px;
 }
 
 .text-white-75 {
