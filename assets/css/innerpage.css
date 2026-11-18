@@ -1,75 +1,167 @@
 
 /* =====================================================
-   MARAGATHAM MATRIC SCHOOL - BREADCRUMB
+   MARAGATHAAM MATRIC SCHOOL
+   RESPONSIVE BREADCRUMB
+   DESKTOP + TABLET + MOBILE
+===================================================== */
+
+/* =====================================================
+   MAIN BREADCRUMB SECTION
 ===================================================== */
 
 .mmhs-breadcrumb-section {
     position: relative;
+    isolation: isolate;
+
     width: 100%;
-    min-height: 400px;
+    min-height: 350px;
+    height: auto;
+
     display: flex;
     align-items: center;
-    overflow: hidden;
 
-    /* CHANGE IMAGE PATH */
-    background-image: url("../img/EVENT 10-04-2026/build.jpg");
-    background-position: top center;
+    overflow: hidden;
+        margin-top: 5%;
+
+    background-image: url("../img/photos/bread.png");
+    background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
 
-    padding:65px 0;
+    padding: 60px 0;
+    box-sizing: border-box;
 }
 
-/* DARK IMAGE OVERLAY */
+/* =====================================================
+   FULL SECTION DARK OVERLAY
+===================================================== */
 
 .mmhs-breadcrumb-overlay {
     position: absolute;
     inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    z-index: 0;
+    pointer-events: none;
+
     background: linear-gradient(
         90deg,
-        rgba(0, 0, 0, 0.358) 100%
+        rgba(0, 0, 0, 0.55) 0%,
+        rgba(0, 0, 0, 0.35) 55%,
+        rgba(0, 0, 0, 0.15) 100%
     );
 }
 
-/* CONTENT */
+/* =====================================================
+   BOOTSTRAP CONTAINER
+===================================================== */
+
+.mmhs-breadcrumb-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* =====================================================
+   CONTENT
+===================================================== */
 
 .mmhs-breadcrumb-content {
     position: relative;
     z-index: 2;
+
+    width: 100%;
+
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: center;
+
+    box-sizing: border-box;
 }
 
-/* PAGE HEADING */
+/* =====================================================
+   SUBTITLE
+===================================================== */
+
+.mmhs-breadcrumb-subtitle {
+    display: block;
+
+    color: #ffffff;
+
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 1.6;
+
+    margin-bottom: 12px;
+}
+
+/* =====================================================
+   PAGE TITLE
+===================================================== */
+
+.mmhs-breadcrumb-title {
+    width: 100%;
+}
 
 .mmhs-breadcrumb-title h1 {
     color: #ffffff;
+
     font-size: 40px;
     font-weight: 800;
     line-height: 1.2;
+
     margin: 0 0 22px;
+    padding: 0;
+
+    overflow-wrap: break-word;
 }
 
-/* BREADCRUMB LIST */
+/* =====================================================
+   BREADCRUMB LIST
+===================================================== */
 
 .mmhs-breadcrumb-list {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap: 12px;
+
+    gap: 10px;
+
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-/* LINKS */
+/* =====================================================
+   BREADCRUMB ITEMS
+===================================================== */
+
+.mmhs-breadcrumb-item {
+    display: inline-flex;
+    align-items: center;
+
+    line-height: 1.5;
+}
+
+/* =====================================================
+   BREADCRUMB LINKS
+===================================================== */
 
 .mmhs-breadcrumb-item a {
+    display: inline-flex;
+    align-items: center;
+
     color: #ffffff;
+
     font-size: 15px;
     font-weight: 500;
+
     text-decoration: none;
+    white-space: nowrap;
+
     transition: color 0.3s ease;
 }
 
@@ -79,62 +171,221 @@
 
 .mmhs-breadcrumb-item a i {
     color: #f6d77b;
-    margin-right: 6px;
+
+    font-size: 14px;
+    margin-right: 7px;
 }
 
-/* SEPARATOR */
+/* =====================================================
+   SEPARATOR
+===================================================== */
 
 .mmhs-breadcrumb-separator {
     color: #f6d77b;
-    font-size: 15px;
+
+    font-size: 14px;
+    font-weight: 700;
 }
 
-/* ACTIVE PAGE */
+/* =====================================================
+   ACTIVE PAGE
+===================================================== */
 
 .mmhs-breadcrumb-item.mmhs-active {
     color: #f6d77b;
+
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 700;
+    line-height: 1.5;
 }
 
-/* TABLET */
+/* =====================================================
+   LAPTOP
+===================================================== */
 
-@media (max-width: 991px) {
+@media (max-width: 1199px) {
 
     .mmhs-breadcrumb-section {
-        min-height: 250px;
+        min-height: 320px;
         padding: 55px 0;
     }
 
     .mmhs-breadcrumb-title h1 {
-        font-size: 34px;
+        font-size: 37px;
     }
 
 }
 
-/* MOBILE */
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 991px) {
+
+    .mmhs-breadcrumb-section {
+        min-height: 270px;
+        padding: 45px 0;
+        margin-top: 5%;
+        background-position: center center;
+    }
+
+    .mmhs-breadcrumb-overlay {
+        background: rgba(0, 0, 0, 0.48);
+    }
+
+    .mmhs-breadcrumb-title h1 {
+        font-size: 34px;
+        margin-bottom: 18px;
+    }
+
+    .mmhs-breadcrumb-item a,
+    .mmhs-breadcrumb-item.mmhs-active {
+        font-size: 14px;
+    }
+
+}
+
+/* =====================================================
+   MOBILE - 767px
+===================================================== */
+
+@media (max-width: 767px) {
+
+    .mmhs-breadcrumb-section {
+        width: 100%;
+
+        min-height: 220px;
+        height: auto;
+
+        padding: 35px 0;
+
+        display: flex;
+        align-items: center;
+        margin-top: 5%;
+
+        background-size: cover;
+        background-position: 60% center;
+        background-repeat: no-repeat;
+
+        overflow: hidden;
+    }
+
+    /* FULL MOBILE OVERLAY */
+
+    .mmhs-breadcrumb-overlay {
+        position: absolute;
+
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+
+        background: rgba(0, 0, 0, 0.48);
+
+        z-index: 0;
+    }
+
+    /* MOBILE CONTENT */
+
+    .mmhs-breadcrumb-content {
+        width: 100%;
+
+        padding: 0 20px;
+
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    /* SUBTITLE */
+
+    .mmhs-breadcrumb-subtitle {
+        font-size: 10px;
+        letter-spacing: 1.5px;
+
+        margin-bottom: 9px;
+    }
+
+    /* TITLE */
+
+    .mmhs-breadcrumb-title h1 {
+        font-size: 29px;
+        line-height: 1.3;
+
+        margin-bottom: 15px;
+    }
+
+    /* BREADCRUMB */
+
+    .mmhs-breadcrumb-list {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+        column-gap: 8px;
+        row-gap: 6px;
+    }
+
+    .mmhs-breadcrumb-item a,
+    .mmhs-breadcrumb-item.mmhs-active {
+        font-size: 13px;
+    }
+
+    .mmhs-breadcrumb-item a i {
+        font-size: 12px;
+        margin-right: 5px;
+    }
+
+    .mmhs-breadcrumb-separator {
+        font-size: 12px;
+    }
+
+}
+
+/* =====================================================
+   SMALL MOBILE - 576px
+===================================================== */
 
 @media (max-width: 576px) {
 
     .mmhs-breadcrumb-section {
-        min-height: 200px;
-        padding: 40px 0;
-        background-position: center;
+        min-height: 205px;
+        height: auto;
+
+        padding: 32px 0;
+        margin-top: 15%;
+        background-position: 58% center;
+    }
+
+    .mmhs-breadcrumb-overlay {
+        inset: 0;
+        width: 100%;
+        height: 100%;
+
+        background: rgba(0, 0, 0, 0.50);
+    }
+
+    .mmhs-breadcrumb-content {
+        padding: 0 18px;
     }
 
     .mmhs-breadcrumb-subtitle {
-        font-size: 10px;
+        font-size: 9px;
         letter-spacing: 1.2px;
-        line-height: 1.6;
+        margin-bottom: 8px;
     }
 
     .mmhs-breadcrumb-title h1 {
-        font-size: 27px;
-        margin-bottom: 17px;
+        font-size: 26px;
+        line-height: 1.3;
+        margin-bottom: 13px;
     }
 
     .mmhs-breadcrumb-list {
-        gap: 8px;
+        column-gap: 6px;
+        row-gap: 5px;
     }
 
     .mmhs-breadcrumb-item a,
@@ -142,16 +393,104 @@
         font-size: 12px;
     }
 
-}
-
-/* SMALL MOBILE */
-
-@media (max-width: 360px) {
-
-    .mmhs-breadcrumb-title h1 {
-        font-size: 24px;
+    .mmhs-breadcrumb-item a i {
+        font-size: 11px;
+        margin-right: 4px;
     }
 
+    .mmhs-breadcrumb-separator {
+        font-size: 11px;
+    }
+
+}
+
+/* =====================================================
+   EXTRA SMALL MOBILE - 400px
+===================================================== */
+
+@media (max-width: 400px) {
+
+    .mmhs-breadcrumb-section {
+        min-height: 190px;
+        height: auto;
+
+        padding: 28px 0;
+        margin-top: 15%;
+
+        background-position: 56% center;
+    }
+
+    .mmhs-breadcrumb-content {
+        padding: 0 15px;
+    }
+
+    .mmhs-breadcrumb-title h1 {
+        font-size: 23px;
+        line-height: 1.3;
+
+        margin-bottom: 12px;
+    }
+
+    .mmhs-breadcrumb-subtitle {
+        font-size: 9px;
+    }
+
+    .mmhs-breadcrumb-list {
+        gap: 5px;
+    }
+
+    .mmhs-breadcrumb-item a,
+    .mmhs-breadcrumb-item.mmhs-active {
+        font-size: 11px;
+    }
+
+}
+
+/* =====================================================
+   VERY SMALL MOBILE - 350px
+===================================================== */
+
+@media (max-width: 350px) {
+
+    .mmhs-breadcrumb-section {
+        min-height: 180px;
+        height: auto;
+        margin-top: 15%;
+
+        padding: 25px 0;
+    }
+
+    .mmhs-breadcrumb-title h1 {
+        font-size: 21px;
+        line-height: 1.3;
+
+        margin-bottom: 10px;
+    }
+
+    .mmhs-breadcrumb-subtitle {
+        font-size: 8px;
+        letter-spacing: 1px;
+    }
+
+    .mmhs-breadcrumb-item a,
+    .mmhs-breadcrumb-item.mmhs-active {
+        font-size: 10px;
+    }
+
+    .mmhs-breadcrumb-list {
+        gap: 5px;
+    }
+
+}
+
+/* =====================================================
+   FINAL BOX SIZING
+===================================================== */
+
+.mmhs-breadcrumb-section *,
+.mmhs-breadcrumb-section *::before,
+.mmhs-breadcrumb-section *::after {
+    box-sizing: border-box;
 }
 
 
@@ -741,142 +1080,101 @@ color:#c62a81;
 
 
 /* =========================================================
-   MARAGATHAAM - JOURNEY SECTION
-   PRIMARY: #c62a81
-   SECONDARY: #89bd3b
+   MARAGATHAAM MATRIC SCHOOL
+   HISTORY & EDUCATIONAL JOURNEY
+   LEFT CONTENT + RIGHT IMAGE
 ========================================================= */
 
 .mmhs-journey-section {
     width: 100%;
-    padding: 75px 30px;
-    background: #faf8f5;
+    padding: 85px 25px;
+    background: #ffffff;
     overflow: hidden;
-    position: relative;
-    box-sizing: border-box;
-}
-
-.mmhs-journey-section * {
-    box-sizing: border-box;
 }
 
 .mmhs-journey-wrapper {
     max-width: 1450px;
-    margin: 0 auto;
+    margin: auto;
     display: grid;
-    grid-template-columns: 150px minmax(0, 1fr);
-    gap: 38px;
+    grid-template-columns: 175px minmax(0, 1fr);
+    gap: 55px;
     align-items: stretch;
 }
 
-
-/* =========================================================
+/* =========================================
    LEFT VERTICAL SIDEBAR
-========================================================= */
+========================================= */
 
 .mmhs-journey-sidebar {
     position: relative;
-    background: linear-gradient(
-        180deg,
-        #c62a81 0%,
-        #a91e6a 100%
-    );
-    border-radius: 5px;
-    overflow: hidden;
+    background: linear-gradient(160deg, #c62a81, #a71966);
+    border-radius: 4px;
     min-height: 100%;
 }
 
 .mmhs-sidebar-inner {
     position: sticky;
-    top: 30px;
-    min-height: 850px;
-    height: 100%;
-    padding: 30px 10px;
+    top: 10px;
+    min-height: 480px;
+    padding: 35px 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    text-align: center;
+    color: #ffffff;
 }
 
 .mmhs-sidebar-top {
-    color: #ffffff;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 800;
     letter-spacing: 3px;
-    writing-mode: vertical-rl;
-    transform: rotate(180deg);
 }
-
-/* VERTICAL OUR JOURNEY */
 
 .mmhs-vertical-title {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
-}
-
-.mmhs-vertical-title span {
-    color: #ffffff;
-    font-family: Georgia, serif;
-    font-size: 49px;
-    font-weight: 800;
+    gap: 8px;
+    font-size: 35px;
+    font-weight: 900;
     line-height: 1;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
     writing-mode: vertical-rl;
     transform: rotate(180deg);
-    text-shadow: 3px 4px 4px rgba(0,0,0,0.2);
 }
 
 .mmhs-sidebar-divider {
     width: 45px;
     height: 3px;
     background: #89bd3b;
-    margin: 5px auto;
+    margin: 25px 0;
 }
 
 .mmhs-sidebar-year {
-    color: #ffffff;
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 800;
     letter-spacing: 2px;
 }
 
-.mmhs-sidebar-decoration {
-    width: 100%;
-    max-width: 115px;
-    margin: 15px 0;
-}
-
-.mmhs-sidebar-decoration img {
-    width: 100%;
-    height: 110px;
-    object-fit: contain;
-}
-
 .mmhs-sidebar-bottom {
-    color: #ffffff;
-    font-size: 9px;
+    font-size: 10px;
     font-weight: 700;
-    letter-spacing: 1.5px;
+    letter-spacing: 2px;
     writing-mode: vertical-rl;
     transform: rotate(180deg);
 }
 
-
-/* =========================================================
+/* =========================================
    MAIN CONTENT
-========================================================= */
+========================================= */
 
 .mmhs-journey-content {
     min-width: 0;
-    width: 100%;
 }
 
-
-/* =========================================================
-   INTRODUCTION
-========================================================= */
+/* =========================================
+   INTRO HEADING
+========================================= */
 
 .mmhs-journey-heading {
     max-width: 850px;
@@ -888,220 +1186,178 @@ color:#c62a81;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 12px;
+    gap: 13px;
     color: #c62a81;
-    font-size: 12px;
-    font-weight: 900;
+    font-size: 13px;
+    font-weight: 800;
     letter-spacing: 3px;
-    margin-bottom: 15px;
+    margin-bottom: 17px;
 }
 
 .mmhs-heading-label span {
-    width: 30px;
+    width: 35px;
     height: 2px;
     background: #89bd3b;
 }
 
 .mmhs-journey-heading h2 {
-    color: #29252a;
-    font-size: 38px;
-    font-weight: 800;
-    line-height: 1.3;
-    margin: 0 0 18px;
+    color: #252525;
+    font-size: clamp(28px, 3.5vw, 43px);
+    font-weight: 850;
+    line-height: 1.2;
+    margin-bottom: 20px;
 }
 
 .mmhs-journey-heading h2 span {
+    display: block;
     color: #c62a81;
+    margin-top: 5px;
 }
 
 .mmhs-journey-heading p {
-    color: #000000;
-    font-size: 17px;
-    line-height: 1.85;
-    text-align: justify;
-    margin: 0;
+    max-width: 780px;
+    margin: auto;
+    color: #444444;
+    font-size: 16px;
+    line-height: 1.9;
+    text-align: center;
 }
 
-
-/* =========================================================
+/* =========================================
    TIMELINE
-========================================================= */
+========================================= */
 
 .mmhs-journey-timeline {
     position: relative;
-    padding: 5px 0 15px;
+    padding-left: 55px;
 }
-
-/* TIMELINE CENTRAL LINE */
 
 .mmhs-journey-timeline::before {
     content: "";
     position: absolute;
-    top: 0;
-    bottom: 130px;
-    left: 50%;
-    width: 3px;
+    top: 15px;
+    bottom: 110px;
+    left: 20px;
+    width: 2px;
     background: linear-gradient(
         to bottom,
         #c62a81,
         #89bd3b,
         #c62a81
     );
-    transform: translateX(-50%);
 }
 
-
-/* =========================================================
-   TIMELINE ITEMS
-========================================================= */
+/* =========================================
+   JOURNEY ITEM
+========================================= */
 
 .mmhs-journey-item {
-    width: 100%;
     position: relative;
-    display: flex;
-    justify-content: flex-start;
-    padding-right: calc(50% + 38px);
-    margin-bottom: 55px;
+    margin-bottom: 45px;
 }
 
-.mmhs-journey-item:nth-child(even) {
-    justify-content: flex-end;
-    padding-right: 0;
-    padding-left: calc(50% + 38px);
-}
-
-
-/* =========================================================
-   NUMBER CIRCLE
-========================================================= */
+/* Timeline Number */
 
 .mmhs-journey-number {
     position: absolute;
-    left: 50%;
+    left: -55px;
     top: 35px;
-    transform: translateX(-50%);
-    width: 58px;
-    height: 58px;
+    width: 42px;
+    height: 42px;
+    border: 3px solid #ffffff;
     border-radius: 50%;
     background: #c62a81;
-    border: 5px solid #faf8f5;
-    box-shadow: 0 0 0 2px #89bd3b;
+    color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #ffffff;
-    font-size: 15px;
-    font-weight: 900;
-    z-index: 3;
+    font-size: 13px;
+    font-weight: 800;
+    box-shadow: 0 0 0 2px #c62a81;
+    z-index: 2;
 }
 
-
-/* =========================================================
-   TIMELINE CARD
-========================================================= */
+/* =========================================
+   CONTENT LEFT + IMAGE RIGHT
+========================================= */
 
 .mmhs-journey-card {
-    width: 100%;
     display: grid;
-    grid-template-columns: minmax(0, 1fr) 145px;
+    grid-template-columns: minmax(0, 1fr) 290px;
     align-items: center;
-    gap: 15px;
-    padding: 20px;
-    background: #ffffff;
-    border-left: 4px solid #c62a81;
-    border-bottom: 3px solid #89bd3b;
-    position: relative;
-    border-radius: 5px;
+    gap: 30px;
+    padding: 28px 0;
+    border-bottom: 1px solid #e9e9e9;
 }
 
-/* ALTERNATING CONNECTOR */
+/* LEFT TEXT */
 
-.mmhs-journey-card::after {
-    content: "";
-    position: absolute;
-    top: 62px;
-    right: -38px;
-    width: 38px;
-    height: 3px;
-    background: #89bd3b;
+.mmhs-journey-card-content {
+    min-width: 0;
+    padding: 5px 0;
+    order: 1;
 }
-
-.mmhs-journey-item:nth-child(even) .mmhs-journey-card {
-    border-left: 0;
-    border-right: 4px solid #c62a81;
-}
-
-.mmhs-journey-item:nth-child(even) .mmhs-journey-card::after {
-    right: auto;
-    left: -38px;
-}
-
-
-/* =========================================================
-   DATE AND LABEL
-========================================================= */
 
 .mmhs-journey-date {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 7px;
-    margin-bottom: 13px;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 13px;
+    margin-bottom: 15px;
 }
 
 .mmhs-date-year {
+    display: inline-block;
     color: #c62a81;
-    font-size: 27px;
+    font-size: 25px;
     font-weight: 900;
-    line-height: 1.1;
 }
 
 .mmhs-date-label {
     display: inline-block;
-    background: #edf5df;
-    color: #577e27;
-    padding: 6px 9px;
-    font-size: 9px;
-    font-weight: 900;
-    letter-spacing: 1px;
+    padding: 7px 13px;
+    background: #eef6e4;
+    color: #527d1c;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
 }
 
-
-/* =========================================================
-   TEXT CONTENT
-========================================================= */
-
-.mmhs-journey-card-content {
-    min-width: 0;
-}
-
-.mmhs-journey-card h3 {
-    color: #29252a;
-    font-size: 20px;
+.mmhs-journey-card-content h3 {
+    color: #292929;
+    font-size: 23px;
     font-weight: 800;
     line-height: 1.35;
-    margin: 0 0 12px;
+    margin-bottom: 13px;
 }
 
-.mmhs-journey-card p {
-    color: #000000;
-    font-size: 16px;
-    line-height: 1.75;
+.mmhs-journey-card-content p {
+    color: #444444;
+    font-size: 15px;
+    line-height: 1.9;
     text-align: justify;
     margin: 0;
 }
 
-
-/* =========================================================
-   RIGHT SIDE IMAGE
-========================================================= */
+/* RIGHT IMAGE */
 
 .mmhs-journey-photo {
+    order: 2;
     width: 100%;
-    height: 185px;
+    height: 220px;
+    position: relative;
     overflow: hidden;
-    border-radius: 5px;
-    background: #f2f2ec;
+    border-radius: 4px;
+    background: #f3f3f3;
+}
+
+.mmhs-journey-photo::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: 4px solid rgba(137, 189, 59, 0.75);
+    pointer-events: none;
+    transition: 0.4s ease;
 }
 
 .mmhs-journey-photo img {
@@ -1110,224 +1366,146 @@ color:#c62a81;
     display: block;
     object-fit: cover;
     object-position: center;
-    transition: transform 0.5s ease;
+    transition: transform 0.6s ease;
 }
 
-.mmhs-journey-photo:hover img {
-    transform: scale(1.07);
+.mmhs-journey-item:hover .mmhs-journey-photo img {
+    transform: scale(1.06);
 }
 
+.mmhs-journey-item:hover .mmhs-journey-photo::after {
+    border-color: #c62a81;
+}
 
-/* =========================================================
-   FINAL JOURNEY SECTION
-========================================================= */
+/* =========================================
+   FINAL MESSAGE
+========================================= */
 
 .mmhs-journey-future {
     position: relative;
-    max-width: 750px;
-    margin: 85px auto 20px;
-    padding: 35px 30px;
-    background: #ffffff;
-    border-top: 4px solid #c62a81;
-    border-bottom: 4px solid #89bd3b;
+    margin-top: 55px;
+    padding: 40px 35px;
+    background: #f5f9ef;
+    border-left: 5px solid #89bd3b;
     text-align: center;
 }
 
 .mmhs-future-symbol {
-    color: #89bd3b;
-    font-size: 36px;
+    color: #c62a81;
+    font-size: 30px;
     margin-bottom: 10px;
 }
 
 .mmhs-journey-future > span {
-    color: #c62a81;
+    color: #688f32;
     font-size: 12px;
     font-weight: 900;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
 }
 
 .mmhs-journey-future h3 {
-    color: #29252a;
-    font-size: 27px;
+    color: #292929;
+    font-size: 28px;
     font-weight: 800;
-    line-height: 1.35;
+    line-height: 1.4;
     margin: 15px 0;
 }
 
 .mmhs-journey-future h3 strong {
+    display: block;
     color: #c62a81;
 }
 
 .mmhs-journey-future p {
-    color: #000000;
-    font-size: 17px;
-    line-height: 1.8;
-    text-align: justify;
-    margin: 0;
+    max-width: 750px;
+    margin: auto;
+    color: #444444;
+    font-size: 15px;
+    line-height: 1.9;
 }
 
+/* =========================================
+   TABLET
+========================================= */
 
-/* =========================================================
-   LARGE TABLET
-========================================================= */
-
-@media (max-width: 1199px) {
+@media (max-width: 1100px) {
 
     .mmhs-journey-wrapper {
-        grid-template-columns: 125px minmax(0, 1fr);
-        gap: 25px;
-    }
-
-    .mmhs-vertical-title span {
-        font-size: 43px;
+        grid-template-columns: 130px minmax(0, 1fr);
+        gap: 35px;
     }
 
     .mmhs-journey-card {
-        grid-template-columns: minmax(0, 1fr) 115px;
-        padding: 15px;
-        gap: 12px;
+        grid-template-columns: minmax(0, 1fr) 230px;
+        gap: 22px;
     }
 
     .mmhs-journey-photo {
-        height: 165px;
+        height: 200px;
     }
 
-    .mmhs-journey-card h3 {
-        font-size: 18px;
+    .mmhs-journey-card-content h3 {
+        font-size: 20px;
     }
-
-    .mmhs-journey-card p {
-        font-size: 15px;
-    }
-
 }
 
-
-/* =========================================================
-   TABLET RESPONSIVE
-========================================================= */
-
-@media (max-width: 991px) {
-
-    .mmhs-journey-section {
-        padding: 55px 20px;
-    }
-
-    .mmhs-journey-wrapper {
-        grid-template-columns: 100px minmax(0, 1fr);
-        gap: 20px;
-    }
-
-    .mmhs-sidebar-inner {
-        min-height: 800px;
-    }
-
-    .mmhs-vertical-title span {
-        font-size: 36px;
-        letter-spacing: 2px;
-    }
-
-    .mmhs-journey-heading h2 {
-        font-size: 31px;
-    }
-
-    .mmhs-journey-timeline::before {
-        display: none;
-    }
-
-    .mmhs-journey-number {
-        display: none;
-    }
-
-    .mmhs-journey-item,
-    .mmhs-journey-item:nth-child(even) {
-        padding: 0;
-        margin-bottom: 25px;
-    }
-
-    .mmhs-journey-card::after {
-        display: none;
-    }
-
-    .mmhs-journey-card {
-        grid-template-columns: minmax(0, 1fr) 120px;
-    }
-
-}
-
-
-/* =========================================================
-   MOBILE RESPONSIVE
-========================================================= */
+/* =========================================
+   MOBILE
+========================================= */
 
 @media (max-width: 767px) {
 
     .mmhs-journey-section {
-        padding: 40px 16px;
+        padding: 55px 15px;
     }
 
     .mmhs-journey-wrapper {
-        grid-template-columns: 1fr;
-        gap: 28px;
+        display: block;
     }
-
-    /* VERTICAL TITLE BECOMES TOP BANNER */
 
     .mmhs-journey-sidebar {
         min-height: auto;
-        border-radius: 5px;
+        margin-bottom: 40px;
     }
 
     .mmhs-sidebar-inner {
         position: relative;
-        top: auto;
         min-height: auto;
-        padding: 23px 15px;
+        padding: 18px 15px;
+        flex-direction: row;
         gap: 12px;
     }
 
     .mmhs-sidebar-top {
-        writing-mode: horizontal-tb;
-        transform: none;
         font-size: 10px;
+        letter-spacing: 1px;
     }
 
     .mmhs-vertical-title {
         flex-direction: row;
-        justify-content: center;
-        gap: 12px;
-    }
-
-    .mmhs-vertical-title span {
         writing-mode: horizontal-tb;
         transform: none;
-        font-size: 34px;
-        letter-spacing: 2px;
+        font-size: 21px;
+        gap: 5px;
     }
 
     .mmhs-sidebar-divider {
-        width: 45px;
-        margin: 2px auto;
+        width: 25px;
+        height: 2px;
+        margin: 0;
     }
 
     .mmhs-sidebar-year {
-        font-size: 12px;
-    }
-
-    .mmhs-sidebar-decoration {
-        display: none;
+        font-size: 11px;
+        letter-spacing: 1px;
     }
 
     .mmhs-sidebar-bottom {
-        writing-mode: horizontal-tb;
-        transform: none;
-        font-size: 9px;
+        display: none;
     }
 
-    /* INTRODUCTION */
-
     .mmhs-journey-heading {
-        margin-bottom: 35px;
+        margin-bottom: 45px;
     }
 
     .mmhs-journey-heading h2 {
@@ -1335,85 +1513,70 @@ color:#c62a81;
     }
 
     .mmhs-journey-heading p {
-        font-size: 17px;
-        line-height: 1.75;
+        font-size: 15px;
+        text-align: justify;
     }
 
-    /* TIMELINE */
-
     .mmhs-journey-timeline {
-        padding: 0 0 0 26px;
+        padding-left: 35px;
     }
 
     .mmhs-journey-timeline::before {
-        display: block;
-        left: 8px;
-        transform: none;
-        top: 0;
-        bottom: 100px;
-        width: 3px;
-    }
-
-    .mmhs-journey-item,
-    .mmhs-journey-item:nth-child(even) {
-        display: block;
-        padding: 0;
-        margin-bottom: 28px;
+        left: 12px;
     }
 
     .mmhs-journey-number {
-        display: flex;
-        left: -18px;
-        top: 22px;
-        transform: translateX(-50%);
-        width: 38px;
-        height: 38px;
-        border-width: 3px;
+        left: -35px;
+        top: 20px;
+        width: 30px;
+        height: 30px;
         font-size: 11px;
     }
 
-    /* CARD */
-
-    .mmhs-journey-card,
-    .mmhs-journey-item:nth-child(even) .mmhs-journey-card {
-        grid-template-columns: 1fr;
-        padding: 17px;
-        gap: 15px;
-        border-left: 4px solid #c62a81;
-        border-right: 0;
-        border-bottom: 3px solid #89bd3b;
+    .mmhs-journey-item {
+        margin-bottom: 30px;
     }
 
-    .mmhs-journey-card::after,
-    .mmhs-journey-item:nth-child(even) .mmhs-journey-card::after {
-        display: none;
+    .mmhs-journey-card {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 18px;
+        padding: 20px 0;
+    }
+
+    /* Mobile: Text first, image second */
+
+    .mmhs-journey-card-content {
+        order: 1;
+    }
+
+    .mmhs-journey-photo {
+        order: 2;
+        width: 100%;
+        height: 210px;
+    }
+
+    .mmhs-journey-date {
+        gap: 10px;
     }
 
     .mmhs-date-year {
-        font-size: 25px;
+        font-size: 22px;
     }
 
-    .mmhs-journey-card h3 {
+    .mmhs-journey-card-content h3 {
         font-size: 20px;
     }
 
-    .mmhs-journey-card p {
-        font-size: 17px;
-        line-height: 1.75;
+    .mmhs-journey-card-content p {
+        font-size: 14px;
+        line-height: 1.8;
     }
-
-    /* IMAGE ON RIGHT BECOMES FULL WIDTH BELOW TEXT */
-
-    .mmhs-journey-photo {
-        width: 100%;
-        height: 220px;
-    }
-
-    /* ENDING */
 
     .mmhs-journey-future {
-        margin: 45px 0 15px;
-        padding: 25px 18px;
+        margin-top: 35px;
+        padding: 30px 18px;
     }
 
     .mmhs-journey-future h3 {
@@ -1421,98 +1584,44 @@ color:#c62a81;
     }
 
     .mmhs-journey-future p {
-        font-size: 17px;
+        font-size: 14px;
     }
-
 }
 
-
-/* =========================================================
+/* =========================================
    SMALL MOBILE
-========================================================= */
+========================================= */
 
-@media (max-width: 480px) {
+@media (max-width: 420px) {
 
     .mmhs-journey-section {
-        padding: 30px 12px;
-    }
-
-    .mmhs-journey-wrapper {
-        gap: 23px;
+        padding: 40px 12px;
     }
 
     .mmhs-sidebar-inner {
-        padding: 20px 12px;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
-    .mmhs-vertical-title span {
-        font-size: 29px;
-    }
-
-    .mmhs-journey-heading h2 {
-        font-size: 26px;
-    }
-
-    .mmhs-journey-timeline {
-        padding-left: 23px;
-    }
-
-    .mmhs-journey-timeline::before {
-        left: 7px;
-    }
-
-    .mmhs-journey-number {
-        left: -16px;
-        width: 35px;
-        height: 35px;
-    }
-
-    .mmhs-journey-card {
-        padding: 14px;
-    }
-
-    .mmhs-journey-card h3 {
+    .mmhs-vertical-title {
         font-size: 19px;
     }
 
-    .mmhs-journey-card p {
-        font-size: 17px;
-        line-height: 1.7;
-    }
-
-    .mmhs-journey-photo {
-        height: 195px;
-    }
-
-    .mmhs-journey-future h3 {
-        font-size: 21px;
-    }
-
-}
-
-
-/* =========================================================
-   EXTRA SMALL MOBILE
-========================================================= */
-
-@media (max-width: 360px) {
-
-    .mmhs-vertical-title span {
+    .mmhs-journey-heading h2 {
         font-size: 25px;
     }
 
-    .mmhs-journey-heading h2 {
-        font-size: 24px;
+    .mmhs-journey-photo {
+        height: 185px;
     }
 
-    .mmhs-journey-card h3 {
+    .mmhs-journey-card-content h3 {
         font-size: 18px;
     }
 
-    .mmhs-journey-photo {
-        height: 175px;
+    .mmhs-date-label {
+        font-size: 9px;
     }
-
 }
 
 
@@ -1870,6 +1979,697 @@ color:#c62a81;
 
     .mmhs-motto-content h2 {
         font-size: 25px;
+    }
+
+}
+
+
+/* =========================================================
+   MARAGATHAAM MATRIC SCHOOL
+   CORE VALUES & EDUCATIONAL PHILOSOPHY
+   SIX LARGE CIRCULAR PETAL DESIGN
+========================================================= */
+
+.mmhs-values-section {
+    width: 100%;
+    padding: 30px 20px;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+.mmhs-values-container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* =========================================================
+   SECTION HEADING
+========================================================= */
+
+.mmhs-values-heading {
+    max-width:1200px;
+    margin: 0 auto 35px;
+    text-align: center;
+}
+
+.mmhs-values-subtitle {
+    display: inline-block;
+    color: #c62a81;
+    font-size: 17px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.mmhs-values-heading h2 {
+    color: #292929;
+    font-size: clamp(30px, 4vw, 43px);
+    font-weight: 850;
+    line-height: 1.25;
+    margin: 0 0 18px;
+}
+
+.mmhs-values-heading h2 span {
+    color: #c62a81;
+}
+
+.mmhs-values-heading p {
+    color: #000000;
+    font-size: 19px;
+    line-height: 1.85;
+    text-align: justify;
+    margin: 0;
+}
+
+/* =========================================================
+   MAIN INFOGRAPHIC AREA
+========================================================= */
+
+.mmhs-values-wheel {
+    position: relative;
+    width: 900px;
+    height: 800px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* =========================================================
+   SIX PETAL SHAPES
+========================================================= */
+
+.mmhs-value-item {
+    position: absolute;
+    width: 350px;
+    height: 285px;
+    padding: 105px 35px 25px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    box-sizing: border-box;
+
+    border-radius: 48% 52% 48% 52%;
+    overflow: hidden;
+
+    z-index: 1;
+    transition: transform 0.35s ease;
+}
+
+.mmhs-value-item:hover {
+    z-index: 5;
+}
+
+/* =========================================================
+   ICON CIRCLE
+========================================================= */
+
+.mmhs-value-icon {
+    position: absolute;
+    width: 88px;
+    height: 88px;
+
+    top: 20px;
+    left: 50%;
+    right: auto;
+
+    transform: translateX(-50%);
+
+    background: #ffffff;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 3;
+}
+
+.mmhs-value-icon i {
+    font-size: 31px;
+    line-height: 1;
+}
+
+/* =========================================================
+   CONTENT ALIGNMENT
+========================================================= */
+
+.mmhs-value-content {
+    position: relative;
+    width: 100%;
+    max-width: 245px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    margin: 0 auto;
+    z-index: 3;
+}
+
+/* NUMBER */
+
+.mmhs-value-number {
+    width: 100%;
+    color: inherit;
+
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 1;
+
+    text-align: center;
+    margin-bottom: 11px;
+}
+
+.mmhs-value-number small {
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+/* HEADING */
+
+.mmhs-value-content h3 {
+    width: 100%;
+    color: inherit;
+
+    font-size: 19px;
+    font-weight: 850;
+    line-height: 1.3;
+
+    text-align: center;
+    margin: 0 0 9px;
+}
+
+/* DESCRIPTION */
+
+.mmhs-value-content p {
+    width: 100%;
+    max-width: 220px;
+
+    color: inherit;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.6;
+
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* =========================================================
+   VALUE 01 - CURIOSITY
+========================================================= */
+
+.value-one {
+    top: 0;
+    left: 125px;
+
+    background: #079e96;
+    color: #ffffff;
+
+    transform: rotate(-8deg);
+}
+
+.value-one .mmhs-value-content {
+    transform: rotate(8deg);
+}
+
+.value-one .mmhs-value-icon i {
+    color: #079e96;
+}
+
+.value-one:hover {
+    transform: rotate(-8deg) translateY(-5px);
+}
+
+/* =========================================================
+   VALUE 02 - RESPECT
+========================================================= */
+
+.value-two {
+    top: 0;
+    right: 125px;
+
+    background: #f43838;
+    color: #ffffff;
+
+    transform: rotate(8deg);
+}
+
+.value-two .mmhs-value-content {
+    transform: rotate(-8deg);
+}
+
+.value-two .mmhs-value-icon i {
+    color:  #f43838;
+}
+
+.value-two:hover {
+    transform: rotate(8deg) translateY(-5px);
+}
+
+/* =========================================================
+   VALUE 03 - RESPONSIBILITY
+========================================================= */
+
+.value-three {
+    top: 265px;
+    right: 0;
+
+    background: #0874b9;
+    color: #ffffff;
+
+    transform: rotate(-8deg);
+}
+
+.value-three .mmhs-value-content {
+    transform: rotate(8deg);
+}
+
+.value-three .mmhs-value-icon i {
+    color: #0874b9;
+}
+
+.value-three:hover {
+    transform: rotate(-8deg) translateY(-5px);
+}
+
+/* =========================================================
+   VALUE 04 - PERSEVERANCE
+========================================================= */
+
+.value-four {
+    bottom: 0;
+    right: 125px;
+
+    background: #805022;
+    color: #ffffff;
+
+    transform: rotate(8deg);
+}
+
+.value-four .mmhs-value-content {
+    transform: rotate(-8deg);
+}
+
+.value-four .mmhs-value-icon i {
+    color: #805022;
+}
+
+.value-four:hover {
+    transform: rotate(8deg) translateY(-5px);
+}
+
+/* =========================================================
+   VALUE 05 - PHYSICAL WELLBEING
+========================================================= */
+
+.value-five {
+    bottom: 0;
+    left: 125px;
+
+    background: #c62a81;
+    color: #ffffff;
+
+    transform: rotate(-8deg);
+}
+
+.value-five .mmhs-value-content {
+    transform: rotate(8deg);
+}
+
+.value-five .mmhs-value-icon i {
+    color: #c62a81;
+}
+
+.value-five:hover {
+    transform: rotate(-8deg) translateY(-5px);
+}
+
+/* =========================================================
+   VALUE 06 - CONTINUOUS IMPROVEMENT
+========================================================= */
+
+.value-six {
+    top: 265px;
+    left: 0;
+
+    background: #89bd3b;
+    color: #ffffff;
+
+    transform: rotate(8deg);
+}
+
+.value-six .mmhs-value-content {
+    transform: rotate(-8deg);
+}
+
+.value-six .mmhs-value-icon i {
+    color: #68992a;
+}
+
+.value-six:hover {
+    transform: rotate(8deg) translateY(-5px);
+}
+
+/* =========================================================
+   CENTRAL CIRCLE
+========================================================= */
+
+.mmhs-values-center {
+    position: absolute;
+
+    width: 300px;
+    height: 300px;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    background: #ffffff;
+
+    border: 9px solid #eeeeee;
+    outline: 2px solid #ffffff;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    z-index: 10;
+}
+
+.mmhs-center-inner {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* CENTRAL SUBTITLE */
+
+.mmhs-center-small {
+    display: block;
+    color: #777777;
+
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+
+    margin-bottom: 12px;
+}
+
+/* CENTRAL ICON */
+
+.mmhs-center-symbol {
+    color: #c62a81;
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+/* CENTRAL TITLE */
+
+.mmhs-center-inner h3 {
+    color: #292929;
+
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 1.1;
+
+    margin: 0;
+}
+
+.mmhs-center-inner h3 strong {
+    color: #c62a81;
+}
+
+/* DIVIDER */
+
+.mmhs-center-divider {
+    width: 85px;
+    height: 4px;
+
+    margin: 14px auto;
+
+    background: linear-gradient(
+        90deg,
+        #c62a81 50%,
+        #89bd3b 50%
+    );
+}
+
+/* CENTRAL SUBHEADING */
+
+.mmhs-center-inner h4 {
+    color: #333333;
+
+    font-size: 13px;
+    font-weight: 900;
+    line-height: 1.5;
+
+    margin: 0;
+}
+
+.mmhs-center-inner h4 span {
+    color: #c62a81;
+}
+
+/* CENTRAL FOOTER */
+
+.mmhs-center-inner p {
+    color: #777777;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    margin: 10px 0 0;
+}
+
+/* =========================================================
+   BOTTOM MESSAGE
+========================================================= */
+
+.mmhs-values-footer {
+    margin-top: 45px;
+    text-align: center;
+}
+
+.mmhs-footer-star {
+    display: block;
+    color: #89bd3b;
+    font-size: 26px;
+    margin-bottom: 9px;
+}
+
+.mmhs-values-footer p {
+    color: #c62a81;
+
+    font-size: 17px;
+    font-weight: 800;
+
+    margin: 0;
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 950px) and (min-width: 601px) {
+
+    .mmhs-values-wheel {
+        width: 900px;
+        max-width: none;
+
+        transform: scale(0.78);
+        transform-origin: top center;
+
+        margin-bottom: -170px;
+    }
+
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .mmhs-values-section {
+        padding: 50px 15px;
+    }
+
+    .mmhs-values-heading {
+        margin-bottom: 35px;
+    }
+
+    .mmhs-values-heading h2 {
+        font-size: 28px;
+    }
+
+    .mmhs-values-heading p {
+        font-size: 16px;
+        text-align: justify;
+    }
+
+    .mmhs-values-wheel {
+        width: 100%;
+        height: auto;
+
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
+
+        transform: none;
+        margin: 0 auto;
+    }
+
+    /* CENTRAL CIRCLE */
+
+    .mmhs-values-center {
+        position: relative;
+
+        top: auto;
+        left: auto;
+
+        transform: none;
+
+        grid-column: 1 / -1;
+        grid-row: 1;
+
+        width: 300px;
+        height: 300px;
+
+        margin: 0 auto 15px;
+    }
+
+    .mmhs-center-inner h3 {
+        font-size: 24px;
+    }
+
+    /* MOBILE VALUE SHAPES */
+
+    .mmhs-value-item {
+        position: relative;
+
+        top: auto;
+        right: auto;
+        bottom: auto;
+        left: auto;
+
+        width: 100%;
+        height: 235px;
+
+        padding: 105px 12px 20px;
+
+        border-radius: 45% 45% 15px 15px;
+
+        transform: none !important;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        text-align: center;
+    }
+
+    /* MOBILE ICON */
+
+    .mmhs-value-icon {
+        width: 68px;
+        height: 68px;
+
+        top: 15px;
+        left: 50%;
+        right: auto;
+
+        transform: translateX(-50%);
+    }
+
+    .mmhs-value-icon i {
+        font-size: 25px;
+    }
+
+    /* MOBILE CONTENT */
+
+    .mmhs-value-content {
+        width: 100%;
+        max-width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        transform: none !important;
+
+        margin: 0 auto;
+    }
+
+    .mmhs-value-number {
+        font-size: 25px;
+        margin-bottom: 8px;
+    }
+
+    .mmhs-value-content h3 {
+        font-size: 14px;
+        line-height: 1.35;
+        margin-bottom: 7px;
+    }
+
+    .mmhs-value-content p {
+        font-size: 11px;
+        line-height: 1.55;
+        text-align: center;
+    }
+
+    /* BOTTOM MESSAGE */
+
+    .mmhs-values-footer {
+        margin-top: 30px;
+    }
+
+    .mmhs-values-footer p {
+        font-size: 17px;
+        line-height: 1.7;
+    }
+
+}
+
+/* =========================================================
+   EXTRA SMALL MOBILE
+========================================================= */
+
+@media (max-width: 380px) {
+
+    .mmhs-values-wheel {
+        gap: 10px;
+    }
+
+    .mmhs-value-item {
+        height: 220px;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .mmhs-value-icon {
+        width: 62px;
+        height: 62px;
+    }
+
+    .mmhs-value-content h3 {
+        font-size: 13px;
+    }
+
+    .mmhs-value-content p {
+        font-size: 10px;
     }
 
 }
