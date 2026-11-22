@@ -678,45 +678,24 @@
 
 
 <!-- =========================================================
-    Maragathaam– HERO IMAGE SLIDER
-     Full Width | Zoom Animation | Social Bar | Navigation
+     MARAGATHAAM MATRIC HR SEC SCHOOL - VIDEO HERO SECTION
+     Full Width | Single Video | Social Bar | Responsive
 ========================================================= -->
 
 <section class="bb-hero-section">
 
-    <!-- HERO SLIDER -->
-    <div class="swiper bb-hero-slider">
+    <!-- SINGLE HERO VIDEO -->
+    <div class="bb-hero-video-wrap">
 
-        <div class="swiper-wrapper">
+        <video class="bb-hero-video"
+               autoplay
+               muted
+               loop
+               playsinline
+               preload="auto">
 
-            <!-- SLIDE 1 -->
-            <div class="swiper-slide">
-                <div class="bb-hero-image-wrap">
-                    <img src="assets/img/photos/banner1.png"
-                         alt="Maragathaam Matriculation hr sec school"
-                         class="bb-hero-image"
-                         fetchpriority="high">
-                </div>
-            </div>
-                  <!-- SLIDE 3: Replace with another image -->
-            <div class="swiper-slide">
-                <div class="bb-hero-image-wrap">
-                    <img src="assets/img/photos/banner4.png"
-                         alt="Maragathaam Matriculation hr sec school"
-                         class="bb-hero-image">
-                </div>
-            </div>
-
-            <!-- SLIDE 3: Replace with another image -->
-            <div class="swiper-slide">
-                <div class="bb-hero-image-wrap">
-                    <img src="assets/img/photos/banner2.png"
-                         alt="Maragathaam Matriculation hr sec school"
-                         class="bb-hero-image">
-                </div>
-            </div>
-
-        </div>
+            <source src="assets/img/maragathaam-hero-video-1920x800_2x_upscaled.mp4" type="video/mp4">
+        </video>
 
     </div>
 
@@ -745,55 +724,8 @@
 
     </div>
 
-    <!-- BOTTOM LEFT SLIDER ARROWS -->
-    <div class="bb-hero-navigation">
-
-        <button class="bb-hero-prev" aria-label="Previous slide">
-            <i class="fa-solid fa-arrow-left"></i>
-        </button>
-
-        <button class="bb-hero-next" aria-label="Next slide">
-            <i class="fa-solid fa-arrow-right"></i>
-        </button>
-
-    </div>
-
 </section>
 
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-
-    const heroSwiper = new Swiper(".bb-hero-slider", {
-
-        loop: true,
-
-        effect: "fade",
-
-        fadeEffect: {
-            crossFade: true
-        },
-
-        speed: 1200,
-
-        autoplay: {
-            delay: 4000,
-            disableOnInteraction: false,
-            pauseOnMouseEnter: true
-        },
-
-        navigation: {
-            nextEl: ".bb-hero-next",
-            prevEl: ".bb-hero-prev"
-        },
-
-        allowTouchMove: true,
-
-        grabCursor: true
-
-    });
-
-});
-</script>
 
 <!-- ABOUT US SECTION -->
 <section class="tb-about-v2 py-5 py-lg-6 position-relative bg-white overflow-hidden">
@@ -864,7 +796,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     <div class="tb-about-sub-img-wrap d-md-block">
 
                         <img
-                            src="assets/img/EVENT 10-04-2026/build.jpg"
+                            src="assets/img/JRC/assembly.jpeg"
                             alt="Students learning and growing together"
                             class="tb-about-sub-img"
                             loading="lazy"
@@ -873,9 +805,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     </div>
 
                 </div>
-                           <h4 style="color: rgb(0, 0, 0);padding:5px;
-           font-size:18px;border-radius: 5px;text-align: center;margin-top: 8%;">
-         Our Motto:Fit and Intellectual Education</h4>
+
             </div>
 
             <!-- RIGHT COLUMN: ABOUT CONTENT -->
@@ -901,6 +831,7 @@ document.addEventListener("DOMContentLoaded", function () {
                             <span class="tb-heading-accent">
                                 Our School
                             </span>
+                                                      
                         </h2>
                     </div>
 
@@ -1069,55 +1000,405 @@ The school’s educational direction is rooted in preparing students for lifelon
 </section>
 
 
-<section class="bb-notice-section">
+<section class="maragatham-chalk-section">
+    <!-- MOTTO -->
+    <div class="maragatham-chalk-motto">
+        <span>Our Motto:</span>
+        Fit and Intellectual Education
+    </div>
+    <div class="maragatham-chalk-board">
 
-    <div class="bb-board-frame" style="background: linear-gradient(110deg, #c62a81 0%, #ac1a19 100%);">
-
-
-
-        <div class="bb-notice-grid">
+        <div class="maragatham-board-inner">
 
             <!-- VISION -->
-            <div class="bb-paper vision-paper">
-                <span class="bb-pushpin navy-pin"></span>
-                <span class="bb-paper-tag">OUR VISION</span>
+            <div class="maragatham-chalk-column">
 
-                <div class="bb-paper-icon">🌟</div>
+                <h2 class="maragatham-chalk-heading">
+                    Our Vision
+                </h2>
 
-                <h3>Our Vision</h3>
-
-                <div class="bb-paper-underline"></div>
-
-                <p>
-                To empower students to pursue meaningful goals, develop their abilities and prepare for lifelong success through education that strengthens knowledge, character and confidence.
-
+                <p class="maragatham-chalk-text">
+                    To empower students to pursue meaningful goals,
+                    develop their abilities and prepare for lifelong
+                    success through education that strengthens
+                    knowledge, character and confidence.
                 </p>
+
             </div>
+
+            <!-- DIVIDER -->
+            <div class="maragatham-chalk-divider"></div>
 
             <!-- MISSION -->
-            <div class="bb-paper mission-paper">
-                <span class="bb-pushpin red-pin"></span>
-                <span class="bb-paper-tag">OUR MISSION</span>
+            <div class="maragatham-chalk-column">
 
-                <div class="bb-paper-icon">📚</div>
+                <h2 class="maragatham-chalk-heading">
+                    Our Mission
+                </h2>
 
-                <h3>Our Mission</h3>
-
-                <div class="bb-paper-underline"></div>
-
-                <p>
-                To cultivate a holistic approach to learning and development, encouraging intellectual growth, physical wellbeing, responsible conduct and the skills needed to participate positively in society.
-
+                <p class="maragatham-chalk-text">
+                    To cultivate a holistic approach to learning
+                    and development, encouraging intellectual
+                    growth, physical wellbeing, responsible conduct
+                    and the skills needed to participate positively
+                    in society.
                 </p>
 
             </div>
+
+            <!-- INTERACTIVE CHALK -->
+            <canvas
+                id="maragathamChalkCanvas"
+                class="maragatham-chalk-canvas"
+                aria-label="Write or draw on the chalkboard">
+            </canvas>
 
         </div>
 
+        <!-- CHALK TRAY -->
+        <div class="maragatham-chalk-tray">
+            <span class="maragatham-tray-chalk"></span>
+            <span class="maragatham-tray-chalk-small"></span>
+        </div>
 
     </div>
 
 </section>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const canvas = document.getElementById("maragathamChalkCanvas");
+
+    if (!canvas) return;
+
+    const ctx = canvas.getContext("2d");
+
+    let drawing = false;
+    let lastX = 0;
+    let lastY = 0;
+
+    let fadeTimer = null;
+    let animationFrame = null;
+
+    const fadeDelay = 1000;
+    const fadeDuration = 800;
+
+    let dpr = window.devicePixelRatio || 1;
+
+    /* =================================
+       CHALK CURSOR
+    ================================= */
+
+    const chalkCursor = document.createElement("canvas");
+
+    chalkCursor.width = 32;
+    chalkCursor.height = 32;
+
+    const cursorCtx = chalkCursor.getContext("2d");
+
+    cursorCtx.save();
+    cursorCtx.translate(16, 16);
+    cursorCtx.rotate(-0.65);
+
+    cursorCtx.fillStyle = "#f7f3df";
+    cursorCtx.shadowColor = "#ffffff";
+    cursorCtx.shadowBlur = 3;
+
+    cursorCtx.fillRect(-3, -11, 6, 20);
+
+    cursorCtx.beginPath();
+    cursorCtx.moveTo(-3, -11);
+    cursorCtx.lineTo(0, -16);
+    cursorCtx.lineTo(3, -11);
+    cursorCtx.closePath();
+    cursorCtx.fill();
+
+    cursorCtx.restore();
+
+    const chalkCursorUrl = chalkCursor.toDataURL();
+
+    canvas.style.cursor =
+        "url('" + chalkCursorUrl + "') 16 16, crosshair";
+
+
+    /* =================================
+       CANVAS SIZE
+    ================================= */
+
+    function resizeCanvas() {
+
+        const rect = canvas.getBoundingClientRect();
+
+        dpr = window.devicePixelRatio || 1;
+
+        canvas.width = Math.round(rect.width * dpr);
+        canvas.height = Math.round(rect.height * dpr);
+
+        ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+
+    }
+
+    resizeCanvas();
+
+    /* =================================
+       POINTER POSITION
+    ================================= */
+
+    function getPosition(event) {
+
+        const rect = canvas.getBoundingClientRect();
+
+        return {
+            x: event.clientX - rect.left,
+            y: event.clientY - rect.top
+        };
+
+    }
+
+
+    /* =================================
+       GLITTER PARTICLES
+    ================================= */
+
+    function addGlitter(x, y) {
+
+        for (let i = 0; i < 2; i++) {
+
+            const offsetX = (Math.random() - 0.5) * 12;
+            const offsetY = (Math.random() - 0.5) * 12;
+
+            const size = Math.random() * 1.4 + 0.5;
+
+            ctx.save();
+
+            ctx.globalAlpha = Math.random() * 0.6 + 0.35;
+
+            ctx.fillStyle = "#fff8dc";
+
+            ctx.shadowColor = "#ffffff";
+            ctx.shadowBlur = 7;
+
+            ctx.beginPath();
+
+            ctx.arc(
+                x + offsetX,
+                y + offsetY,
+                size,
+                0,
+                Math.PI * 2
+            );
+
+            ctx.fill();
+
+            ctx.restore();
+
+        }
+
+    }
+
+
+    /* =================================
+       START DRAWING
+    ================================= */
+
+    canvas.addEventListener("pointerdown", function (event) {
+
+        event.preventDefault();
+
+        clearTimeout(fadeTimer);
+        cancelAnimationFrame(animationFrame);
+
+        drawing = true;
+
+        canvas.setPointerCapture(event.pointerId);
+
+        const position = getPosition(event);
+
+        lastX = position.x;
+        lastY = position.y;
+
+        ctx.save();
+
+        ctx.fillStyle = "#fff9ed";
+        ctx.shadowColor = "#ffffff";
+        ctx.shadowBlur = 7;
+
+        ctx.beginPath();
+
+        ctx.arc(
+            lastX,
+            lastY,
+            1.7,
+            0,
+            Math.PI * 2
+        );
+
+        ctx.fill();
+
+        ctx.restore();
+
+    });
+
+
+    /* =================================
+       DRAW GLITTER CHALK
+    ================================= */
+
+    canvas.addEventListener("pointermove", function (event) {
+
+        if (!drawing) return;
+
+        event.preventDefault();
+
+        const position = getPosition(event);
+
+        /* Main chalk stroke */
+
+        ctx.save();
+
+        ctx.globalAlpha = 0.95;
+        ctx.strokeStyle = "#fff9ed";
+        ctx.lineWidth = 2.8;
+
+        ctx.lineCap = "round";
+        ctx.lineJoin = "round";
+
+        ctx.shadowColor = "#ffffff";
+        ctx.shadowBlur = 7;
+
+        ctx.beginPath();
+
+        ctx.moveTo(lastX, lastY);
+        ctx.lineTo(position.x, position.y);
+
+        ctx.stroke();
+
+        ctx.restore();
+
+        /* Soft chalk dust */
+
+        ctx.save();
+
+        ctx.globalAlpha = 0.2;
+        ctx.strokeStyle = "#ffffff";
+        ctx.lineWidth = 5;
+
+        ctx.lineCap = "round";
+
+        ctx.beginPath();
+
+        ctx.moveTo(lastX, lastY);
+        ctx.lineTo(position.x, position.y);
+
+        ctx.stroke();
+
+        ctx.restore();
+
+        /* Glitter */
+
+        addGlitter(position.x, position.y);
+
+        lastX = position.x;
+        lastY = position.y;
+
+    });
+
+
+    /* =================================
+       STOP DRAWING
+    ================================= */
+
+    function stopDrawing() {
+
+        if (!drawing) return;
+
+        drawing = false;
+
+        ctx.beginPath();
+
+        clearTimeout(fadeTimer);
+
+        fadeTimer = setTimeout(function () {
+
+            startAutomaticFade();
+
+        }, fadeDelay);
+
+    }
+
+    canvas.addEventListener("pointerup", stopDrawing);
+    canvas.addEventListener("pointercancel", stopDrawing);
+    canvas.addEventListener("lostpointercapture", stopDrawing);
+
+
+    /* =================================
+       FAST AUTOMATIC FADE
+    ================================= */
+
+    function startAutomaticFade() {
+
+        const snapshot = document.createElement("canvas");
+
+        snapshot.width = canvas.width;
+        snapshot.height = canvas.height;
+
+        const snapshotCtx = snapshot.getContext("2d");
+
+        snapshotCtx.drawImage(canvas, 0, 0);
+
+        const startTime = performance.now();
+
+        function fadeFrame(currentTime) {
+
+            const elapsed = currentTime - startTime;
+
+            const opacity = Math.max(
+                0,
+                1 - elapsed / fadeDuration
+            );
+
+            ctx.clearRect(
+                0,
+                0,
+                canvas.width,
+                canvas.height
+            );
+
+            ctx.save();
+
+            ctx.globalAlpha = opacity;
+
+            ctx.drawImage(snapshot, 0, 0);
+
+            ctx.restore();
+
+            if (elapsed < fadeDuration) {
+
+                animationFrame = requestAnimationFrame(fadeFrame);
+
+            } else {
+
+                ctx.clearRect(
+                    0,
+                    0,
+                    canvas.width,
+                    canvas.height
+                );
+
+                animationFrame = null;
+
+            }
+
+        }
+
+        animationFrame = requestAnimationFrame(fadeFrame);
+
+    }
+
+});
+</script>
 
 
 <!-- =========================================================
@@ -2282,6 +2563,169 @@ document.addEventListener("DOMContentLoaded", function () {
 </section>
 
 
+<!-- =====================================================
+     MARAGATHAM SCHOOL - COUNTING SECTION
+===================================================== -->
+
+<section class="maragatham-count-section">
+
+    <div class="maragatham-count-container">
+
+        <!-- COUNTING ITEMS -->
+        <div class="maragatham-count-grid">
+
+            <!-- STUDENTS -->
+            <div class="maragatham-count-item">
+                <div class="maragatham-count-icon student-icon">
+                    <svg viewBox="0 0 64 64" fill="none">
+                        <path d="M32 9L5 23L32 37L59 23L32 9Z"
+                              stroke="currentColor" stroke-width="3"
+                              stroke-linejoin="round"/>
+                        <path d="M16 30V43C16 43 22 51 32 51C42 51 48 43 48 43V30"
+                              stroke="currentColor" stroke-width="3"
+                              stroke-linecap="round"/>
+                        <path d="M59 23V40"
+                              stroke="currentColor" stroke-width="3"
+                              stroke-linecap="round"/>
+                    </svg>
+                </div>
+
+                <h3>
+                    <span class="maragatham-counter" data-target="1500">0</span>+
+                </h3>
+
+                <h4>Happy Students</h4>
+            </div>
+
+            <!-- STAFF -->
+            <div class="maragatham-count-item">
+                <div class="maragatham-count-icon staff-icon">
+                    <svg viewBox="0 0 64 64" fill="none">
+                        <circle cx="32" cy="20" r="10"
+                                stroke="currentColor" stroke-width="3"/>
+                        <path d="M12 54C12 42 20 35 32 35C44 35 52 42 52 54"
+                              stroke="currentColor" stroke-width="3"
+                              stroke-linecap="round"/>
+                        <path d="M8 17C8 12 12 8 17 8M56 17C56 12 52 8 47 8"
+                              stroke="currentColor" stroke-width="3"
+                              stroke-linecap="round"/>
+                    </svg>
+                </div>
+
+                <h3>
+                    <span class="maragatham-counter" data-target="75">0</span>+
+                </h3>
+
+                <h4>Dedicated Staff</h4>
+            </div>
+
+            <!-- PARENTS -->
+            <div class="maragatham-count-item">
+                <div class="maragatham-count-icon parent-icon">
+                    <svg viewBox="0 0 64 64" fill="none">
+                        <circle cx="23" cy="20" r="9"
+                                stroke="currentColor" stroke-width="3"/>
+                        <circle cx="43" cy="22" r="8"
+                                stroke="currentColor" stroke-width="3"/>
+                        <path d="M5 53C5 41 12 34 23 34C34 34 40 41 40 53"
+                              stroke="currentColor" stroke-width="3"
+                              stroke-linecap="round"/>
+                        <path d="M39 37C49 35 57 42 57 53"
+                              stroke="currentColor" stroke-width="3"
+                              stroke-linecap="round"/>
+                    </svg>
+                </div>
+
+                <h3>
+                    <span class="maragatham-counter" data-target="1200">0</span>+
+                </h3>
+
+                <h4>Happy Parents</h4>
+            </div>
+
+            <!-- CLASSES -->
+            <div class="maragatham-count-item">
+                <div class="maragatham-count-icon class-icon">
+                    <svg viewBox="0 0 64 64" fill="none">
+                        <path d="M8 13H56V51H8V13Z"
+                              stroke="currentColor" stroke-width="3"
+                              stroke-linejoin="round"/>
+                        <path d="M8 23H56M20 13V23M32 13V23M44 13V23"
+                              stroke="currentColor" stroke-width="3"
+                              stroke-linecap="round"/>
+                        <path d="M19 35H45M19 43H38"
+                              stroke="currentColor" stroke-width="3"
+                              stroke-linecap="round"/>
+                    </svg>
+                </div>
+
+                <h3 class="maragatham-class-count">KG <span>–</span> XII</h3>
+
+                <h4>Classes Offered</h4>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+
+<!-- COUNTING ANIMATION -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const counters = document.querySelectorAll(
+        ".maragatham-counter"
+    );
+
+    const observer = new IntersectionObserver(function (entries) {
+
+        entries.forEach(function (entry) {
+
+            if (entry.isIntersecting) {
+
+                const counter = entry.target;
+                const target = Number(counter.dataset.target);
+                const duration = 1800;
+                const startTime = performance.now();
+
+                function updateCounter(currentTime) {
+
+                    const progress = Math.min(
+                        (currentTime - startTime) / duration,
+                        1
+                    );
+
+                    const easedProgress = 1 - Math.pow(1 - progress, 3);
+
+                    counter.textContent = Math.floor(
+                        easedProgress * target
+                    ).toLocaleString("en-IN");
+
+                    if (progress < 1) {
+                        requestAnimationFrame(updateCounter);
+                    } else {
+                        counter.textContent = target.toLocaleString("en-IN");
+                    }
+                }
+
+                requestAnimationFrame(updateCounter);
+                observer.unobserve(counter);
+            }
+
+        });
+
+    }, {
+        threshold: 0.5
+    });
+
+    counters.forEach(function (counter) {
+        observer.observe(counter);
+    });
+
+});
+</script>
+
 <!-- WHY CHOOSE US SECTION -->
 <section class="why-choose-us py-5 position-relative">
   <div class="container py-lg-5 py-4">
@@ -2354,8 +2798,7 @@ Academic Excellence</h4>
               <p class="text-muted fs-7 mb-0 position-relative z-1">
 
                 <ul>
-                <li>MI Kids</li>
-                <li>International Phonics</li>
+                <li>MI Kids - International Phonics</li>
                 <li>Abacus</li>
                 <li>Activity-Based Learning</li>
               </ul>
@@ -2379,9 +2822,7 @@ Academic Excellence</h4>
               <p class="text-muted fs-7 mb-0 position-relative z-1">
               <ul>
                 <li>EL2 Club</li>
-                <li>Situational English</li>
-                <li>Daily-Use Phrases</li>
-                <li>Vocabulary Building</li>
+                <li>LSRW - L - Learing Skill , S - Speaking Skill , R - Reading Skill , W - Writing Skill</li>
               </ul>
               </p>
             </div>
@@ -2397,15 +2838,14 @@ Academic Excellence</h4>
               </div>
 
               <h4 class="fw-bold text-dark  position-relative z-1">
-                Cultural Excellence
+                Creative & Cultural Excellence
               </h4>
 
               <p class="text-muted fs-7 mb-0 position-relative z-1">
                   <ul>
-                <li>Festival Celebrations</li>
-                <li>Art & Painting</li>
-                <li>Dance & Music</li>
-                <li>Literary Activities</li>
+                <li>CCE</li>
+                <li>EXPO</li>
+                <li>Festival celebration</li>
               </ul>
               </p>
             </div>
@@ -2426,10 +2866,9 @@ Academic Excellence</h4>
 
               <p class="text-muted fs-7 mb-0 position-relative z-1">
                  <ul>
-                <li>Daily Yoga</li>
-                <li>Indoor & Outdoor Sports</li>
-                <li>258 Sports Participants</li>
-                <li>State Second Place – Boxing</li>
+                <li>Indoor</li>
+                <li>Outdoor</li>
+                <li>Acheivement</li>
               </ul>
               </p>
             </div>
@@ -2703,7 +3142,7 @@ Academic Excellence</h4>
             <div class="bb-designed-by">
                 <span>Designed by</span>
                 <a href="https://eduweb.co.in/" aria-label="Website designer logo">
-                    <img src="assets/photos/companylogo.png"
+                    <img src="assets/img/companylogo.png"
                          alt="Website Design Logo">
                 </a>
             </div>

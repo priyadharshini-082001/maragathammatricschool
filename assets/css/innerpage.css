@@ -2673,3 +2673,1247 @@ color:#c62a81;
     }
 
 }
+
+/* =========================================================
+   MARAGATHAM MATRIC SCHOOL
+   PRIMARY EDUCATION SECTION
+========================================================= */
+
+.mm-primary-section {
+    position: relative;
+    width: 100%;
+    padding:25px 0 20px;
+    background: #fffdf7;
+    overflow: hidden;
+}
+
+.mm-primary-container {
+    width: 90%;
+    max-width: 1250px;
+    margin: auto;
+}
+
+
+/* =========================================================
+   SECTION HEADING
+========================================================= */
+
+.mm-primary-heading {
+    text-align: center;
+    margin-bottom: 65px;
+}
+
+.mm-primary-tag {
+    display: inline-block;
+    color: #8f1314;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+.mm-primary-heading h2 {
+    font-size: 42px;
+    font-weight: 800;
+    color: #27232a;
+    margin: 0 0 12px;
+    line-height: 1.2;
+}
+
+.mm-primary-heading h2 span {
+    color: #8f1314;
+}
+
+.mm-primary-heading p {
+    font-size: 19px;
+    line-height: 1.7;
+    color: #000000;
+    margin: 0;
+}
+
+
+/* =========================================================
+   MAIN THREE COLUMN LAYOUT
+========================================================= */
+
+.mm-primary-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 300px minmax(0, 1fr);
+    gap: 30px;
+    align-items: center;
+}
+
+.mm-primary-side {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    min-width: 0;
+}
+
+
+/* =========================================================
+   LEARNING CONTENT ITEMS
+========================================================= */
+
+.mm-learning-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    position: relative;
+    min-height: 115px;
+    z-index: 2;
+}
+
+.mm-learning-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.mm-learning-content h3 {
+    color: #8f1314;
+    font-size: 19px;
+    font-weight: 750;
+    margin: 0 0 9px;
+    line-height: 1.3;
+}
+
+.mm-learning-content p {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #000000;
+    margin: 0;
+    text-align: left;
+}
+
+
+/* =========================================================
+   LEARNING ICONS
+========================================================= */
+
+.mm-learning-icon {
+    width: 75px;
+    height: 75px;
+    min-width: 75px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 27px;
+    color: #fff;
+    position: relative;
+    z-index: 3;
+}
+
+.mm-learning-icon.magenta {
+    background: #c62a81;
+}
+
+.mm-learning-icon.green {
+    background: #89bd3b;
+}
+
+.mm-learning-icon.blue {
+    background: #65a9c7;
+}
+
+.mm-learning-icon.coral {
+    background: #d66b73;
+}
+
+.mm-learning-icon.yellow {
+    background: #e7b83d;
+}
+
+.mm-learning-icon.purple {
+    background: #8c78b8;
+}
+
+
+/* =========================================================
+   LEFT CONNECTING LINES
+========================================================= */
+
+.mm-primary-left .mm-learning-item::after {
+    content: "";
+    position: absolute;
+    right: -45px;
+    top: 50%;
+    width: 45px;
+    height: 2px;
+    background: #89bd3b;
+}
+
+
+/* =========================================================
+   RIGHT CONNECTING LINES
+========================================================= */
+
+.mm-primary-right .mm-learning-item::before {
+    content: "";
+    position: absolute;
+    left: -45px;
+    top: 50%;
+    width: 45px;
+    height: 2px;
+    background:#8f1314;
+
+}
+
+
+/* =========================================================
+   CENTRAL EDUCATION AREA
+========================================================= */
+
+.mm-primary-center {
+    position: relative;
+    min-height: 560px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px 0;
+}
+
+
+/* VERTICAL DECORATIVE LINE */
+
+.mm-center-decoration {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 12px;
+
+    background: linear-gradient(
+        to right,
+        #89bd3b 0 30%,
+        #c62a81 30% 65%,
+        #e7b83d 65% 100%
+    );
+
+    opacity: .55;
+    z-index: 0;
+}
+
+
+/* =========================================================
+   CENTRAL LIGHT BULB
+========================================================= */
+
+.mm-bulb {
+    width: 145px;
+    height: 145px;
+    border-radius: 50%;
+    background: #e7b83d;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #fff;
+    font-size: 72px;
+
+    position: relative;
+    z-index: 2;
+
+    margin-bottom: 25px;
+}
+
+.mm-bulb::before {
+    content: "";
+    position: absolute;
+    top: -17px;
+    left: 50%;
+
+    width: 5px;
+    height: 22px;
+
+    background: #e7b83d;
+    transform: translateX(-50%);
+    border-radius: 5px;
+}
+
+.mm-bulb::after {
+    content: "";
+    position: absolute;
+    bottom: -17px;
+
+    width: 65px;
+    height: 22px;
+
+    background: #8f1314;
+
+    border-radius: 5px 5px 12px 12px;
+}
+
+
+/* =========================================================
+   CENTRAL TEXT
+========================================================= */
+
+.mm-center-title {
+    position: relative;
+    z-index: 2;
+    background: #fffdf7;
+    padding: 12px 10px;
+}
+
+.mm-center-title span {
+    color: #89bd3b;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+.mm-center-title h3 {
+   color: #8f1314;
+    font-size: 24px;
+    font-weight: 800;
+    margin: 8px 0;
+}
+
+.mm-center-title p {
+    font-size: 16px;
+    color: #000000;
+    line-height: 1.6;
+    margin: 0;
+}
+
+
+/* =========================================================
+   TWO STUDENT PHOTOGRAPHS
+========================================================= */
+
+.mm-student-images {
+    position: relative;
+    z-index: 3;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 12px;
+    width: 100%;
+
+    margin: 20px 0;
+}
+
+.mm-student-photo {
+    width: 125px;
+    height: 145px;
+
+    padding: 5px;
+    background: #fff;
+
+    border: 2px solid #89bd3b;
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    transform: rotate(-4deg);
+}
+
+.mm-student-photo:nth-child(2) {
+    border-color: #c62a81;
+    transform: rotate(4deg);
+}
+
+.mm-student-photo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+/* =========================================================
+   CENTRAL PENCIL
+========================================================= */
+
+.mm-pencil {
+    width: 65px;
+    height: 75px;
+
+    background: #e7b83d;
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 28px;
+
+    position: relative;
+    z-index: 2;
+
+    margin-top: 20px;
+
+    border-radius: 5px 5px 12px 12px;
+}
+
+.mm-pencil::after {
+    content: "";
+    position: absolute;
+    bottom: -19px;
+    left: 0;
+
+    border-left: 32px solid transparent;
+    border-right: 33px solid transparent;
+    border-top: 20px solid #333;
+}
+
+
+/* =========================================================
+   BOTTOM MOTTO
+========================================================= */
+
+.mm-primary-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    margin-top: 65px;
+}
+
+.mm-primary-footer span {
+    width: 65px;
+    height: 2px;
+    background: #89bd3b;
+}
+
+.mm-primary-footer p {
+    color: #c62a81;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+
+/* =========================================================
+   TABLET RESPONSIVE
+========================================================= */
+
+@media (max-width: 991px) {
+
+    .mm-primary-container {
+        width: 92%;
+    }
+
+    .mm-primary-layout {
+        grid-template-columns: 1fr 1fr;
+        gap: 35px;
+    }
+
+    .mm-primary-center {
+        grid-column: 1 / -1;
+        grid-row: 1;
+        min-height: 540px;
+    }
+
+    .mm-primary-side {
+        gap: 35px;
+    }
+
+    .mm-primary-left .mm-learning-item::after,
+    .mm-primary-right .mm-learning-item::before {
+        display: none;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE RESPONSIVE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .mm-primary-section {
+        padding: 55px 0 45px;
+    }
+
+    .mm-primary-container {
+        width: 91%;
+    }
+
+    .mm-primary-heading {
+        margin-bottom: 35px;
+    }
+
+    .mm-primary-heading h2 {
+        font-size: 30px;
+    }
+
+    .mm-primary-heading p {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    .mm-primary-layout {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .mm-primary-center {
+        grid-column: auto;
+        grid-row: auto;
+        min-height: 490px;
+        order: -1;
+    }
+
+    .mm-primary-side {
+        gap: 25px;
+    }
+
+    .mm-learning-item {
+        gap: 13px;
+        min-height: 95px;
+    }
+
+    .mm-learning-icon {
+        width: 62px;
+        height: 62px;
+        min-width: 62px;
+        font-size: 22px;
+    }
+
+    .mm-learning-content h3 {
+        font-size: 17px;
+    }
+
+    .mm-learning-content p {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    .mm-bulb {
+        width: 120px;
+        height: 120px;
+        font-size: 58px;
+    }
+
+    .mm-center-title h3 {
+        font-size: 21px;
+    }
+
+    .mm-student-images {
+        gap: 12px;
+        margin: 18px 0;
+    }
+
+    .mm-student-photo {
+        width: 115px;
+        height: 130px;
+    }
+
+    .mm-pencil {
+        width: 55px;
+        height: 60px;
+        margin-top: 15px;
+    }
+
+    .mm-pencil::after {
+        border-left-width: 27px;
+        border-right-width: 28px;
+    }
+
+    .mm-primary-footer {
+        margin-top: 40px;
+        gap: 10px;
+    }
+
+    .mm-primary-footer span {
+        width: 30px;
+    }
+
+    .mm-primary-footer p {
+        font-size: 13px;
+        text-align: center;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .mm-primary-heading h2 {
+        font-size: 26px;
+    }
+
+    .mm-learning-icon {
+        width: 55px;
+        height: 55px;
+        min-width: 55px;
+        font-size: 19px;
+    }
+
+    .mm-student-photo {
+        width: 105px;
+        height: 120px;
+    }
+
+    .mm-center-title h3 {
+        font-size: 19px;
+    }
+
+}
+
+/* =====================================================
+   MARAGATHAM SCHOOL - SUCCESS TARGET SECTION
+===================================================== */
+
+.mm-success-section {
+    width: 100%;
+    padding: 85px 0 75px;
+    background: #fff;
+    overflow: hidden;
+}
+
+.mm-success-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* =====================================================
+   SECTION HEADING
+===================================================== */
+
+.mm-success-heading {
+    text-align: center;
+    margin-bottom: 65px;
+}
+
+.mm-success-heading > span {
+    display: inline-block;
+    color: #89bd3b;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    margin-bottom: 14px;
+}
+
+.mm-success-heading h2 {
+    color: #29252b;
+    font-size: 39px;
+    font-weight: 800;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.mm-success-heading h2 strong {
+    color: #c62a81;
+}
+
+.mm-success-divider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.mm-success-divider span {
+    width: 65px;
+    height: 2px;
+    background: #89bd3b;
+}
+
+.mm-success-divider i {
+    color: #c62a81;
+    font-size: 13px;
+}
+
+.mm-success-heading p {
+    color: #555;
+    font-size: 15px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+
+/* =====================================================
+   MAIN TARGET GRAPHIC
+===================================================== */
+
+.mm-success-graphic {
+    width: 100%;
+    max-width: 1050px;
+    min-height: 440px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 58% 13% 29%;
+    align-items: center;
+    position: relative;
+}
+
+
+/* =====================================================
+   FIVE COLOURED ARROWS
+===================================================== */
+
+.mm-success-arrows {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 13px;
+    position: relative;
+    z-index: 2;
+}
+
+.mm-success-arrow {
+    width: 100%;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 0 30px 0 45px;
+    color: #fff;
+    position: relative;
+    clip-path: polygon(
+        0 50%,
+        8% 0,
+        100% 0,
+        100% 100%,
+        8% 100%
+    );
+    transition: transform .3s ease;
+}
+
+.mm-success-arrow:hover {
+    transform: translateX(10px);
+}
+
+.mm-success-arrow span {
+    font-size: 17px;
+    font-weight: 800;
+    opacity: .8;
+}
+
+.mm-success-arrow strong {
+    font-size: 17px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+
+/* INDIVIDUAL ARROW COLOURS */
+
+.arrow-hardwork {
+    background: #269aab;
+    width: 88%;
+}
+
+.arrow-passion {
+    background: #c62a81;
+    width: 94%;
+}
+
+.arrow-focus {
+    background: #398b50;
+    width: 100%;
+}
+
+.arrow-courage {
+    background: #89a72f;
+    width: 94%;
+}
+
+.arrow-goal {
+    background: #e5aa32;
+    width: 88%;
+}
+
+
+/* =====================================================
+   DART SHAFT
+===================================================== */
+
+.mm-success-dart {
+    position: relative;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 3;
+}
+
+.mm-dart-shaft {
+    position: absolute;
+    width: 100%;
+    height: 12px;
+    background: linear-gradient(
+        to bottom,
+        #dedede,
+        #f8f8f8,
+        #bdbdbd
+    );
+    border-radius: 3px;
+}
+
+.mm-dart-point {
+    position: absolute;
+    right: -2px;
+    width: 0;
+    height: 0;
+    border-top: 13px solid transparent;
+    border-bottom: 13px solid transparent;
+    border-left: 24px solid #777;
+}
+
+.mm-dart-flight {
+    position: absolute;
+    left: 0;
+    top: -13px;
+    width: 38px;
+    height: 42px;
+}
+
+.mm-dart-flight span:first-child {
+    position: absolute;
+    width: 25px;
+    height: 18px;
+    background: #c62a81;
+    top: 0;
+    left: 0;
+    clip-path: polygon(0 0, 100% 50%, 0 100%);
+}
+
+.mm-dart-flight span:last-child {
+    position: absolute;
+    width: 25px;
+    height: 18px;
+    background: #89bd3b;
+    bottom: 0;
+    left: 0;
+    clip-path: polygon(0 0, 100% 50%, 0 100%);
+}
+
+
+/* =====================================================
+   TARGET CIRCLES
+===================================================== */
+
+.mm-success-target {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.mm-target-ring {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.ring-outer {
+    width: 215px;
+    height: 215px;
+    background: #d72c36;
+    border: 8px solid #eeeeee;
+}
+
+.ring-middle {
+    width: 155px;
+    height: 155px;
+    background: #fff;
+}
+
+.ring-inner {
+    width: 92px;
+    height: 92px;
+    background: #d72c36;
+}
+
+.mm-target-center {
+    width: 46px;
+    height: 46px;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #c62a81;
+    font-size: 23px;
+}
+
+
+/* =====================================================
+   SUCCESS STATEMENT
+===================================================== */
+
+.mm-success-statement {
+    max-width: 850px;
+    text-align: center;
+    margin: 65px auto 0;
+}
+
+.mm-success-statement h3 {
+    color: #28252b;
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 1.5;
+    margin: 0 0 12px;
+}
+
+.mm-success-statement h3 span {
+    color: #c62a81;
+}
+
+.mm-success-statement p {
+    color: #555;
+    font-size: 15px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+
+/* =====================================================
+   TWO LARGE STUDENT PHOTOGRAPHS
+===================================================== */
+
+.mm-success-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+    margin-top: 65px;
+}
+
+.mm-success-photo {
+    height: 360px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px;
+    background: #eee;
+}
+
+.mm-success-photo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform .6s ease;
+}
+
+.mm-success-photo:hover img {
+    transform: scale(1.06);
+}
+
+
+/* PHOTO CAPTION */
+
+.mm-success-photo-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: linear-gradient(
+        to top,
+        rgba(25, 20, 25, .9),
+        transparent
+    );
+}
+
+.mm-success-photo-caption > span {
+    width: 45px;
+    height: 45px;
+    min-width: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 800;
+    background: #c62a81;
+}
+
+.mm-success-photo:nth-child(2)
+.mm-success-photo-caption > span {
+    background: #89bd3b;
+}
+
+.mm-success-photo-caption h4 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 800;
+    margin: 0 0 6px;
+}
+
+.mm-success-photo-caption p {
+    color: #fff;
+    font-size: 13px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+
+/* =====================================================
+   BOTTOM MOTTO
+===================================================== */
+
+.mm-success-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 60px;
+}
+
+.mm-success-footer span {
+    width: 60px;
+    height: 2px;
+    background: #89bd3b;
+}
+
+.mm-success-footer p {
+    color: #c62a81;
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+
+/* =====================================================
+   TABLET RESPONSIVE
+===================================================== */
+
+@media (max-width: 991px) {
+
+    .mm-success-container {
+        width: 92%;
+    }
+
+    .mm-success-graphic {
+        grid-template-columns: 55% 13% 32%;
+        min-height: 380px;
+    }
+
+    .mm-success-arrow {
+        height: 62px;
+        padding-left: 30px;
+        gap: 12px;
+    }
+
+    .mm-success-arrow strong {
+        font-size: 14px;
+    }
+
+    .ring-outer {
+        width: 175px;
+        height: 175px;
+    }
+
+    .ring-middle {
+        width: 125px;
+        height: 125px;
+    }
+
+    .ring-inner {
+        width: 75px;
+        height: 75px;
+    }
+
+    .mm-success-photo {
+        height: 300px;
+    }
+}
+
+
+/* =====================================================
+   MOBILE RESPONSIVE
+===================================================== */
+
+@media (max-width: 650px) {
+
+    .mm-success-section {
+        padding: 55px 0 45px;
+    }
+
+    .mm-success-container {
+        width: 91%;
+    }
+
+    .mm-success-heading {
+        margin-bottom: 40px;
+    }
+
+    .mm-success-heading h2 {
+        font-size: 26px;
+        line-height: 1.4;
+    }
+
+    .mm-success-heading p {
+        font-size: 13px;
+    }
+
+    /* GRAPHIC */
+
+    .mm-success-graphic {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        min-height: auto;
+    }
+
+    .mm-success-arrows {
+        width: 100%;
+        gap: 10px;
+    }
+
+    .mm-success-arrow,
+    .arrow-hardwork,
+    .arrow-passion,
+    .arrow-focus,
+    .arrow-courage,
+    .arrow-goal {
+        width: 100%;
+        height: 58px;
+        padding: 0 25px 0 35px;
+        gap: 15px;
+    }
+
+    .mm-success-arrow strong {
+        font-size: 14px;
+    }
+
+    .mm-success-arrow span {
+        font-size: 14px;
+    }
+
+    /* DART */
+
+    .mm-success-dart {
+        width: 75%;
+        height: 25px;
+        transform: rotate(90deg);
+        margin: 0 auto;
+    }
+
+    /* TARGET */
+
+    .mm-success-target {
+        margin: 5px 0 15px;
+    }
+
+    .ring-outer {
+        width: 180px;
+        height: 180px;
+    }
+
+    .ring-middle {
+        width: 130px;
+        height: 130px;
+    }
+
+    .ring-inner {
+        width: 78px;
+        height: 78px;
+    }
+
+    .mm-target-center {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+
+    /* STATEMENT */
+
+    .mm-success-statement {
+        margin-top: 40px;
+    }
+
+    .mm-success-statement h3 {
+        font-size: 21px;
+    }
+
+    .mm-success-statement p {
+        font-size: 13px;
+    }
+
+    /* PHOTOS */
+
+    .mm-success-images {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin-top: 40px;
+    }
+
+    .mm-success-photo {
+        height: 290px;
+        border-radius: 13px;
+    }
+
+    .mm-success-photo-caption {
+        padding: 18px;
+    }
+
+    .mm-success-photo-caption h4 {
+        font-size: 17px;
+    }
+
+    .mm-success-photo-caption p {
+        font-size: 12px;
+    }
+
+    /* FOOTER */
+
+    .mm-success-footer {
+        margin-top: 40px;
+        gap: 10px;
+    }
+
+    .mm-success-footer span {
+        width: 22px;
+    }
+
+    .mm-success-footer p {
+        font-size: 12px;
+        text-align: center;
+    }
+
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 360px) {
+
+    .mm-success-heading h2 {
+        font-size: 23px;
+    }
+
+    .mm-success-arrow {
+        height: 52px;
+    }
+
+    .mm-success-arrow strong {
+        font-size: 12px;
+    }
+
+    .mm-success-photo {
+        height: 245px;
+    }
+
+}
