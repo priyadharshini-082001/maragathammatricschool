@@ -109,8 +109,9 @@
 @media (max-width: 991px) {
 
     .bb-hero-section {
-        height: 600px;
-        min-height: 500px;
+        height: 300px;
+        min-height: 300px;     
+           margin-top:10%;
     }
 
     .bb-hero-social {
@@ -131,8 +132,9 @@
 @media (max-width: 767px) {
 
     .bb-hero-section {
-        height: 480px;
-        min-height: 380px;
+        height: 300px;
+        min-height: 300px;
+
     }
 
     .bb-hero-video {
@@ -180,8 +182,9 @@
 @media (max-width: 480px) {
 
     .bb-hero-section {
-        height: 400px;
-        min-height: 350px;
+        height: 200px;
+        min-height: 200px;
+        margin-top: 18%;
     }
 
     .bb-hero-social {
