@@ -195,411 +195,385 @@
 }
 
 
-/* =====================================================
-   MARAGATHAM CHALKBOARD SECTION
-===================================================== */
-
-.maragatham-chalk-section {
-    width: 100%;
-    padding: 20px 15px 20px;
-    overflow: hidden;
-    background: #101e70;
-    background-image: radial-gradient(
-        rgba(255,255,255,0.10) 1px,
-        transparent 1px
-    );
-    background-size: 20px 20px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* WOODEN FRAME */
+body {
+    font-family: 'Poppins', sans-serif;
+}
 
-.maragatham-chalk-board {
+/* =================================
+   MAIN SECTION
+================================= */
+
+.vm-section {
     position: relative;
-    width: 100%;
-    max-width: 1120px;
-    margin: auto;
-    padding: 9px;
+    overflow: hidden;
+    padding: 25px 3% 30px;
 
     background: linear-gradient(
-        135deg,
-        #a66d35,
-        #69421f,
-        #b17a40,
-        #75451f
+        110deg,
+        #16813d 0%,
+        #4baa31 40%,
+        #91bf32 70%,
+        #e8d13a 100%
     );
-
-    border: 2px solid #b78349;
 }
 
-/* GREEN BOARD */
+/* =================================
+   BACKGROUND GLITTER ANIMATION
+================================= */
 
-.maragatham-board-inner {
-    position: relative;
-    width: 100%;
-   height: 260px;
-
-    display: grid;
-    grid-template-columns: 1fr 1px 1fr;
-    align-items: start;
-
-    gap: 28px;
-    padding: 35px 40px;
-
-    overflow: hidden;
-
-    background:
-        radial-gradient(
-            ellipse at center,
-            rgba(255,255,255,0.05),
-            transparent 75%
-        ),
-        linear-gradient(
-            120deg,
-            #244b39,
-            #315b43,
-            #203f31
-        );
-}
-
-/* SUBTLE BOARD TEXTURE */
-
-.maragatham-board-inner::before {
+.vm-section::before {
     content: "";
     position: absolute;
     inset: 0;
-    z-index: 0;
     pointer-events: none;
-
-    opacity: 0.14;
+    opacity: 0.45;
 
     background-image:
-        repeating-linear-gradient(
-            0deg,
-            transparent,
-            transparent 3px,
-            rgba(255,255,255,0.025) 4px
-        );
+        radial-gradient(2px 2px at 10% 20%, #fff, transparent),
+        radial-gradient(2px 2px at 30% 70%, #fff, transparent),
+        radial-gradient(3px 3px at 50% 30%, #fff, transparent),
+        radial-gradient(2px 2px at 70% 60%, #fff, transparent),
+        radial-gradient(3px 3px at 90% 15%, #fff, transparent),
+        radial-gradient(2px 2px at 80% 85%, #fff, transparent);
+
+    background-size: 180px 150px;
+    animation: sparkleMove 5s linear infinite;
 }
 
-/* CONTENT */
+@keyframes sparkleMove {
+    0% {
+        background-position: 0 0;
+    }
 
-.maragatham-chalk-column {
+    100% {
+        background-position: 180px 150px;
+    }
+}
+
+/* =================================
+   MAIN HEADING
+================================= */
+
+.vm-heading {
     position: relative;
-    z-index: 1;
-    min-width: 0;
-    color: #f4f1e7;
+    z-index: 2;
+    text-align: center;
+    margin-bottom: 65px;
 }
 
-/* HEADINGS */
-
-.maragatham-chalk-heading {
-    margin: 0 0 16px;
-
-    color: #ffe49a;
-
-    font-size: 27px;
-    line-height: 1.3;
+.vm-heading h2 {
+    color: #fff;
+    font-size: clamp(24px, 3vw, 44px);
     font-weight: 700;
-    font-style: italic;
-
-    text-shadow: 0 0 4px rgba(255,235,160,0.35);
-}
-
-.maragatham-chalk-heading::after {
-    content: "";
-    display: block;
-
-    width: 105px;
-    height: 4px;
-
-    margin-top: 5px;
-
-    background: #e8d68f;
-    opacity: 0.8;
-
-    clip-path: polygon(
-        0 50%, 10% 0, 20% 70%, 30% 15%,
-        40% 80%, 50% 15%, 60% 80%, 70% 15%,
-        80% 80%, 90% 15%, 100% 50%
-    );
-}
-
-/* BODY TEXT */
-
-.maragatham-chalk-text {
+    line-height: 1.3;
     margin: 0;
-
-    color: #ffffff;
-
-    font-size: 19px;
-    line-height: 1.8;
-    font-weight: 600;
-    font-style: italic;
-
-    text-align: justify;
-
-    text-shadow: 0 0 3px rgba(255,255,255,0.25);
 }
 
-/* VERTICAL DIVIDER */
-
-.maragatham-chalk-divider {
-    width: 1px;
-    min-height: 315px;
-
-    background: repeating-linear-gradient(
-        to bottom,
-        rgba(255,255,255,0.45) 0 6px,
-        transparent 6px 12px
-    );
+.vm-heading .heading-line {
+    width: 210px;
+    height: 3px;
+    background: #fff;
+    margin: 16px auto 0;
+    position: relative;
+    border-radius: 10px;
 }
 
-/* INTERACTIVE CANVAS */
-
-.maragatham-chalk-canvas {
+.vm-heading .heading-line::before {
+    content: "";
     position: absolute;
-    inset: 0;
-    z-index: 5;
+    left: 0;
+    top: -3px;
+    width: 9px;
+    height: 9px;
+    background: #fff;
+    border-radius: 50%;
+}
 
-    display: block;
+.vm-heading .heading-line::after {
+    content: "\f061";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    right: -3px;
+    top: -9px;
+    color: #fff;
+}
+
+/* =================================
+   CARD CONTAINER
+================================= */
+
+.vm-container {
+    position: relative;
+    z-index: 2;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 35px;
+    align-items: stretch;
+}
+
+/* =================================
+   WHITE CARDS
+================================= */
+
+.vm-card {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    gap: 22px;
 
     width: 100%;
-    height: 100%;
+    min-height: 240px;
+    padding: 40px 28px;
 
-    touch-action: none;
-    cursor: crosshair;
-}
-
-/* WOODEN CHALK TRAY */
-
-.maragatham-chalk-tray {
-    position: absolute;
-    left: 5%;
-    right: 5%;
-    bottom: -11px;
-
-    height: 11px;
-
-    background: linear-gradient(
-        to bottom,
-        #a56b32,
-        #69401f
-    );
-
-    border-radius: 0 0 4px 4px;
-}
-
-/* CHALK ON TRAY */
-
-.maragatham-tray-chalk {
-    position: absolute;
-    top: -5px;
-    left: 20%;
-
-    width: 35px;
-    height: 6px;
-
-    border-radius: 5px;
     background: #ffffff;
-    transform: rotate(-5deg);
+    border-radius: 40px;
+    border: none;
+
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.10);
 }
 
-.maragatham-tray-chalk-small {
+/* =================================
+   VISION / MISSION LABEL
+================================= */
+
+.vm-label {
     position: absolute;
-    top: -5px;
-    right: 18%;
+    top: -65px;
+    left: 50%;
+    transform: translateX(-50%);
 
-    width: 25px;
-    height: 6px;
+    width: 260px;
+    height: 75px;
 
-    border-radius: 5px;
-    background: #fff2c5;
-    transform: rotate(6deg);
-}
-
-/* MOTTO */
-
-.maragatham-chalk-motto {
-    margin: 22px auto 10px;
-
-    color: #fff0bd;
-
-    font-size: 30px;
-    line-height: 1.4;
-    font-weight: 700;
-    font-style: italic;
-
-    text-align: center;
-}
-
-.maragatham-chalk-motto span {
-    color: #ffffff;
-}
-
-/* SINGLE GLITTER CHALK */
-
-.maragatham-chalk-toolbar {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 
-    margin: 8px auto 0;
+    color: #fff;
+    font-size: 26px;
+    font-weight: 700;
+
+    border-radius: 40px 40px 0 0;
+    z-index: 3;
 }
 
-.maragatham-chalk-toolbar > span {
-    color: #fff4c7;
-    font-size: 15px;
-    font-weight: 600;
+/* LABEL ARROW */
+
+.vm-label::after {
+    content: "";
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 25px solid;
 }
 
-.maragatham-chalk-symbol {
-    padding: 0 9px;
+/* VISION COLOR */
 
-    color: #fff2b5 !important;
-    font-size: 20px !important;
-
-    text-shadow:
-        0 0 5px #ffffff,
-        0 0 10px #ffe49a;
-
-    animation: maragathamGlitter 1.2s infinite alternate;
+.vision-label {
+    background: #43a587;
 }
 
-@keyframes maragathamGlitter {
-    from {
-        opacity: 0.5;
-        transform: scale(0.8);
+.vision-label::after {
+    border-top-color: #43a587;
+}
+
+/* MISSION COLOR */
+
+.mission-label {
+    background: #df5155;
+}
+
+.mission-label::after {
+    border-top-color: #df5155;
+}
+
+/* =================================
+   ICON AREA
+================================= */
+
+.vm-icon {
+    flex: 0 0 125px;
+    min-width: 125px;
+    height: 145px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 52px;
+    color: #0b6409;
+
+    border-right: 1px solid #dedede;
+}
+
+/* =================================
+   CONTENT AREA
+================================= */
+
+.vm-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.vm-content p {
+    color: #000000;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 1.85;
+    text-align: justify;
+    margin: 0;
+}
+
+/* =================================
+   TABLET RESPONSIVE
+================================= */
+
+@media (max-width: 1100px) {
+
+    .vm-section {
+        padding-left: 25px;
+        padding-right: 25px;
     }
 
-    to {
-        opacity: 1;
-        transform: scale(1.2);
+    .vm-container {
+        gap: 30px;
+    }
+
+    .vm-card {
+        padding: 35px 20px;
+        gap: 18px;
+        min-height: 230px;
+        border-radius: 32px;
+    }
+
+    .vm-label {
+        width: 220px;
+        height: 65px;
+        top: -55px;
+        font-size: 22px;
+    }
+
+    .vm-icon {
+        flex-basis: 90px;
+        min-width: 90px;
+        height: 130px;
+        font-size: 42px;
+    }
+
+    .vm-content p {
+        font-size: 16px;
+        line-height: 1.8;
     }
 }
 
-/* INSTRUCTION */
+/* =================================
+   MOBILE RESPONSIVE
+================================= */
 
-.maragatham-chalk-instruction {
-    margin: 5px 0 0;
+@media (max-width: 768px) {
 
-    color: rgba(255,255,255,0.8);
-
-    font-size: 12px;
-    line-height: 1.5;
-
-    text-align: center;
-}
-
-/* =====================================================
-   TABLET
-===================================================== */
-
-@media (max-width: 991px) {
-
-    .maragatham-board-inner {
-        gap: 22px;
-        padding: 30px 25px;
-                height: 250px;
-
+    .vm-section {
+        padding: 30px 15px;
     }
 
-    .maragatham-chalk-heading {
-        font-size: 25px;
+    .vm-heading {
+        margin-bottom: 60px;
     }
 
-    .maragatham-chalk-text {
-        font-size: 17px;
+    .vm-heading h2 {
+        font-size: 20px;
     }
 
-}
-
-/* =====================================================
-   MOBILE
-===================================================== */
-
-@media (max-width: 767px) {
-
-    .maragatham-chalk-board {
-        padding: 7px;
+    .vm-heading .heading-line {
+        width: 150px;
     }
 
-    .maragatham-board-inner {
+    .vm-container {
         grid-template-columns: 1fr;
-        gap: 20px;
-        padding: 25px 18px;
-        height: 500px;
+        gap: 75px;
     }
 
-    .maragatham-chalk-column {
+    .vm-card {
+        min-height: auto;
+        padding: 40px 20px 25px;
+
+        flex-direction: column;
+        gap: 15px;
+
+        border-radius: 25px;
+    }
+
+    .vm-label {
+        top: -38px;
+        width: 195px;
+        height: 58px;
+        font-size: 20px;
+    }
+
+    .vm-label::after {
+        bottom: -20px;
+        border-left-width: 20px;
+        border-right-width: 20px;
+        border-top-width: 21px;
+    }
+
+    .vm-icon {
+        flex: none;
         width: 100%;
+        min-width: 0;
+        height: 75px;
+        font-size: 42px;
+
+        border-right: none;
+        border-bottom: 1px solid #dedede;
     }
 
-    .maragatham-chalk-divider {
-        width: 100%;
-        height: 1px;
-        min-height: 1px;
+    .vm-content p {
+        font-size: 16px;
+        line-height: 1.8;
+        text-align: center;
+    }
+}
 
-        background: repeating-linear-gradient(
-            to right,
-            rgba(255,255,255,0.45) 0 6px,
-            transparent 6px 12px
-        );
+/* =================================
+   SMALL MOBILE
+================================= */
+
+@media (max-width: 480px) {
+
+    .vm-heading h2 {
+        font-size:17px;
     }
 
-    .maragatham-chalk-heading {
-        font-size: 23px;
-        margin-bottom: 12px;
+    .vm-card {
+        padding: 38px 16px 22px;
     }
 
-    .maragatham-chalk-text {
-        font-size: 17px;
+    .vm-label {
+        width: 180px;
+        font-size: 18px;
+    }
+
+    .vm-content p {
+        font-size: 16px;
         line-height: 1.75;
     }
-
-    .maragatham-chalk-motto {
-        margin-top: 18px;
-        font-size: 19px;
-    }
-
-    .maragatham-chalk-instruction {
-        font-size: 11px;
-    }
-
 }
 
-/* SMALL MOBILE */
-
-@media (max-width: 380px) {
-
-    .maragatham-board-inner {
-        padding: 22px 14px;
-                height: 500px;
-
-    }
-
-    .maragatham-chalk-heading {
-        font-size: 21px;
-    }
-
-    .maragatham-chalk-text {
-        font-size: 15px;
-    }
-
-    .maragatham-chalk-motto {
-        font-size: 17px;
-    }
-
-}
-
-/* REDUCED MOTION */
-
-@media (prefers-reduced-motion: reduce) {
-
-    .maragatham-chalk-symbol {
-        animation: none;
-    }
-
-}
 
 /* ==========================================
    BRAINYSCHOOL PROGRAMMES CAROUSEL

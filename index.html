@@ -772,7 +772,7 @@
                     <div class="tb-about-sub-img-wrap d-md-block">
 
                         <img
-                            src="assets/img/JRC/assembly.jpeg"
+                            src="assets/img/photos/assembly.jpg"
                             alt="Students learning and growing together"
                             class="tb-about-sub-img"
                             loading="lazy"
@@ -976,405 +976,67 @@ The school’s educational direction is rooted in preparing students for lifelon
 </section>
 
 
-<section class="maragatham-chalk-section">
-    <!-- MOTTO -->
-    <div class="maragatham-chalk-motto">
-        <span>Our Motto:</span>
-        Fit and Intellectual Education
+
+
+
+<section class="vm-section">
+
+    <div class="vm-heading">
+        <h2>Our Motto - Fit and Intellectual Education.</h2>
+        <div class="heading-line"></div>
     </div>
-    <div class="maragatham-chalk-board">
 
-        <div class="maragatham-board-inner">
+    <div class="vm-container">
 
-            <!-- VISION -->
-            <div class="maragatham-chalk-column">
+        <!-- OUR VISION -->
 
-                <h2 class="maragatham-chalk-heading">
-                    Our Vision
-                </h2>
+        <div class="vm-card">
 
-                <p class="maragatham-chalk-text">
+            <div class="vm-label vision-label">
+                OUR VISION
+            </div>
+
+            <div class="vm-icon">
+                <i class="fa-solid fa-circle-nodes"></i>
+            </div>
+
+            <div class="vm-content">
+                <p>
                     To empower students to pursue meaningful goals,
                     develop their abilities and prepare for lifelong
                     success through education that strengthens
                     knowledge, character and confidence.
                 </p>
-
             </div>
-
-            <!-- DIVIDER -->
-            <div class="maragatham-chalk-divider"></div>
-
-            <!-- MISSION -->
-            <div class="maragatham-chalk-column">
-
-                <h2 class="maragatham-chalk-heading">
-                    Our Mission
-                </h2>
-
-                <p class="maragatham-chalk-text">
-                    To cultivate a holistic approach to learning
-                    and development, encouraging intellectual
-                    growth, physical wellbeing, responsible conduct
-                    and the skills needed to participate positively
-                    in society.
-                </p>
-
-            </div>
-
-            <!-- INTERACTIVE CHALK -->
-            <canvas
-                id="maragathamChalkCanvas"
-                class="maragatham-chalk-canvas"
-                aria-label="Write or draw on the chalkboard">
-            </canvas>
 
         </div>
 
-        <!-- CHALK TRAY -->
-        <div class="maragatham-chalk-tray">
-            <span class="maragatham-tray-chalk"></span>
-            <span class="maragatham-tray-chalk-small"></span>
+        <!-- OUR MISSION -->
+
+        <div class="vm-card">
+
+            <div class="vm-label mission-label">
+                OUR MISSION
+            </div>
+
+            <div class="vm-icon">
+                <i class="fa-solid fa-arrow-trend-up"></i>
+            </div>
+
+            <div class="vm-content">
+                <p>
+                    To cultivate a holistic approach to learning and
+                    development, encouraging intellectual growth,
+                    physical wellbeing, responsible conduct and the
+                    skills needed to participate positively in society.
+                </p>
+            </div>
+
         </div>
 
     </div>
 
 </section>
-
-
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-
-    const canvas = document.getElementById("maragathamChalkCanvas");
-
-    if (!canvas) return;
-
-    const ctx = canvas.getContext("2d");
-
-    let drawing = false;
-    let lastX = 0;
-    let lastY = 0;
-
-    let fadeTimer = null;
-    let animationFrame = null;
-
-    const fadeDelay = 1000;
-    const fadeDuration = 800;
-
-    let dpr = window.devicePixelRatio || 1;
-
-    /* =================================
-       CHALK CURSOR
-    ================================= */
-
-    const chalkCursor = document.createElement("canvas");
-
-    chalkCursor.width = 32;
-    chalkCursor.height = 32;
-
-    const cursorCtx = chalkCursor.getContext("2d");
-
-    cursorCtx.save();
-    cursorCtx.translate(16, 16);
-    cursorCtx.rotate(-0.65);
-
-    cursorCtx.fillStyle = "#f7f3df";
-    cursorCtx.shadowColor = "#ffffff";
-    cursorCtx.shadowBlur = 3;
-
-    cursorCtx.fillRect(-3, -11, 6, 20);
-
-    cursorCtx.beginPath();
-    cursorCtx.moveTo(-3, -11);
-    cursorCtx.lineTo(0, -16);
-    cursorCtx.lineTo(3, -11);
-    cursorCtx.closePath();
-    cursorCtx.fill();
-
-    cursorCtx.restore();
-
-    const chalkCursorUrl = chalkCursor.toDataURL();
-
-    canvas.style.cursor =
-        "url('" + chalkCursorUrl + "') 16 16, crosshair";
-
-
-    /* =================================
-       CANVAS SIZE
-    ================================= */
-
-    function resizeCanvas() {
-
-        const rect = canvas.getBoundingClientRect();
-
-        dpr = window.devicePixelRatio || 1;
-
-        canvas.width = Math.round(rect.width * dpr);
-        canvas.height = Math.round(rect.height * dpr);
-
-        ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-
-    }
-
-    resizeCanvas();
-
-    /* =================================
-       POINTER POSITION
-    ================================= */
-
-    function getPosition(event) {
-
-        const rect = canvas.getBoundingClientRect();
-
-        return {
-            x: event.clientX - rect.left,
-            y: event.clientY - rect.top
-        };
-
-    }
-
-
-    /* =================================
-       GLITTER PARTICLES
-    ================================= */
-
-    function addGlitter(x, y) {
-
-        for (let i = 0; i < 2; i++) {
-
-            const offsetX = (Math.random() - 0.5) * 12;
-            const offsetY = (Math.random() - 0.5) * 12;
-
-            const size = Math.random() * 1.4 + 0.5;
-
-            ctx.save();
-
-            ctx.globalAlpha = Math.random() * 0.6 + 0.35;
-
-            ctx.fillStyle = "#fff8dc";
-
-            ctx.shadowColor = "#ffffff";
-            ctx.shadowBlur = 7;
-
-            ctx.beginPath();
-
-            ctx.arc(
-                x + offsetX,
-                y + offsetY,
-                size,
-                0,
-                Math.PI * 2
-            );
-
-            ctx.fill();
-
-            ctx.restore();
-
-        }
-
-    }
-
-
-    /* =================================
-       START DRAWING
-    ================================= */
-
-    canvas.addEventListener("pointerdown", function (event) {
-
-        event.preventDefault();
-
-        clearTimeout(fadeTimer);
-        cancelAnimationFrame(animationFrame);
-
-        drawing = true;
-
-        canvas.setPointerCapture(event.pointerId);
-
-        const position = getPosition(event);
-
-        lastX = position.x;
-        lastY = position.y;
-
-        ctx.save();
-
-        ctx.fillStyle = "#fff9ed";
-        ctx.shadowColor = "#ffffff";
-        ctx.shadowBlur = 7;
-
-        ctx.beginPath();
-
-        ctx.arc(
-            lastX,
-            lastY,
-            1.7,
-            0,
-            Math.PI * 2
-        );
-
-        ctx.fill();
-
-        ctx.restore();
-
-    });
-
-
-    /* =================================
-       DRAW GLITTER CHALK
-    ================================= */
-
-    canvas.addEventListener("pointermove", function (event) {
-
-        if (!drawing) return;
-
-        event.preventDefault();
-
-        const position = getPosition(event);
-
-        /* Main chalk stroke */
-
-        ctx.save();
-
-        ctx.globalAlpha = 0.95;
-        ctx.strokeStyle = "#fff9ed";
-        ctx.lineWidth = 2.8;
-
-        ctx.lineCap = "round";
-        ctx.lineJoin = "round";
-
-        ctx.shadowColor = "#ffffff";
-        ctx.shadowBlur = 7;
-
-        ctx.beginPath();
-
-        ctx.moveTo(lastX, lastY);
-        ctx.lineTo(position.x, position.y);
-
-        ctx.stroke();
-
-        ctx.restore();
-
-        /* Soft chalk dust */
-
-        ctx.save();
-
-        ctx.globalAlpha = 0.2;
-        ctx.strokeStyle = "#ffffff";
-        ctx.lineWidth = 5;
-
-        ctx.lineCap = "round";
-
-        ctx.beginPath();
-
-        ctx.moveTo(lastX, lastY);
-        ctx.lineTo(position.x, position.y);
-
-        ctx.stroke();
-
-        ctx.restore();
-
-        /* Glitter */
-
-        addGlitter(position.x, position.y);
-
-        lastX = position.x;
-        lastY = position.y;
-
-    });
-
-
-    /* =================================
-       STOP DRAWING
-    ================================= */
-
-    function stopDrawing() {
-
-        if (!drawing) return;
-
-        drawing = false;
-
-        ctx.beginPath();
-
-        clearTimeout(fadeTimer);
-
-        fadeTimer = setTimeout(function () {
-
-            startAutomaticFade();
-
-        }, fadeDelay);
-
-    }
-
-    canvas.addEventListener("pointerup", stopDrawing);
-    canvas.addEventListener("pointercancel", stopDrawing);
-    canvas.addEventListener("lostpointercapture", stopDrawing);
-
-
-    /* =================================
-       FAST AUTOMATIC FADE
-    ================================= */
-
-    function startAutomaticFade() {
-
-        const snapshot = document.createElement("canvas");
-
-        snapshot.width = canvas.width;
-        snapshot.height = canvas.height;
-
-        const snapshotCtx = snapshot.getContext("2d");
-
-        snapshotCtx.drawImage(canvas, 0, 0);
-
-        const startTime = performance.now();
-
-        function fadeFrame(currentTime) {
-
-            const elapsed = currentTime - startTime;
-
-            const opacity = Math.max(
-                0,
-                1 - elapsed / fadeDuration
-            );
-
-            ctx.clearRect(
-                0,
-                0,
-                canvas.width,
-                canvas.height
-            );
-
-            ctx.save();
-
-            ctx.globalAlpha = opacity;
-
-            ctx.drawImage(snapshot, 0, 0);
-
-            ctx.restore();
-
-            if (elapsed < fadeDuration) {
-
-                animationFrame = requestAnimationFrame(fadeFrame);
-
-            } else {
-
-                ctx.clearRect(
-                    0,
-                    0,
-                    canvas.width,
-                    canvas.height
-                );
-
-                animationFrame = null;
-
-            }
-
-        }
-
-        animationFrame = requestAnimationFrame(fadeFrame);
-
-    }
-
-});
-</script>
 
 
 <!-- =========================================================
@@ -2215,7 +1877,7 @@ document.addEventListener("DOMContentLoaded", function () {
              data-aos="fade-up"
              data-aos-delay="100">
 
-            <div class="swiper-wrapper pb-5 pt-2">
+            <div class="swiper-wrapper  pt-2">
 
 
                 <!-- 01. SMART CLASSROOMS -->
@@ -2234,12 +1896,8 @@ document.addEventListener("DOMContentLoaded", function () {
                         <div class="style-card-content position-absolute bottom-0 start-0
                                     w-100 p-4 text-center z-2">
 
-                            <h4 class="text-white fw-bold mb-2 fs-5">
-                                Smart Classrooms
-                            </h4>
-
                             <span class="style-package-pill">
-                                Technology-Enabled Learning
+                                Smart Classrooms
                             </span>
 
                         </div>
@@ -2265,12 +1923,8 @@ document.addEventListener("DOMContentLoaded", function () {
                         <div class="style-card-content position-absolute bottom-0 start-0
                                     w-100 p-4 text-center z-2">
 
-                            <h4 class="text-white fw-bold mb-2 fs-5">
-                                Biology Laboratory
-                            </h4>
-
                             <span class="style-package-pill">
-                                Discover Life &amp; Nature
+                                Biology Laboratory
                             </span>
 
                         </div>
@@ -2296,12 +1950,8 @@ document.addEventListener("DOMContentLoaded", function () {
                         <div class="style-card-content position-absolute bottom-0 start-0
                                     w-100 p-4 text-center z-2">
 
-                            <h4 class="text-white fw-bold mb-2 fs-5">
-                                Chemistry Laboratory
-                            </h4>
-
                             <span class="style-package-pill">
-                                Learning Through Experiments
+                                   Chemistry Laboratory
                             </span>
 
                         </div>
@@ -2327,12 +1977,8 @@ document.addEventListener("DOMContentLoaded", function () {
                         <div class="style-card-content position-absolute bottom-0 start-0
                                     w-100 p-4 text-center z-2">
 
-                            <h4 class="text-white fw-bold mb-2 fs-5">
-                                Physics Laboratory
-                            </h4>
-
                             <span class="style-package-pill">
-                                Explore Science &amp; Motion
+                                    Physics Laboratory
                             </span>
 
                         </div>
@@ -2358,12 +2004,8 @@ document.addEventListener("DOMContentLoaded", function () {
                         <div class="style-card-content position-absolute bottom-0 start-0
                                     w-100 p-4 text-center z-2">
 
-                            <h4 class="text-white fw-bold mb-2 fs-5">
-                                Playground
-                            </h4>
-
                             <span class="style-package-pill">
-                                Play, Explore &amp; Grow
+                                 Playground
                             </span>
 
                         </div>
@@ -2389,13 +2031,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
                         <div class="style-card-content position-absolute bottom-0 start-0
                                     w-100 p-4 text-center z-2">
-
-                            <h4 class="text-white fw-bold mb-2 fs-5">
-                                Computer Laboratory
-                            </h4>
-
                             <span class="style-package-pill">
-                                Digital Learning &amp; Skills
+                                     Computer Laboratory
                             </span>
 
                         </div>
@@ -2421,12 +2058,8 @@ document.addEventListener("DOMContentLoaded", function () {
                         <div class="style-card-content position-absolute bottom-0 start-0
                                     w-100 p-4 text-center z-2">
 
-                            <h4 class="text-white fw-bold mb-2 fs-5">
-                                School Transportation
-                            </h4>
-
                             <span class="style-package-pill">
-                                Comfortable School Travel
+                                School Transportation
                             </span>
 
                         </div>
@@ -2453,12 +2086,8 @@ document.addEventListener("DOMContentLoaded", function () {
                         <div class="style-card-content position-absolute bottom-0 start-0
                                     w-100 p-4 text-center z-2">
 
-                            <h4 class="text-white fw-bold mb-2 fs-5">
-                                Classroom Learning
-                            </h4>
-
                             <span class="style-package-pill">
-                                Knowledge &amp; Growth
+                                  Classroom Learning
                             </span>
 
                         </div>
@@ -2474,7 +2103,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     <a href="facilities.html"
                        class="travel-style-card d-block position-relative overflow-hidden">
 
-                        <img src="assets/img/photos/tennis.jpeg"
+                        <img src="assets/img/photos/sport2.png"
                              alt="Sports and Games at Maragathaam School"
                              class="style-card-img w-100 h-100 object-fit-cover"
                              loading="lazy" decoding="async">
@@ -2484,12 +2113,8 @@ document.addEventListener("DOMContentLoaded", function () {
                         <div class="style-card-content position-absolute bottom-0 start-0
                                     w-100 p-4 text-center z-2">
 
-                            <h4 class="text-white fw-bold mb-2 fs-5">
-                                Sports &amp; Games
-                            </h4>
-
                             <span class="style-package-pill">
-                                Fitness &amp; Teamwork
+                              Sports &amp; Games
                             </span>
 
                         </div>
@@ -2515,12 +2140,8 @@ document.addEventListener("DOMContentLoaded", function () {
                         <div class="style-card-content position-absolute bottom-0 start-0
                                     w-100 p-4 text-center z-2">
 
-                            <h4 class="text-white fw-bold mb-2 fs-5">
-                                Creative Activities
-                            </h4>
-
                             <span class="style-package-pill">
-                                Art, Creativity &amp; Expression
+                                Creative Activities
                             </span>
 
                         </div>
@@ -2567,7 +2188,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 </div>
 
                 <h3>
-                    <span class="maragatham-counter" data-target="1500">0</span>+
+                    <span class="maragatham-counter" data-target="1200">0</span>+
                 </h3>
 
                 <h4>Happy Students</h4>
@@ -2613,7 +2234,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 </div>
 
                 <h3>
-                    <span class="maragatham-counter" data-target="1200">0</span>+
+                    <span class="maragatham-counter" data-target="2100">0</span>+
                 </h3>
 
                 <h4>Happy Parents</h4>
@@ -2977,7 +2598,7 @@ Academic Excellence</h4>
         <div class="bb-footer-grid">
 
             <!-- SCHOOL INFORMATION -->
-            <div class="bb-footer-column bb-footer-about">
+            <div class="bb-footer-column bb-footer-about" style="text-align: center;">
 
                 <a href="index.html" class="bb-footer-logo"
                    style="background-color: white;border-radius: 5px;">
@@ -3070,7 +2691,7 @@ Academic Excellence</h4>
                         <p>
                             <a href="maragathaam.org" target="_blank"
                                rel="noopener noreferrer">
-                              Maragathaam.org
+                              www.maragathaamschool.org
                             </a>
                         </p>
                     </div>

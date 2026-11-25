@@ -4431,7 +4431,7 @@ background: #ffffff !important;
 
 /* Arch-Shaped Tall Card */
 .travel-style-card {
-  height:350px;
+  height:250px;
   border-radius:5px;
   background-color: var(--primary);
   transition: all 0.5s cubic-bezier(0.25, 1, 0.5, 1);
@@ -6431,9 +6431,8 @@ background: #ffffff !important;
 }
 
 .tb-explore-desc {
-  font-size: 17px;
+  font-size: 18px;
   line-height: 1.6;
-  max-width: 520px;
   color: black;
   text-align: justify;
 }
