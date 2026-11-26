@@ -828,7 +828,7 @@ background: linear-gradient(110deg, #1F7A35, #63B82E, #FFD43B);
 }
 
 .main-header.header-glass .navbar-nav .dropdown-menu {
-  background: rgba(255, 255, 255, 0.8) !important;
+  background: rgb(255, 255, 255) !important;
   backdrop-filter: blur(24px) saturate(190%) !important;
   -webkit-backdrop-filter: blur(24px) saturate(190%) !important;
   border: 1px solid rgba(255, 255, 255, 0.7) !important;

@@ -431,7 +431,7 @@ body {
 
 .vm-content p {
     color: #000000;
-    font-size: 19px;
+    font-size: 17px;
     font-weight: 400;
     line-height: 1.85;
     text-align: justify;
@@ -1452,3 +1452,4 @@ background: linear-gradient(110deg, #1F7A35, #63B82E, #FFD43B);
         font-size: 14px;
     }
 }
+
